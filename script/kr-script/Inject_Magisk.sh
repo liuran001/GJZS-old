@@ -32,12 +32,12 @@ File3="${File1}_and_Magisk.$File2"
 Script=$Script_Dir/META-INF/com/google/android/updater-script
 
 [[ -d $Script_Dir ]] && rm -rf $Script_Dir &>/dev/null
-mkdir -p $Script_Dir/com.gjzs.chongzhi.online
+mkdir -p $Script_Dir/Han.GJZS
 
 
 if [[ $Option2 = 1 ]]; then
     [[ ! -f "$Magisk_File" ]] && abort "自定义的$Magisk_File 文件不存在无法注入！"
-    cp -f "$Magisk_File" $Script_Dir/com.gjzs.chongzhi.online/Magisk.zip
+    cp -f "$Magisk_File" $Script_Dir/Han.GJZS/Magisk.zip
     unzip -oq "$Magisk_File" 'common/util_functions.sh' -d $Script_Dir
     MAGISK_VER=`grep_prop MAGISK_VER $Script_Dir/common/util_functions.sh`
     MAGISK_VER=`echo $MAGISK_VER | tr -d \"`
@@ -47,20 +47,20 @@ if [[ $Option2 = 1 ]]; then
 else
     Choice=1
     . $Load com.topjohnwu.magisk
-    cp -f "$Download_File" $Script_Dir/com.gjzs.chongzhi.online/Magisk.zip
+    cp -f "$Download_File" $Script_Dir/Han.GJZS/Magisk.zip
     version="$name-$version($versionCode).zip"
 fi
 
 unzip -oq $File 'META-INF/com/google/android/updater-script' -d $Script_Dir
 
-if ! Check_Magisk com.gjzs.chongzhi.online/Magisk.zip; then
+if ! Check_Magisk Han.GJZS/Magisk.zip; then
 cat <<Han >>$Script
 ui_print("- 开始安装 $version...");
 ui_print("- 由「搞机助手」一键注入");
-run_program("/sbin/mkdir", "-p", "/tmp/com.gjzs.chongzhi.online");
-package_extract_file("com.gjzs.chongzhi.online/Magisk.zip", "/tmp/com.gjzs.chongzhi.online/Magisk.zip");
-run_program("/sbin/unzip", "-oq", "/tmp/com.gjzs.chongzhi.online/Magisk.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/com.gjzs.chongzhi.online");
-run_program("/sbin/sh", "/tmp/com.gjzs.chongzhi.online/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/com.gjzs.chongzhi.online/Magisk.zip");
+run_program("/sbin/mkdir", "-p", "/tmp/Han.GJZS");
+package_extract_file("Han.GJZS/Magisk.zip", "/tmp/Han.GJZS/Magisk.zip");
+run_program("/sbin/unzip", "-oq", "/tmp/Han.GJZS/Magisk.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/Han.GJZS");
+run_program("/sbin/sh", "/tmp/Han.GJZS/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/Han.GJZS/Magisk.zip");
 Han
 fi
 
