@@ -193,7 +193,7 @@ time='2021年5月4号'
     [[ $Choice = 1 ]] && Download -net "13cfe4814c9998caa7ca270295644948?at_=1620065598375&ak_=1aaac4e75c20ab9dbf78b5ff708b845f&ad_=9aef95132e85e65a82e74a53ea3b8edc&fn=$1" "$1.apk" 14985916 c746e603a36a3d483967099540bec068 "$1.apk"
 ;;
 
-ru.bshqkoek.afdpvmdun)
+ru.kdhcorud.gxttvasej)
 apk='ru.kdhcorud.gxttvasej'
 name='Lucky~Pаtchеr  '
 version='9.5.7'
