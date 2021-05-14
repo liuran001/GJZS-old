@@ -1,0 +1,3 @@
+#Han.GJZS
+
+. ./CheckUpdate.sh
