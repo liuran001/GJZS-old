@@ -1,6 +1,6 @@
-Configuration=2021051501
-Magisk_Warehouse_version=2021051501
-App_Store_version=2021051501
+Configuration=2021051502
+Magisk_Warehouse_version=2021051502
+App_Store_version=2021051502
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -119,12 +119,12 @@ time='2021年5月2号'
 ru.zdevs.zarchiver.pro)
 apk='ru.zdevs.zarchiver.pro'
 name='ZArchiver Pro'
-version='0.9.4'
-versionCode=9405
+version='0.9.5.8'
+versionCode=9593
 author='未知'
 description='解压缩神器'
-time='2020年8月14号'
-    [[ $Choice = 1 ]] && Download -net "9cd53f4b17367a498141efe3196a4d52?at_=1618237713384&ak_=84d0ec945b3c7406e37c3d357e48b558&ad_=c15e9f3ca2012ce9d70704d77aaf1bf4&fn=$1" "$1.apk" 5320967 3c55d28ac1bd498ab7de67aec7212c8f "$1.apk"
+time='2021年5月15号'
+    [[ $Choice = 1 ]] && Download -net "20af8458428019f35934391293e50eed?at_=1621020531667&ak_=d5dda6ac90af3fd991cdcafd28441968&ad_=40f6d7fbfb918416d9245022bcd34d6b&fn=$1" "$1.apk" 4736962 6dd40e27a7575840b77cb5b393242c1e "$1.apk"
 ;;
 
 org.telegram.messenger)
@@ -194,14 +194,14 @@ time='2021年5月4号'
 ;;
 
 ru.bshqkoek.afdpvmdun)
-apk='ru.bshqkoek.afdpvmdun'
-name='Luckу*Pаtcher'
-version='9.5.2'
-versionCode=1712
+apk='ru.kdhcorud.gxttvasej'
+name='Lucky~Pаtchеr  '
+version='9.5.7'
+versionCode=1717
 author='未知'
 description='幸运破解器'
-time='2021年4月25号'
-    [[ $Choice = 1 ]] && Download -net "f3c323003663faefeeb2fc7514cfebbd?at_=1619302092851&ak_=e7215974f7ee4e931532ea9fb2305e0a&ad_=b0a80be3d53fa5ae436e4b92fb982f3a&fn=$1" "$1.apk" 10059127 dc9e7111ce7a3c53674e8e1e5c02011b "$1.apk"
+time='2021年5月15号'
+    [[ $Choice = 1 ]] && Download -net "da81b742d02b3a465ac85ec442c45743?at_=1621020826996&ak_=6b2c7db6541292e015da4fcb4f1ee1f5&ad_=a24e7f8f81d04e10b186e64ef8dc8cef&fn=$1" "$1.apk" 9949608 7588f943f359d5404201fae5451416cf "$1.apk"
 ;;
 
 com.linroid.zlive)
@@ -1303,12 +1303,12 @@ time='2020年6月15号'
 busybox-ndk)
 id='busybox-ndk'
 name='Busybox for Android NDK'
-version='1.32.1'
-versionCode='13210'
+version='1.33.1'
+versionCode='13310'
 author='osm0sis @ xda-developers'
 description='Static busybox binary for all Android architectures built with the NDK（busybox可执行的二进制命令，适用于使用NDK构建的所有Android手机）'
 time='2021年3月31号'
-    [[ $Choice = 1 ]] && Download -net "e37f98cf50d987b73756bf9b1fea6e0b?at_=1618189692166&ak_=7829db68980eac34e6d0c3325a32e5fc&ad_=94712993a5f383b7b034c5af17c27040&fn=$1" "$1.zip" 9802054 ae82ac2dbbe49bf4c1ee47599f575db5 "$1.zip"
+    [[ $Choice = 1 ]] && Download -net "2650e49447da8e26708ba1cd2d9d2abf?at_=1621019427701&ak_=dfed478a7404244cec6084e422aad7ee&ad_=bf568916116f1137c407a3ceb68306fc&fn=$1" "$1.zip" 9834213 f449d7e9f46fe40c43c12dc237af979d "$1.zip"
 ;;
 
 kfmark)
