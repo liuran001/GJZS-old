@@ -1,6 +1,6 @@
-Configuration=2021051502
+Configuration=2021051503
 Magisk_Warehouse_version=2021051502
-App_Store_version=2021051502
+App_Store_version=2021051503
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -247,6 +247,17 @@ time='2021年5月15号'
 ;;
 
 # Xposed模块
+com.tsng.hidemyapplist)
+apk='com.tsng.hidemyapplist'
+name='隐藏应用列表'
+version='1.5.4.Native'
+versionCode=25
+author='DR-TSNG'
+description='使应用无法检测到应用列表  通常情况下作用域只需要系统框架  此为Native版，如果闪退请前往GitHub（https://github.com/Dr-TSNG/Hide-My-Applist）下载Non-Native版本'
+time='2021年5月15号'
+    [[ $Choice = 1 ]] && Download -net "76496f7ffee60ad054f6b43f405d3476?at_=1621022715029&ak_=8a33196acb58dfa35cd978e5100fb05f&ad_=a794a0f3c3d33501551fb46ca6516a1d&fn=$1" "$1.apk" 5857886 c444852a57db8b184306f1e8b5920fba "$1.apk"
+;;
+
 com.coderstory.toolkit)
 apk='com.coderstory.toolkit'
 name='安卓4.4-11核心破解'
