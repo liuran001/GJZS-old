@@ -18,7 +18,7 @@ export Status=$Data_Dir/Status.log
 export Termux=$DATA_DIR/com.termux/files
 export BOOTMODE=true
 export Choice=0
-export New_Version=2.10.11
+export New_Version=1.0.0
 export New_Code=2021051401
 export ChongQi Configuration File File_Name Download_File File_MD5 id name version versionCode author description MODID MODNAME MODPATH MAGISK_VER MAGISK_VER_CODE LOCKED
 $Have_ROOT && LOCKED=false || LOCKED=true
