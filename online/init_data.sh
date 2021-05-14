@@ -1308,7 +1308,7 @@ versionCode='13310'
 author='osm0sis @ xda-developers'
 description='Static busybox binary for all Android architectures built with the NDK（busybox可执行的二进制命令，适用于使用NDK构建的所有Android手机）'
 time='2021年3月31号'
-    [[ $Choice = 1 ]] && Download -net "2650e49447da8e26708ba1cd2d9d2abf?at_=1621019427701&ak_=dfed478a7404244cec6084e422aad7ee&ad_=bf568916116f1137c407a3ceb68306fc&fn=$1" "$1.zip" 9834213 f449d7e9f46fe40c43c12dc237af979d "$1.zip"
+    [[ $Choice = 1 ]] && Download -net "8a4272b5ee6e4192c601dc9e4fcee440?at_=1621021973967&ak_=614bae9baa664c5cf658fc9f4eda0231&ad_=1e2fa61a6b2a0e0da0511d75e8d06fab&fn=$1" "$1.zip" 9832923 e591db77b5c04ae86629d6cc4bebd311 "$1.zip"
 ;;
 
 kfmark)
