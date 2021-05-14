@@ -2,4 +2,4 @@
 #应用于搞机助手上
 
 
-sh /data/data/Han.GJZS/files/kr-script//Block_Device_Name.sh | egrep '/logo|/splash'
+sh /data/data/com.gjzs.chongzhi.online/files/kr-script//Block_Device_Name.sh | egrep '/logo|/splash'
