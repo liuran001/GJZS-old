@@ -1,5 +1,5 @@
-Configuration=2021051401
-Magisk_Warehouse_version=2021050805
+Configuration=2021051501
+Magisk_Warehouse_version=2021051501
 App_Store_version=2021051401
 Show_Compatibility_Mode=1
 MIUI=0
@@ -11,12 +11,12 @@ case "$1" in
 com.topjohnwu.magisk)
 apk='com.topjohnwu.magisk'
 name='Magisk'
-version='22.1'
-versionCode='22100'
+version='23.0'
+versionCode='23000'
 author='John Wu'
 description='Magisk Manager'
-time='2021年4月9号'
-    [[ $Choice = 1 ]] && Download -url 'https://cdn.jsdelivr.net/gh/topjohnwu/magisk-files@22.1/app-release.apk' "$1.apk" 6720493 b6c71c287647bda911f7027a087a7503 "$1.apk"
+time='2021年5月15号'
+    [[ $Choice = 1 ]] && Download -url 'https://cdn.jsdelivr.net/gh/topjohnwu/magisk-files@23.0/app-release.apk' "$1.apk" 6874374 ea450d98c25b4e09bb353e5bef8ca8a0 "$1.apk"
 ;;
 
 com.omarea.vtools)
@@ -97,12 +97,12 @@ time='2021年3月18号'
 top.canyie.dreamland.manager)
 apk='top.canyie.dreamland.manager'
 name='梦境'
-version='0.0.5'
-versionCode='5'
+version='0.0.7'
+versionCode='7'
 author=canyie
 description='梦境框架管理器'
-time='2021年3月19号'
-    [[ $Choice = 1 ]] && Download -net "f3d68aa4b7ce2f5849989fa86e789cc5?at_=1618169320029&ak_=323ad5fa60476a31bd38225523e0ed1d&ad_=85930862b8f738acb74578c611ed26a4&fn=$1" "$1.apk" 2242379 bdae2f91cdee6aff8e91dc1626bbb6b5 "$1.apk"
+time='2021年5月15号'
+    [[ $Choice = 1 ]] && Download -net "5d5c14440f361ba03394e3201cac0e57?at_=1621010423696&ak_=e00000eb382892efce9550cf0bca3e45&ad_=d98797e5de0afc62e068c26be871b734&fn=$1" "$1.apk" 2041765 33ea0e394f1fb6b92b43037392a01401 "$1.apk"
 ;;
 
 com.termux)
@@ -229,12 +229,12 @@ time='2021年3月14号'
 rikka.riru)
 apk='rikka.riru'
 name='Riru'
-version='25.4.2'
-versionCode=415
+version='25.4.4'
+versionCode=426
 author='Rikka  酷安@蓝莓味绿茶 '
 description='显示Riru状态'
 apkfile="$PeiZhi_File/$apk-$versionCode.apk"
-time='2021年4月18号'
+time='2021年5月15号'
     if [[ $Choice = 1 ]]; then
         if [[ ! -s "$apkfile" ]]; then
             rm -rf "$PeiZhi_File/$apk-"*.apk
@@ -1202,12 +1202,12 @@ fi
 riru_storage_redirect)
 id='riru_storage_redirect'
 name='Riru - Enhanced mode for Storage Isolation'
-version='v23.8'
-versionCode='61'
+version='v24.1.2'
+versionCode='62'
 author='Rikka  酷安@蓝莓味绿茶 '
 description='启用存储空间隔离（存储重定向）的增强模式，包名=moe.shizuku.redirectstorage'
-time='2021年4月19号'
-    [[ $Choice = 1 ]] && Download -net "885323adfd7ed9339ede53499f13a181?at_=1618778581218&ak_=2c267fb922247f579869ae92bd33bbb5&ad_=8896acfe5e1fb53453b9ae164ab8773a&fn=$1" "$1.zip" 111121 99afa843baa9305aed9818200d4a9fa1 "$1.zip"
+time='2021年5月15号'
+    [[ $Choice = 1 ]] && Download -net "590c09c63905678800b5cb7939b3d0de?at_=1621011091935&ak_=657d7f0c6d4c77de58e35888f40c964a&ad_=3768f48366d510361e54f2995dc5bdb4&fn=$1" "$1.zip" 110511 56f16e1af1c23d366932f0e99579e9e3 "$1.zip"
 ;;
 
 riru-module-xfingerprint-pay-wechat)
@@ -1268,12 +1268,12 @@ time='2021年4月5号'
 riru_clipboard_whitelist)
 id='riru_clipboard_whitelist'
 name='Riru - Clipboard Whitelist'
-version='v7'
-versionCode=7
+version='v9'
+versionCode=9
 author='Kr328'
 description='允许应用在Android 10上在后台访问剪贴板。'
-time='2021年3月14号'
-    [[ $Choice = 1 ]] && Download -net "811015279689fbad2e19933b4ebf0bde?at_=1618189237248&ak_=6489e6c2c0410d3e15cc2dacf6f43fef&ad_=c1bf9b74c19bc355131b4e83735ace32&fn=$1" "$1.zip" 55391 a1e0867d3175c30ebae020083c9283ba "$1.zip"
+time='2021年5月15号'
+    [[ $Choice = 1 ]] && Download -net "e13f11c1d318f96c6f6495f4d5b6d96a?at_=1621011263951&ak_=74be92b89ecfd198d0afb62010dd273d&ad_=7aa82b6f73aed0806043291faee207b4&fn=$1" "$1.zip" 41042 b77d473bfc4b08f0e5d2b7646a8090fe "$1.zip"
 ;;
 
 taichi)
