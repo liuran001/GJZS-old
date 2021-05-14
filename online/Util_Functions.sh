@@ -326,7 +326,7 @@ Installing_Busybox() {
     [[ ! -d $lu ]] && mkdir -p $lu &>/dev/null
     [[ ! -d $lu2 ]] && mkdir -p $lu2 &>/dev/null
     [[ ! -d $lu3 ]] && mkdir -p $lu3 &>/dev/null
-    Cloud_Update
+Cloud_Update
 }
 
 Start_Time() {
