@@ -11,7 +11,7 @@
     init_data_ID=init_data.sh
     init_data_MD5=361b0e698b5eeb4167d278641d0c2f70
     Util_Functions_ID=Util_Functions.sh
-    Util_Functions_MD5=ba4cf8e696e0b764695277fc005c343c
+    Util_Functions_MD5=0ec941bd066cf70db90c0a57ef51e168
     Cloud_ID=Cloud_Page.zip
     Cloud_Version=2021051501
-   # Cloud_MD5=1aefd34a0483630004b939bd299c3dca
+    Cloud_MD5=5a156d28231860dc9ebe9e418c2bef00

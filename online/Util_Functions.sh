@@ -252,10 +252,10 @@ Cloud_Update() {
                 echo "- 正在$S云端页面：$Cloud_Version"
                     XiaZai -s "$CODING/$Cloud_ID" "$File"
                     if [[ -f "$File" ]]; then
-                        Verify=`unzip -p "$File" 'Data_Dir/Verify.log'`
-                            if [[ "$Verify" != "$Package_name" ]]; then
-                                rm -f $File
-                                abort2 "- 验证云端页面失败"
+                        Check_MD5=`md5sum "$File" 2>/dev/null | sed 's/ .*//g'`
+                           if [[ "$Check_MD5" != "$Cloud_MD5" ]]; then
+                               rm -f $File
+                               abort2 "- 更新云端页面失败"
                             else
                                 unzip -oq "$File" -d ~
                                     if [[ $? = 0 ]]; then
