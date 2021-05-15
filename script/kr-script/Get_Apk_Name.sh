@@ -3,4 +3,4 @@
 
 
 rm -rf "$APK_Name_list"
-am start -n Han.GJZS/com.projectkr.shell.DialogActivity
+am start -n com.gjzs.chongzhi.online/com.projectkr.shell.DialogActivity

@@ -1,3 +1,9 @@
+最新下载地址：https://qqcn.coding.net/public/import-rt20/GJZS-Download/git/files
+酷安动态又被屏蔽了，麻烦各位帮忙宣传下
+
+V1.00 (云端2021051502)
+修复了提取应用功能以及部分页面404问题
+
 V1.00 (2021051502)
 修复了云端版提示脚本丢失的问题（抄的https://github.com/People-11/FuckGJZS）
 

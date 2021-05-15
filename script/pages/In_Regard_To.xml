@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <group title="关于">
 <!-- START -->
-    <page link="https://by-han.coding.net/p/Han.GJZS/d/Han.GJZS/git/raw/master/WeChat_Official_Accounts.jpg">
+    <page link="https://qqcn.coding.net/p/import-rt20/d/GJZS/git/raw/master/other/WeChat_Official_Accounts.jpg">
         <title>微信公众号：HanGJZS</title>
     </page>
 <!-- END -->
 <!-- START -->
-    <page link="https://by-han.coding.net/public/Han.GJZS/Han.GJZS/git/files">
+    <page link="https://github.com/liuran001/GJZS">
         <title>开源地址</title>
     </page>
 <!-- END -->
