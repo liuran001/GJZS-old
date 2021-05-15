@@ -1,5 +1,5 @@
-Configuration=2021051503
-Magisk_Warehouse_version=2021051502
+Configuration=2021051504
+Magisk_Warehouse_version=2021051503
 App_Store_version=2021051503
 Show_Compatibility_Mode=1
 MIUI=0
@@ -676,14 +676,15 @@ time='2021年2月18号'
 ;;
 
 riru_dreamland)
-showapk='0.0.5(5)'
+showapk='0.0.7(7)'
 id='riru_dreamland'
 name='Riru - Dreamland（梦境框架）'
 author='canyie'
-version='2.0'
-versionCode='2000'
+version='2.0_2005'
+versionCode='2005'
 description='一款基于Riru API开发的Xposed框架，支持运行在安卓 7.0 ~ 11，需要安装Riru v23或更高版本，Telegram：@DreamlandFramework, QQ群：949888394'
-    [[ $Choice = 1 ]] && Download -net "728707e9b2330d2f648322d37b6bf5cb?at_=1618169536046&ak_=a5ab282626fc0a20078b88eefc077ca0&ad_=4b528702b87b6890fd06dfba1686e662&fn=$1" "$1.zip" 713381 429fd412cb6fd8348112fb558c0c5b56 "$1.zip"
+time='2021年5月15号'
+    [[ $Choice = 1 ]] && Download -net "3ec4ee237a1cc962b176561b296eaeba?at_=1621093345169&ak_=0e4fb6b1088027db49e69c2c752c8398&ad_=32dcfbdcd6db3d51926807926e4719aa&fn=$1" "$1.zip" 728977 54cee829bcfe5cd559ed80b811356647 "$1.zip"
 ;;
 
 xposed)
