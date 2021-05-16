@@ -1,6 +1,6 @@
-Configuration=2021051701
-Magisk_Warehouse_version=2021051701
-App_Store_version=2021051701
+Configuration=2021051702
+Magisk_Warehouse_version=2021051702
+App_Store_version=2021051702
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -22,12 +22,12 @@ time='2021年5月15号'
 com.omarea.vtools)
 apk='com.omarea.vtools'
 name='Scene4 Beta'
-version='4.3.4 Beta'
-versionCode=202105011
+version='4.3.6 Beta'
+versionCode=202105131
 author='嘟嘟Ski'
 description='你猜'
-time='2021年5月2号'
-    [[ $Choice = 1 ]] && Download -coding "21051601/apks/com.omarea.vtools.apk" "$1.apk" 4469159 f296ea0f3ccf9b74d9039148518c6146 "$1.apk"
+time='2021年5月17号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 4530123 5a32b6f27f1416342ac65fdd0a21c4ba "$1.apk"
 ;;
 
 bin.mt.plus)
@@ -38,7 +38,7 @@ versionCode='21050100'
 author='Bin'
 description='文件管理器/安卓逆向神器'
 time='2021年5月2号'
-    [[ $Choice = 1 ]] && Download -net "9eff763f3f331276ad8f0fe2acabdae7?at_=1619904134955&ak_=39efdfef5a7154248a3d0a7f4fe1dffb&ad_=d0568185c691f9151bf32a7c2389ff38&fn=$1" "$1.apk" 9614454 1b1669074bd7eb773c9c6fb3ac176e98 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 9614454 1b1669074bd7eb773c9c6fb3ac176e98 "$1.apk"
 ;;
 
 bin.mt.plus.canary)
@@ -49,7 +49,7 @@ versionCode='21050100'
 author='Bin'
 description='文件管理器/安卓逆向神器，此版本为内测版可与正式版共存，因为是内测版如果你在使用中发现bug，可向QQ：243454893提交反馈问题'
 time='2021年5月2号'
-    [[ $Choice = 1 ]] && Download -net "74628370ad3540fb8570ea560d837197?at_=1619904217067&ak_=e5f91aee35de7d8f89d92733ecb87dfd&ad_=0393075e27db0d02dcf8c7326a69fee8&fn=$1" "$1.apk" 9589884 c539c700e379b0089226bd490f2b96d5 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 9589884 c539c700e379b0089226bd490f2b96d5 "$1.apk"
 ;;
 
 org.lsposed.manager)
@@ -80,7 +80,7 @@ versionCode='46200'
 author='MlgmXyysd'
 description='EDXposed框架模块管理器'
 time='2021年2月7号'
-    [[ $Choice = 1 ]] && Download -net "4c0efd7070d73941b4b806dbf21b638f?at_=1618169276538&ak_=a3ffe234c37178e8427df0c47396cf3f&ad_=f4050bd174b63aee329931ebb7c60a14&fn=$1" "$1.apk" 3550938 a712f351af88497bc2fb6fae009e49bf "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 3550938 a712f351af88497bc2fb6fae009e49bf "$1.apk"
 ;;
 
 de.robv.android.xposed.installer)
@@ -91,7 +91,7 @@ versionCode='43'
 author=rovo89
 description='原版Xposed，提供Xposed模块管理，Xposed安装与卸载'
 time='2021年3月18号'
-    [[ $Choice = 1 ]] && Download -net "4ac74d50da825b6c6db74551d4f0b9ba?at_=1618169423602&ak_=d3a0b2cbc6964af3e90d0c442f96c154&ad_=2a43928fc1f37c537f286ffda9e4cd7b&fn=$1" "$1.apk" 3105672 315362d994986e6584203fca282f4472 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 3105672 315362d994986e6584203fca282f4472 "$1.apk"
 ;;
 
 top.canyie.dreamland.manager)
@@ -102,7 +102,7 @@ versionCode='7'
 author=canyie
 description='梦境框架管理器'
 time='2021年5月15号'
-    [[ $Choice = 1 ]] && Download -net "5d5c14440f361ba03394e3201cac0e57?at_=1621010423696&ak_=e00000eb382892efce9550cf0bca3e45&ad_=d98797e5de0afc62e068c26be871b734&fn=$1" "$1.apk" 2041765 33ea0e394f1fb6b92b43037392a01401 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 2041765 33ea0e394f1fb6b92b43037392a01401 "$1.apk"
 ;;
 
 com.termux)
@@ -157,7 +157,7 @@ versionCode=16
 author='未知'
 description='非官方汉化版，测试内存读取速度性能'
 time='2020年8月14号'
-    [[ $Choice = 1 ]] && Download -net "c7ba4f719de85bc7377254a685374ab1?at_=1618173773887&ak_=3d06a8c674af9a2180b46a88f664d88c&ad_=2991b51409039d874f031fd1a403168b&fn=$1" "$1.apk" 2906485 0765ed36fbb5c2a52a6b33857059f7b6 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 2906485 0765ed36fbb5c2a52a6b33857059f7b6 "$1.apk"
 ;;
 
 com.camel.corp.universalcopy)
@@ -168,7 +168,7 @@ versionCode=69
 author='未知'
 description='全局复制，无需ROOT，复制屏幕上你想要的一切文本 - http://bit.ly/universal-copy'
 time='2021年1月31号'
-    [[ $Choice = 1 ]] && Download -net "073ec9d500fb39f997cddc7a2d1daa95?at_=1618173747389&ak_=e73f055dbe2b105e7b24605c6167a9aa&ad_=0d5fa5a436fa00141939ac12a074bd08&fn=$1" "$1.apk" 5377132 18a1be26629fe269d8c0943f2931798a "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 5377132 18a1be26629fe269d8c0943f2931798a "$1.apk"
 ;;
 
 com.kieronquinn.app.taptap)
@@ -193,15 +193,15 @@ time='2021年5月4号'
     [[ $Choice = 1 ]] && Download -net "13cfe4814c9998caa7ca270295644948?at_=1620065598375&ak_=1aaac4e75c20ab9dbf78b5ff708b845f&ad_=9aef95132e85e65a82e74a53ea3b8edc&fn=$1" "$1.apk" 14985916 c746e603a36a3d483967099540bec068 "$1.apk"
 ;;
 
-ru.kdhcorud.gxttvasej)
-apk='ru.kdhcorud.gxttvasej'
-name='Lucky~Pаtchеr  '
+ru.aaaaaadz.installer)
+apk='ru.aaaaaadz.installer'
+name=' LP  Installer '
 version='9.5.7'
 versionCode=1717
 author='未知'
 description='幸运破解器'
 time='2021年5月15号'
-    [[ $Choice = 1 ]] && Download -net "da81b742d02b3a465ac85ec442c45743?at_=1621020826996&ak_=6b2c7db6541292e015da4fcb4f1ee1f5&ad_=a24e7f8f81d04e10b186e64ef8dc8cef&fn=$1" "$1.apk" 9949608 7588f943f359d5404201fae5451416cf "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 9943604 e7e9a8a3f91417b73a5b2aee37533a69 "$1.apk"
 ;;
 
 com.linroid.zlive)
@@ -212,18 +212,18 @@ versionCode=342
 author='未知'
 description='Z直播只有 6M 大小，非常流畅和简洁，一个 App 即可关注全网主播'
 time='2020年8月14号'
-    [[ $Choice = 1 ]] && Download -net "bb5e12451cec48e6b4dc95e8a82f9670?at_=1618174041515&ak_=961044328d73d742125cb6a2b4607a77&ad_=26adba3bcca3baa933c6ebedaeff848d&fn=$1" "$1.apk" 6703460 6e110f47cece4fb763d43345cc76d991 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 6703460 6e110f47cece4fb763d43345cc76d991 "$1.apk"
 ;;
 
 com.kuss.rewind)
 apk='com.kuss.rewind'
 name='倒带'
-version='3.2.0'
-versionCode=3000090
+version='3.2.2'
+versionCode=2000092
 author='未知'
 description='简单的音乐播放器'
-time='2021年3月14号'
-    [[ $Choice = 1 ]] && Download -net "5968d613108f7e141ad788699ea672f3?at_=1618173439122&ak_=1d52dd75d0182e60ab0a5fb721ee18db&ad_=d860655d093bc15e84b14c367408838a&fn=$1" "$1.apk" 8421620 9ebf89edfb6f33b86f83cf606e666044 "$1.apk"
+time='2021年5月17号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 8382714 95ae7de9e912781310fa4ce51d2ecf5d "$1.apk"
 ;;
 
 rikka.riru)
@@ -250,12 +250,12 @@ time='2021年5月15号'
 com.tsng.hidemyapplist)
 apk='com.tsng.hidemyapplist'
 name='隐藏应用列表'
-version='1.5.4.Native'
-versionCode=25
+version='1.6.1.Native'
+versionCode=32
 author='DR-TSNG'
 description='使应用无法检测到特定应用/应用列表  通常情况下作用域只需要系统框架  此为Native版，如果闪退请前往GitHub（https://github.com/Dr-TSNG/Hide-My-Applist）下载Non-Native版本'
-time='2021年5月15号'
-    [[ $Choice = 1 ]] && Download -net "76496f7ffee60ad054f6b43f405d3476?at_=1621022715029&ak_=8a33196acb58dfa35cd978e5100fb05f&ad_=a794a0f3c3d33501551fb46ca6516a1d&fn=$1" "$1.apk" 5857886 c444852a57db8b184306f1e8b5920fba "$1.apk"
+time='2021年5月17号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 5902921 f9d96efed445f44ff150c5a4afe53501 "$1.apk"
 ;;
 
 com.coderstory.toolkit)
@@ -268,7 +268,7 @@ time='2021年3月31号'
     29 | 30) #3
         version='3.4'
         versionCode=1810
-        [[ $Choice = 1 ]] && Download -net "66773be4e90de48cd71fb9867ed1e7df?at_=1618173693063&ak_=b38ef69227321217f963c05a097214c1&ad_=d016b51444f897c7cdef272e70e77802&fn=$1"3 "${1}3.apk" 1233819 f9fee619c34294e86294844446a88196 "${1}3.apk"
+        [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk"3 "${1}3.apk" 1233819 f9fee619c34294e86294844446a88196 "${1}3.apk"
     ;;
     28 | 29) #2
         version='2.2'
@@ -368,17 +368,6 @@ time='2020年8月14号'
     [[ $Choice = 1 ]] && Download -net "04118336fff884e1580baf567dd32593?at_=1618166700024&ak_=a253faeeeb2206503fe331df0cf39293&ad_=0d3c83042b6eaf679201922ba5756058&fn=$1" "$1.apk" 782673 6df81f2136aefc9de79d36e7b7a384d2 "$1.apk"
 ;;
 
-com.volant.mzxpt)
-apk='com.volant.mzxpt'
-name='MeiZu Xposed Tool'
-version='2.2.5'
-versionCode=1
-author='未知'
-description='XP模块/ROOT工具箱：MeiZu Xposed Tool'
-time='2020年8月14号'
-    [[ $Choice = 1 ]] && Download -net "591bc4ae9717fd175e367f589016f880?at_=1618173109707&ak_=b099221c6d22dacc33efd65a89fa8252&ad_=fcfd3a5e95cbb2758f758bee8d2380d6&fn=$1" "$1.apk" 4674032 00fba8fa0124070d2690e83b2e1f879b "$1.apk"
-;;
-
 com.surcumference.fingerprintpay)
 apk='com.surcumference.fingerprintpay'
 name='指纹支付'
@@ -387,18 +376,18 @@ versionCode=21
 author='eritpchy'
 description='XP模块：让微信、支付宝、淘宝和腾讯QQ在支持指纹识别的手机上使用指纹支付, 即使他们都不打算支持!'
 time='2021年2月10号'
-    [[ $Choice = 1 ]] && Download -net "9ed4bedab24ce0136321165ef98f2e45?at_=1618173162835&ak_=9b106a5684662eb8462765ab18230f2f&ad_=38f082c873f6f82a366ae1a46b5c0087&fn=$1" "$1.apk" 1736690 c3f0dd5f62876f50304f83db6dfdaa0c "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 1736690 c3f0dd5f62876f50304f83db6dfdaa0c "$1.apk"
 ;;
 
 com.coderstory.flyme)
 apk='com.coderstory.flyme'
-name='Flyme8助手'
-version='4.2.1'
-versionCode=456
+name='Flyme9助手'
+version='4.3.3'
+versionCode=485
 author='CoderStory'
-description='XP模块：flyme8助手基于dexposed/xposed开发的插件，实现了去除系统广告，核心破解，隐藏桌面应用标签等实用功能。使用插件前请申请root权限并安装EdXposed，也可以选择xposed。'
-time='2021年2月10号'
-    [[ $Choice = 1 ]] && Download -net "e94a88e5dffb1424943a2748a81578b4?at_=1618173719406&ak_=304fba0cc1ac133b9f66bcac1e2271d1&ad_=646adafd91aa281cad6b190a5820df0f&fn=$1" "$1.apk" 5118736 9d87e9418a6b4e84dc4e7cb25cf983f3 "$1.apk"
+description='XP模块：flyme9助手基于dexposed/xposed开发的插件，实现了去除系统广告，核心破解，隐藏桌面应用标签等实用功能。使用插件前请申请root权限并安装LSPosed/EdXposed，也可以选择xposed。'
+time='2021年5月17号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 4940822 667cc18bd0add6e1ca68b00312ffed5d "$1.apk"
 ;;
 
 com.coderstory.purify)
@@ -409,7 +398,7 @@ versionCode=108002
 author='CoderStory'
 description='XP模块：小米净化是基于dexposed/xposed开发的插件，实现了去除系统广告，核心破解，隐藏桌面应用标签等实用功能。使用插件前请申请root权限并安装magisk版EdXposed。'
 time='2020年8月14号'
-    [[ $Choice = 1 ]] && Download -net "0296b8a76fa3916ce4e7a1c6bfd279f0?at_=1618174616039&ak_=8186a1ff083181db83ef43562eda9d30&ad_=d9c968deee1f7c30e1cf5c9af23610e3&fn=$1" "$1.apk" 1955700 628e33908c26ebec2489082c22d04ecb "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 1955700 628e33908c26ebec2489082c22d04ecb "$1.apk"
 ;;
 
 chili.xposed.chimi)
@@ -420,7 +409,7 @@ versionCode=300214
 author='yonghen'
 description='XP模块：MIUI扩展插件（EdXposed/TaiChi）'
 time='2021年2月10号'
-    [[ $Choice = 1 ]] && Download -net "865f58a4ae1e3408c3d1cd088894f8e8?at_=1618173840647&ak_=aba927104ae069935701250ef33f6c1f&ad_=ffb56eb1bf91b2279b91322ec5747e55&fn=$1" "$1.apk" 412235 7d8a7ff8039e71e05511bf5ee42dd77b "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 412235 7d8a7ff8039e71e05511bf5ee42dd77b "$1.apk"
 ;;
 
 cn.lovesykun.miui_force_fps)
@@ -431,7 +420,7 @@ versionCode=1
 author='yujincheng08'
 description='XP模块：强制MIUI 全局高帧'
 time='2021年3月18号'
-    [[ $Choice = 1 ]] && Download -net "a57b522b017aadb5a97a7dd20b713ce8?at_=1618173796289&ak_=ade026a92c64bba50bbc2b0382d75a5a&ad_=10fdb565a520a5d317e2c7ec40a450a0&fn=$1" "$1.apk" 7448 c9757f98794ba42259094080c13ef24d "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 7448 c9757f98794ba42259094080c13ef24d "$1.apk"
 ;;
 
 org.meowcat.xposed.miui)
@@ -445,15 +434,15 @@ time='2021年2月23号'
     [[ $Choice = 1 ]] && Download -net "61f65eeb2ba9777c3b2f74617c57fca6?at_=1618172540435&ak_=ac96e8b99ac82b65b093b634ea29c978&ad_=5a84fe8092383428d82e0a2cbad6ad1d&fn=$1" "$1.apk" 91157 dab61d4cdc27f7ce337163b41c069f27 "$1.apk"
 ;;
 
-com.sollyu.xposed.hook.model)
-apk='com.sollyu.xposed.hook.model'
-name='应用变量'
-version='3.3.2'
-versionCode=602
+com.variable.apkhook)
+apk='com.variable.apkhook'
+name='应用伪装'
+version='1.9.0-叼毛优化版'
+versionCode=5
 author='未知'
 description='XP模块：自定义应用获取的设备数据'
-time='2020年9月4号'
-    [[ $Choice = 1 ]] && Download -net "cbf380669425c797a8af9144ea3ca806?at_=1618173984004&ak_=fee52c0f5f59da70355e7087d41ffe4c&ad_=bdb4a5b1fe4668c7f376a2c4805e220a&fn=$1" "$1.apk" 6261768 650ff324855101d02cef6898df80275d "$1.apk"
+time='2021年5月17号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 2679555 4e37ba65925ffaad09dbb4ef3ede39df "$1.apk"
 ;;
 
 pansong291.xposed.quickenergy.qiufeng)
@@ -464,7 +453,7 @@ versionCode=202105010
 author='未知'
 description='XP模块：支付宝扩展模块，快速收取蚂蚁森林能量'
 time='2021年5月2号'
-    [[ $Choice = 1 ]] && Download -net "240921b5e2a362d28442c14fc9620256?at_=1619953034002&ak_=f5890aebc2ff3fcacf9b340f7f4f4e5f&ad_=47011d43bcd97308288c1808cb5cbfe3&fn=$1" "$1.apk" 143120 bba49b167a544b066240890885ac5611 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 143120 bba49b167a544b066240890885ac5611 "$1.apk"
 ;;
 
 com.xmnh.viphook)
@@ -475,29 +464,29 @@ versionCode=25
 author='by:希梦☆奈何'
 description='XP模块：懂得自然懂'
 time='2021年4月4号'
-    [[ $Choice = 1 ]] && Download -net "beb858e86ce9e2ed568c33889ec23fb7?at_=1618173076706&ak_=c3ac02cb5352b50ccaa19b25c0dac35f&ad_=2a70439961c265f073e456ce56bbe8b0&fn=$1" "$1.apk" 1586050 53e33ecff5327d0305b3d0cca5fcc3b6 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 1586050 53e33ecff5327d0305b3d0cca5fcc3b6 "$1.apk"
 ;;
 
 club.youppgd.adhook)
 apk='club.youppgd.adhook'
 name='联璧模块'
-version='67'
-versionCode=67
+version='71.5'
+versionCode=71
 author='youppgd'
 description='XP模块：去除腾讯视频、爱奇艺、优酷、芒果、豆瓣的各处广告，只支持官方app'
-time='2021年5月2号'
-    [[ $Choice = 1 ]] && Download -net "ed58c07fdf9b61d98cc7198e47b63419?at_=1619952676041&ak_=b8b2f68d4a4f357e23811b23675bf547&ad_=9745ac5c3ce3b130d15bbacb82615896&fn=$1" "$1.apk" 2161276 1559229b4547a4bdcf55c9f372f74a4e "$1.apk"
+time='2021年5月17号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 2164299 b5d2a51f041cd1436ba4c5b2e901fdad "$1.apk"
 ;;
 
 cn.kwaiching.hook)
 apk='cn.kwaiching.hook'
 name='要妳命三千'
-version='21.04.23'
-versionCode=75
+version='21.05.04'
+versionCode=78
 author='youppgd'
 description='XP模块：一加/TikTok/抖音/Musical.ly/快手/Tumblr/墳頭草/內涵段子'
-time='2021年5月2号'
-    [[ $Choice = 1 ]] && Download -net "d9baebcd825ab229b3135a297e6f3989?at_=1619952763733&ak_=8503cfe671b49d3cc59742168a6d7351&ad_=8e34df36c318f218b0f59adf37a882f5&fn=$1" "$1.apk" 4529672 1963404e8d42202d27d8e35fc193ab63 "$1.apk"
+time='2021年5月17号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 4583990 a0f2989acdd21b226668b5f14aefac19 "$1.apk"
 ;;
 
 com.xloger.exlink.app)
@@ -508,18 +497,18 @@ versionCode=18
 author='xloger & oott123'
 description='XP模块：它可以自定义接管App打开浏览器的事件，当点击链接时跳转浏览器打开，不再默认使用内置浏览器打开'
 time='2020年9月6号'
-    [[ $Choice = 1 ]] && Download -net "cd9cf10e14a0633afa897ccd2b17a43c?at_=1618173949747&ak_=974336c3348576134fdc0e1e4bed2a2b&ad_=5774e99d643de45f4003ad5042ffd1c2&fn=$1" "$1.apk" 2133497 84e68e8b7a209902392d8f18dd6d181c "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 2133497 84e68e8b7a209902392d8f18dd6d181c "$1.apk"
 ;;
 
 me.iacn.biliroaming)
 apk='me.iacn.biliroaming'
 name='哔哩漫游'
-version='1.4.3'
-versionCode=43
+version='1.4.4'
+versionCode=44
 author='yujincheng08'
 description='XP模块：解除B站客户端番剧区域限制的Xposed模块，并且提供其他小功能'
-time='2021年4月3号'
-    [[ $Choice = 1 ]] && Download -net "09d5eb55e4e7cdc6b88f3980e72d666f?at_=1618172884214&ak_=58a0ce6332e828dcdbe6d7d8a735ff24&ad_=f685d21260c221e85c8740538ae07ee4&fn=$1" "$1.apk" 381542 792bcb8403ed18c0e2628cb7b148cd74 "$1.apk"
+time='2021年5月17号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 383837 dca806c98ab3c0e23e96d57b3832e77a "$1.apk"
 ;;
 
 me.zjns.lovecloudmusic)
@@ -530,7 +519,7 @@ versionCode=21
 author='xmodule.org'
 description='XP模块：适用于网易云音乐'
 time='2021年3月14号'
-    [[ $Choice = 1 ]] && Download -net "4e0dbad179498be93492e01bd8e5fd52?at_=1618172819640&ak_=1b7acb75a18588b8f7d06ea55f51f4ac&ad_=8f6263d36434629bc08457557babafa5&fn=$1" "$1.apk" 29937 2222129d7579d6ecc8900572e3f91be8 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 29937 2222129d7579d6ecc8900572e3f91be8 "$1.apk"
 ;;
 
 com.specher.music163)
@@ -541,7 +530,7 @@ versionCode=21
 author='Specher'
 description='XP模块：网易云音乐插件'
 time='2020年8月14号'
-    [[ $Choice = 1 ]] && Download -net "1e48ef4dcd86e31705cddb9dc1d2537d?at_=1618173217595&ak_=23b77b53f41cd67288f4be8e4ebce99f&ad_=89d9b4112bd8766b9bc0b2d931ff0c7a&fn=$1" "$1.apk" 29180 fab79b2c910db212d1824282094bc9f3 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 29180 fab79b2c910db212d1824282094bc9f3 "$1.apk"
 ;;
 
 com.raincat.unblockmusicpro)
@@ -563,7 +552,7 @@ versionCode=210
 author='nining377'
 description='XP模块：网易云音乐去广告/签到/精简美化'
 time='2021年3月29号'
-    [[ $Choice = 1 ]] && Download -net "cb033f6c9cbe09c235385aacb4227e48?at_=1618173266341&ak_=c2769eaa0358f1c29a08e466f60657a4&ad_=2e133b063d215d9cc39edce3f8048ebe&fn=$1" "$1.apk" 1061327 9952d2805a3b86d2b4e9835979902fd2 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 1061327 9952d2805a3b86d2b4e9835979902fd2 "$1.apk"
 ;;
 
 me.dyq.android.SDLink)
@@ -574,7 +563,7 @@ versionCode=13
 author='未知'
 description='XP模块：解决APP在内部储存根目录乱拉屎'
 time='2020年8月14号'
-    [[ $Choice = 1 ]] && Download -net "4ef87c61678a6db499f5b41ab65e80d7?at_=1618172909999&ak_=60cb81ac778fc875193a961848413025&ad_=ff8e218a56111de3e92412891b3623dd&fn=$1" "$1.apk" 401063 61d45f2477b3efa5b8910cfefa2d33e5 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 401063 61d45f2477b3efa5b8910cfefa2d33e5 "$1.apk"
 ;;
 
 com.lemonsqueeze.fakewificonnection)
@@ -585,7 +574,7 @@ versionCode=11
 author='未知'
 description='XP模块：伪装成wifi连接'
 time='2020年8月14号'
-    [[ $Choice = 1 ]] && Download -net "095851fea9461db7f672c0cf65653ce3?at_=1618173396493&ak_=c2a66175170c98f3a0edfbcafa12ae79&ad_=3bf370a063b8429ab29cc845d92ba945&fn=$1" "$1.apk" 327389 43a28736d96ade25351d6db3ce37d9ff "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 327389 43a28736d96ade25351d6db3ce37d9ff "$1.apk"
 ;;
 
 me.lee.adaway.sina)
@@ -596,18 +585,18 @@ versionCode=6
 author='未知'
 description='XP模块：去除新浪微博广告'
 time='2020年8月23号'
-    [[ $Choice = 1 ]] && Download -net "57bedc160889ebd25ead7721d247c4b1?at_=1618172841525&ak_=bcc01c44bec3c096b134aeecc61a19a7&ad_=90193c9b2c1529fe5016da59fbd65704&fn=$1" "$1.apk" 1258617 dad0ce3efc5ef5f680bb78eb43c7e65d "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 1258617 dad0ce3efc5ef5f680bb78eb43c7e65d "$1.apk"
 ;;
 
 me.lee.adaway)
 apk='me.lee.adaway'
 name='AdAway'
-version='0.5.8.1'
+version='0.6.2'
 versionCode=49
 author='lis216'
 description='XP模块：微博抖音增强模块'
 time='2021年3月31号'
-    [[ $Choice = 1 ]] && Download -net "f3086d0b22486b4c161ec7381d0ccfd7?at_=1618166787679&ak_=8efa9913213c981c3d5f0d64b522f197&ad_=5000c34bc30d460ea9e8d0af4fae647e&fn=$1" "$1.apk" 2005634 4f12f01a7380d607db8f361e4714ff96 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 2006902 339abd566d384c7b4854f2834ae837a4 "$1.apk"
 ;;
 
 com.github.tianma8023.xposed.smscode)
@@ -618,7 +607,7 @@ versionCode=45
 author='tianma8023'
 description='XP模块：提取新短信中的验证码并复制到剪贴板，并能自动输入验证码'
 time='2021年2月9号'
-    [[ $Choice = 1 ]] && Download -net "4ebc4aa11c7712b462ddb72b24fe16e4?at_=1618173571523&ak_=df7cbe5ea70e0f96624b588b3e01f824&ad_=4f9eeaa07c5ace69e05c90f70a6efa17&fn=$1" "$1.apk" 1925433 e3af8dbc824ac4175cdf277194965371 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 1925433 e3af8dbc824ac4175cdf277194965371 "$1.apk"
 ;;
 
 com.viewblocker.jrsen)
@@ -629,7 +618,7 @@ versionCode=21
 author='kaisar945'
 description='XP模块：去除apk布局，哪里不要点哪里'
 time='2020年8月16号'
-    [[ $Choice = 1 ]] && Download -net "a9d081d1ffe52c6b3ceb61157eeaaa6f?at_=1618173135477&ak_=64052e74b254da6ccf1b43728fadb7e9&ad_=45cfa23b0ab2e567eadc6c5bff91f2ed&fn=$1" "$1.apk" 1251752 0e3dd4ba758411c198da21b1b2d7cbc9 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 1254796 f242fe9c6bfecf8446fae7ea8c34d45f "$1.apk"
 ;;
 
 #模块
@@ -655,7 +644,7 @@ time='2021年4月12号'
     if [[ $Choice = 1 ]]; then
         mask -v
         if [[ $MAGISK_VER_CODE -ge 21000 ]]; then
-             Download -net "801cdda0c7e808ef15050ae87f11b430?at_=1618196366461&ak_=a53d7352148c8dbc5efff337904e8480&ad_=f03d400ed015c7b225a87bbf09de6418&fn=$1" "$1.zip" 1863749 543ac282786f314ea495a1d61d276b59 "$1.zip"
+             Download -coding "21051601/modules/LSPosed-v1.3.5-5551-release.zip" "$1.zip" 1863749 543ac282786f314ea495a1d61d276b59 "$1.zip"
         else
             echo "- 检测到Magisk版本在v21以下，无法安装最新版$version（$versionCode），开始安装v1.3.4（5501）版本"
             Download -net "a3b9e26cc0380691ee804ca7006ce2d5?at_=1618236394371&ak_=c1f7cf50ba6f13d6d01207fe9c5028b0&ad_=870ede5e093014706bebeac08c3c0f0d&fn=$1-5501" "$1.zip" 2189720 de39ec10f67b538fbdc60b7f0e6520f7 "$1.zip"
@@ -672,7 +661,7 @@ versionCode='4683'
 author='solohsu, MlgmXyysd'
 description='一款基于Riru API开发的Xposed框架，支持运行在安卓8 ~ 11系统上。需要安装Riru v23或更高版本，Telegram: @EdXposed'
 time='2021年2月18号'
-    [[ $Choice = 1 ]] && Download -net "4d9ab34e8827ec43cec8b7c2c5e46d13?at_=1618169687863&ak_=aa04354062890d2b54a5897ad0b29f73&ad_=40a5b6a8c15ba13c38b6f46eb7b74cab&fn=$1" "$1.zip" 3461516 71382a57c7e7861b4695d2089e5422a9 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/EdXposed-v0.5.2.2_4683-master-release.zip" "$1.zip" 3461516 71382a57c7e7861b4695d2089e5422a9 "$1.zip"
 ;;
 
 riru_dreamland)
@@ -684,7 +673,7 @@ version='2.0_2005'
 versionCode='2005'
 description='一款基于Riru API开发的Xposed框架，支持运行在安卓 7.0 ~ 11，需要安装Riru v23或更高版本，Telegram：@DreamlandFramework, QQ群：949888394'
 time='2021年5月15号'
-    [[ $Choice = 1 ]] && Download -net "3ec4ee237a1cc962b176561b296eaeba?at_=1621093345169&ak_=0e4fb6b1088027db49e69c2c752c8398&ad_=32dcfbdcd6db3d51926807926e4719aa&fn=$1" "$1.zip" 728977 54cee829bcfe5cd559ed80b811356647 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/magisk-dreamland-2005.zip" "$1.zip" 728977 54cee829bcfe5cd559ed80b811356647 "$1.zip"
 ;;
 
 xposed)
@@ -709,12 +698,12 @@ eval `(curl -skL -m 10 'https://gitee.com/youngdriver/pio/raw/master/znzl/module
 shadow_screenshots)
 id='shadow_screenshots'
 name='阴影截图'
-version='v2.9.6'
-versionCode=2.9.6
+version='v2.9.8'
+versionCode=2.9.8
 author='酷安@巴啦啦魔仙女王'
 description='手机截图自动套阴影，具体配置参数修改module.prop'
-time='2021年5月1号'
-    [[ $Choice = 1 ]] && Download -net "4629a00da9c209c548620920844d8af2?at_=1619863740236&ak_=a82d659a181698fc0bdde01194eac6ab&ad_=844f3179d178687f7fd7d81e93d237c2&fn=$1" "$1.zip" 14332556 b6eec461f9da18a0354ea2dd051d55a7 "$1.zip"
+time='2021年5月17号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/shadow_screenshots2.9.8.zip" "$1.zip" 14332223 54beb572414d8dcae2614759461d4948 "$1.zip"
 ;;
 
 hydhy)
@@ -772,7 +761,7 @@ versionCode='300'
 author='Ai Sauce'
 description='一个自动更新自定义hosts订阅源的脚本，请在使用前启用设置中的Systemless Hosts'
 time='2021年4月12号'
-    [[ $Choice = 1 ]] && Download -net "3af05b902128f109bffdece3feba5306?at_=1618196739061&ak_=4e79f25e7dbf786b2139a1ad3bc5fc37&ad_=d2639398000b84d875209078bcc48fe4&fn=$1" "$1.zip" 21041 89185fd1d4202ed05e03754c4f7a888f "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/AnyHosts_v3.0.zip" "$1.zip" 21041 89185fd1d4202ed05e03754c4f7a888f "$1.zip"
 ;;
 
 UnblockNeteaseMusic)
@@ -794,7 +783,7 @@ versionCode='20210329'
 author='乐阿兰那'
 description='一个基于MIUI系统编写的面具模块。旨在通过Linux命令清理微信、微薄、QQ等APP缓存、垃圾文件，屏蔽ad、.um、.uuid、debug_log、MiPushlog和腾讯X5内核的Shell脚本。相比其他同类软件具有不安装App、清理范围大、清理类型多(清理更彻底)、效果显著且自动化的优点；与同类软件一样，对APP实时新建的缓存文件无法清理(清理后，App会立即或开机后立即新建缓存文件)。请与MIUI官方“垃圾清理”APP搭配食用！！！安装模块后，每次重启将自动调用MIUI官方清理APP。2020-12-07尝试调用模块的Crontab定时执行任务命令，在每2天的凌晨5点执行脚本。'
 time='2020年2月29号'
-    [[ $Choice = 1 ]] && Download -net "8f930c04b4bdd6f41cba130e2e65a975?at_=1618189043757&ak_=89141963975bee1c43a86ed9d016eb73&ad_=293b4bcf5f9ab8db69fc515b89779633&fn=$1" "$1.zip" 1283401 6164aacd34215cffc9b23ab1f30e079c "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/FileClear-for-ZW_Magisk-Modules.zip" "$1.zip" 1332174 1a888ff2d1d564af8933c731a91a932e "$1.zip"
 ;;
 
 MIUI-12_All_in_one)
@@ -806,7 +795,7 @@ name="MIUI 12多合一通用模块"
 author='by：Han | 情非得已c'
 description="$name"
 time='2021年人4月6号'
-    [[ $Choice = 1 ]] && Download -net "8e12fd1ae0cb1858d4ae2928e6fcb119?at_=1618189412923&ak_=d7853ee482f184ba81a6ba4b3eaaf7af&ad_=397c0de56a45bee09312e861e0d9cb6f&fn=$1" "$1.zip" 1125623 6a76d73f76635d53395539e13c72af07 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 1125623 6a76d73f76635d53395539e13c72af07 "$1.zip"
 ;;
 
 MIUI_In_Common_Use)
@@ -841,7 +830,7 @@ versionCode='42'
 author='dadaewq & by：Han | 情非得已c'
 description='将MIUI的应用包管理组件替换为安装狮来静默安装应用，注：无需在「安装狮 静默安装」里做任何设置，也不需要开启「安装狮-Root」模式授权ROOT权限因为默认就可以使用「安装狮-DPM」来静默安装应用﻿'
 time='2021年1月7号'
-    [[ $Choice = 1 ]] && Download -net "1dd95828fde24c54a5e6d585e639fc12?at_=1618189534823&ak_=323c97215c102a30bb772836cfff8b1d&ad_=36b3012f27c005845633bdf060c67252&fn=$1" "$1.zip" 1422609 06babbf3d8606d5903d3af28b257da3a "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 1422609 06babbf3d8606d5903d3af28b257da3a "$1.zip"
 ;;
 
 com.android.thememanager)
@@ -879,7 +868,7 @@ versionCode=3
 author='by：Han | 情非得已c'
 description='给小米官方的电源菜单增加，重启到recovery 和 FASTBOOT，只在安卓10上测试通过其它机型自测，卡米可私信我修复'
 time='2020年12月24号'
-    [[ $Choice = 1 ]] && Download -net "b19f26ee92a74599baf83dd34266797e?at_=1618189391774&ak_=0988d854bc2699eb9b65427a2e81f021&ad_=0a7d1712dd3e1b717f0d1d38e8a72d87&fn=$1" "$1.zip" 129565 8a9c232de79f40c3355e365cade0b068 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 129565 8a9c232de79f40c3355e365cade0b068 "$1.zip"
 ;;
 
 Game_BianShengQi)
@@ -903,7 +892,7 @@ author='酷安ID流昔枫落'
 version='基于4.1.6安全中心'
 description='修改游戏工具箱快捷方式QQ为tim，适用于MIUI11安全中心版本4.1.2，最好安装mm以防卡米'
 time='2020年8月7号'
-    [[ $Choice = 1 ]] && Download -net "d4edefa7b38117c81dfbe521f709a553?at_=1618189553703&ak_=5b2ce933f741c35d595eb897ec910564&ad_=4ceb830d106e4df2d2d04885d3a86597&fn=$1" "$1.zip" 19163791 cb08a33800824be1fe716a55afd6099a "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 19163791 cb08a33800824be1fe716a55afd6099a "$1.zip"
 ;;
 
 10x5g_perfect_cutout)
@@ -922,12 +911,12 @@ time='2020年6月25号'
 MIUI=1
 id='10x5g_perfect_cutout2'
 name='Redmi 10x 5G水滴优化'
-version='2.2.0'
-versionCode='4'
+version='2.5.0'
+versionCode='6'
 author='嘟嘟Ski'
-description='优化隐藏水滴效果，此模块仅适用于Redmi 10x 5G（不包括10x 5G Pro），且要求系统版本必须为MIUI 12.0.2。不符合要求的型号和系统版本，切勿使用！'
-time='2020年7月23号'
-    [[ $Choice = 1 ]] && Download -net "7d4f460c2529c76326ddfb7dbf71064a?at_=1618189783511&ak_=943f1e79703938eda7ed89dfdeacbb2f&ad_=93a1e7bd2f354cd4a37b4a33ac5df84b&fn=$1" "$1.zip" 48984 eb82f672596c5cc6811642421f89fd8c "$1.zip"
+description='优化隐藏水滴效果，此模块仅适用于Redmi 10x 5G（不包括10x 5G Pro），且要求系统版本必须为MIUI 12.0.5。不符合要求的型号和系统版本，切勿使用！'
+time='2021年5月17号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 48984 eb82f672596c5cc6811642421f89fd8c "$1.zip"
 ;;
 
 pig)
@@ -940,7 +929,7 @@ versionCode=4
 author='by：Han | 情非得已c & Teemo_omeeT'
 description='让K30系列的药丸孔，变成猪鼻子'
 time='2021年1月30号'
-    [[ $Choice = 1 ]] && Download -net "458d777e9fb5572f294656c0416fc804?at_=1618189349896&ak_=321c80c26abb64a628c37f7b0eca88ab&ad_=05bd4345a44a14dc3e4f48d83715dbac&fn=$1" "$1.zip" 3155 2b87f38a763dcc82277fbd6dee776965 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 3155 2b87f38a763dcc82277fbd6dee776965 "$1.zip"
 ;;
 
 K30-5G_Status_bar)
@@ -978,7 +967,7 @@ versionCode=1
 author='by：Han | 情非得已c'
 description='修改显示点按操作视觉反馈触摸点'
 time='2020年12月15号'
-    [[ $Choice = 1 ]] && Download -net "82ed6a700f26c114265f7c46521bf118?at_=1618189147331&ak_=de0d042dfbdda6c71f61ebcf89ea341c&ad_=5f13f36e2fc5f42dce0f0bac8473c07b&fn=$1" "$1.zip" 55415 cd4efaa0ba3bb2a36c0b5436b6c5ca3a "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 55415 cd4efaa0ba3bb2a36c0b5436b6c5ca3a "$1.zip"
 ;;
 
 Magisk_Abnormal_Repair)
@@ -1121,18 +1110,18 @@ versionCode='178'
 author='佚名'
 description='将流体手势导航内置为系统应用'
 time='2020年6月15号'
-    [[ $Choice = 1 ]] && Download -net "06c003293555ae43866ec06510b8bb9c?at_=1618173623341&ak_=ff334a35e9e67095050c588c574f46ec&ad_=8ba757b410ae1b95cddd20469d002a6d&fn=$1" "$1.apk" 7562544 c70b5ca61f0093f01b2d1b86b8f26156 "$1.apk" 2.0-11 178
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 7562544 c70b5ca61f0093f01b2d1b86b8f26156 "$1.apk" 2.0-11 178
 ;;
 
 com.omarea.gesture)
 id='com.omarea.gesture'
 name='Gesture(手势导航) '
-version='1.6.2'
-versionCode='102'
+version='1.6.4'
+versionCode='104'
 author='嘟嘟Ski'
 description="将Gesture(手势导航) $version($versionCode)内置为系统应用"
-time='2021年3月26号'
-    [[ $Choice = 1 ]] && Download -net "8c67580c1066cb5e4d89e39c406c9493?at_=1618173293250&ak_=d36f280e6723712ec4a6e8ed1d344273&ad_=8f3bb1252a05171be00491a8d0f15738&fn=$1" "$1.apk" 174046 2e0dc39ec6d1599656f7b2942ed633ab "$1.apk" 1.6.2 102
+time='2021年5月17号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 179024 f90dee479057ead98f57deac3fb12168 "$1.apk" 1.6.4 104
 ;;
 
 emojiR)
@@ -1178,7 +1167,7 @@ versionCode='2400'
 author='嘟嘟Ski'
 description='Scene的附加模块之二（ZRAM/SWAP控制器），在开机时根据配置调整虚拟内存'
 time='2021年4月21号'
-    [[ $Choice = 1 ]] && Download -net "99b4525ea48e5bf7f25b48928f94e96d?at_=1618980979309&ak_=bd26459393a94ca961832099476c5ce8&ad_=6a8f1fb577131b6dab40fea0427affa1&fn=$1" "$1.zip" 16690 9baf11b6e4ce8dd43f92c8764e1adb5f "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.zip" 16690 9baf11b6e4ce8dd43f92c8764e1adb5f "$1.zip"
 ;;
 
 scene_cgroup)
@@ -1189,7 +1178,7 @@ versionCode='1'
 author='嘟嘟Ski'
 description='自动调节部分关键进程的cgroup(memory|cpu)，从资源分配策略上(理论)提高系统稳定性(流畅度方面)'
 time='2020年12月13号'
-    [[ $Choice = 1 ]] && Download -net "076ff59448d6d770622446ef9850a0a0?at_=1618189186980&ak_=effbc962dee2c1a679ab9be4f2b5d31a&ad_=76fdc2bf38cd3f4ba6f998b57841eb95&fn=$1" "$1.zip" 8896 c138428e8abe7bbd7c6f5748c353c659 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.zip" "$1.zip" 8896 c138428e8abe7bbd7c6f5748c353c659 "$1.zip"
 ;;
 
 riru-core)
@@ -1207,7 +1196,7 @@ if [[ $Riru_version -eq 2 ]]; then
     #riru-core-21.3
     [[ $Choice = 1 ]] && Download -net "505160dabf944866969fa7388843006c?at_=1618170457882&ak_=c71c4fba2d77be9c6f66284e849c5f7d&ad_=dd52aed4769309e510d80a027cb261d0&fn=$1-36" "$1-v21.3.zip" 541223 6c395f29a2cc50ae4f4efdaf87f78ca3 "$1-v21.3.zip"
 elif [[ $Riru_version -eq 1 ]]; then
-    [[ $Choice = 1 ]] && Download -net "e28a05a39180c8f219ccb6e6d4cf108d?at_=1620483833962&ak_=19726709b214ff0e141ba8febb1dad86&ad_=78576159dcc10b1bca24c13ff8e7267a&fn=$1" "$1.zip" 234988 25e2f01e5fabc1e7053d23aa1ba7167c "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/riru-v25.4.4-release.zip" "$1.zip" 235467 cd0f5ef48c3da69997f0633d8d3d27b0 "$1.zip"
 fi
 ;;
 
@@ -1219,7 +1208,7 @@ versionCode='62'
 author='Rikka  酷安@蓝莓味绿茶 '
 description='启用存储空间隔离（存储重定向）的增强模式，包名=moe.shizuku.redirectstorage'
 time='2021年5月15号'
-    [[ $Choice = 1 ]] && Download -net "590c09c63905678800b5cb7939b3d0de?at_=1621011091935&ak_=657d7f0c6d4c77de58e35888f40c964a&ad_=3768f48366d510361e54f2995dc5bdb4&fn=$1" "$1.zip" 110511 56f16e1af1c23d366932f0e99579e9e3 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 110511 56f16e1af1c23d366932f0e99579e9e3 "$1.zip"
 ;;
 
 riru-module-xfingerprint-pay-wechat)
@@ -1230,7 +1219,7 @@ versionCode='2'
 author='Jason Eric'
 description='让微信支持指纹支付 Fingerprint pay for WeChat.'
 time='2020年12月7号'
-    [[ $Choice = 1 ]] && Download -net "7333f0f4d3926708538c981bb03740dc?at_=1618189262700&ak_=ec90473624032d4859ffc6701365df9a&ad_=e140a61139745c54cf301c26a82d24ec&fn=$1" "$1.zip" 1371819 74360fe397f80f4c1c588d0b53d59598 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/riru-module-xfingerprint-pay-wechat-v3.9.21.zip" "$1.zip" 1371819 74360fe397f80f4c1c588d0b53d59598 "$1.zip"
 ;;
 
 riru-module-xfingerprint-pay-qq)
@@ -1241,7 +1230,7 @@ versionCode='2'
 author='Jason Eric'
 description='让QQ支持指纹支付 Fingerprint pay for QQ.'
 time='2021年2月2号'
-    [[ $Choice = 1 ]] && Download -net "ec3884f25d1746a9ea019988acb2b6c8?at_=1618189303980&ak_=69c893a2d405758d99f40b2361793389&ad_=e36178955e7ad9fc7090205d0eb8b2ce&fn=$1" "$1.zip" 1220444 59b03e73329d88df922c2569a2656733 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/riru-module-xfingerprint-pay-qq-v3.9.22.zip" "$1.zip" 1220444 59b03e73329d88df922c2569a2656733 "$1.zip"
 ;;
 
 riru-module-xfingerprint-pay-alipay)
@@ -1252,7 +1241,7 @@ versionCode='2'
 author='Jason Eric'
 description='让支付宝支持指纹支付 Fingerprint pay for Alipay.'
 time='2021年2月2号'
-    [[ $Choice = 1 ]] && Download -net "11ad62df92caab15e97c95a2a521a940?at_=1618189329388&ak_=2f7758d4ae62091c1b80a8cd6bec0146&ad_=2a1b960cdea63e58c240a99825ce8dfa&fn=$1" "$1.zip" 1213292 5e9fba5f9b6104d1a5cfd0c6535ff26b "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/riru-module-xfingerprint-pay-alipay-v3.9.22.zip" "$1.zip" 1213292 5e9fba5f9b6104d1a5cfd0c6535ff26b "$1.zip"
 ;;
 
 riru-module-xfingerprint-pay-taobao)
@@ -1263,7 +1252,7 @@ versionCode='2'
 author='Jason Eric'
 description='让淘宝支持指纹支付 Fingerprint pay for Taobao.'
 time='2021年2月2号'
-    [[ $Choice = 1 ]] && Download -net "8d70e479ca9d5ae03b6419c1f54d873e?at_=1618189280360&ak_=93196136312a77724c1ee5d896174bf5&ad_=2d4531a74ca1001218780e87add5935d&fn=$1" "$1.zip" 1218749 30a4efe7b2eab2ebc1a752bc0b51a9a8 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/riru-module-xfingerprint-pay-taobao-v3.9.22.zip" "$1.zip" 1218749 30a4efe7b2eab2ebc1a752bc0b51a9a8 "$1.zip"
 ;;
 
 coloros-magisk)
@@ -1274,18 +1263,18 @@ versionCode='1'
 author='wuxianlin'
 description='Magisk Module for ColorOS，用途：启用Magisk Hide时修复指纹，删除开启开发人员选项警告通知'
 time='2021年4月5号'
-    [[ $Choice = 1 ]] && Download -net "1eaf87b543a1e8c932bd1f31668dc23c?at_=1618189649691&ak_=ece30628f42fe3faa762c9865fd61838&ad_=a4f4492b710f18107105bb5fe857adac&fn=$1" "$1.zip" 4301 539ab990564c6f36efa0320a28dc9ce6 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/ColorOS-Magisk.zip" "$1.zip" 4301 539ab990564c6f36efa0320a28dc9ce6 "$1.zip"
 ;;
 
 riru_clipboard_whitelist)
 id='riru_clipboard_whitelist'
 name='Riru - Clipboard Whitelist'
-version='v9'
-versionCode=9
+version='v10'
+versionCode=10
 author='Kr328'
 description='允许应用在Android 10上在后台访问剪贴板。'
-time='2021年5月15号'
-    [[ $Choice = 1 ]] && Download -net "e13f11c1d318f96c6f6495f4d5b6d96a?at_=1621011263951&ak_=74be92b89ecfd198d0afb62010dd273d&ad_=7aa82b6f73aed0806043291faee207b4&fn=$1" "$1.zip" 41042 b77d473bfc4b08f0e5d2b7646a8090fe "$1.zip"
+time='2021年5月17号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/riru-clipboard-whitelist-10.zip" "$1.zip" 41790 a9bde48856540140bd4568ef682fee0a "$1.zip"
 ;;
 
 taichi)
@@ -1297,8 +1286,8 @@ author='weishu'
 description='Use Xposed modules with Taichi in Magisk.（切换到太极 · 阳）'
 expversion='曳影·7.0.0.02111627(700)'
 time='2021年2月18号'
-    [[ $Choice = 1 ]] && Download -net "a3103a9b70c4520b732de5c4f1601d57?at_=1618174937851&ak_=77917ee5a8aece8e3331f4286369ca53&ad_=2928c410dc8c7b3c761e7b06e4e94242&fn=$1" "$1.zip" 411693 fba1ab534bd0fb67c25f05f5b7ca21ba "$1.zip"
-    [[ $exp = 1 ]] && Download -net "2ae913ab72f98c10aa9f4acecad4625d?at_=1618166651363&ak_=a60ae0dde4df74314fe017d8391fd3be&ad_=0f42ea9458f02223924fa824eb89f83e&fn=me.weishu.exp" "me.weishu.exp.apk" 8672356 9c654871f26575b47ee441d784e8bbd6 "me.weishu.exp.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/magisk-taichi-v7.0.0.zip" "$1.zip" 411693 fba1ab534bd0fb67c25f05f5b7ca21ba "$1.zip"
+    [[ $exp = 1 ]] && Download -coding "21051601/apks/me.weishu.exp" "me.weishu.exp.apk" 8672356 9c654871f26575b47ee441d784e8bbd6 "me.weishu.exp.apk"
 ;;
 
 mm)
@@ -1309,7 +1298,7 @@ versionCode='202002260'
 author='『酷安:@永恒丶叶子』'
 description='使用方法：第三方REC→高级→在终端中运行 "/data/media/mm"、"/sdcard/mm"、"*/mm"、增加切换 magisk核心功能、增加备份还原模块!增加一键操作！'
 time='2020年6月15号'
-    [[ $Choice = 1 ]] && Download -net "5c8788f5a9e7037f729e8868110dc57b?at_=1618189369521&ak_=d116ff6a5f42d88800fcc9e920be6fb1&ad_=2db6ac01c842b32cd11e09f29bd68ff3&fn=$1" "$1.zip" 7374 f898f49917c231fae144e1ba60a58a14 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 7374 f898f49917c231fae144e1ba60a58a14 "$1.zip"
 ;;
 
 busybox-ndk)
@@ -1342,7 +1331,7 @@ versionCode='3'
 author='是陉湮吖'
 description='强制开发者选项里停用HW叠加层，始终使用GPU进行屏幕合成'
 time='2020年6月11号'
-    [[ $Choice = 1 ]] && Download -net "f1d8577a253c8702b7a00afac82da1da?at_=1618189595162&ak_=69d76f3b525eabb5d28789ac81179608&ad_=743cbefa57b86f5574544d4a2abf0a8c&fn=$1" "$1.zip" 4604 0c80645bedc55ef88012bb7a7411c4a1 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 4604 0c80645bedc55ef88012bb7a7411c4a1 "$1.zip"
 ;;
 
 MacRandomization)
@@ -1353,7 +1342,7 @@ versionCode='1'
 author='Santiago'
 description='Mac地址随机化模块，连接公共WIFI更安全。安装后去开发者设置找到选项打开设置即可。'
 time='2020年6月11号'
-    [[ $Choice = 1 ]] && Download -net "2cb87fee97e725bc963f39b0fe3c0373?at_=1618189452140&ak_=340981d97c9b7aaa9c07ca0287940ef0&ad_=7837379ceb489d6c8d0f94d82948d829&fn=$1" "$1.zip" 8138 f988087ed2668cf6c8888774f6ceeaf8 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 8138 f988087ed2668cf6c8888774f6ceeaf8 "$1.zip"
 ;;
 
 XiaoMi_Lanting-Pro)
@@ -1420,7 +1409,7 @@ versionCode='1'
 author='robgiering'
 description='在Android Q上重新启动后强制黑暗(ForceDark)模式'
 time='2020年6月11号'
-    [[ $Choice = 1 ]] && Download -net "40e7da0aa205e833daf647d737d999ba?at_=1618189491494&ak_=439584fadc4fe39a652aecd5fd65db78&ad_=0dac52d69bb5069410add4e645a81ff6&fn=$1" "$1.zip" 6574 bcf9188bc1b03729765def5c8ece039b "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 6574 bcf9188bc1b03729765def5c8ece039b "$1.zip"
 ;;
 
 curl)
@@ -1443,7 +1432,7 @@ versionCode='1'
 author='@酷安by:巴啦啦魔仙女王'
 description='<请使用白色默认主题蟹蟹>辣鸡米安，毁我青春，颓我精神，耗我钱财，坑我历史，废我智商😡'
 time='2020年6月11号'
-    [[ $Choice = 1 ]] && Download -net "8ea2631a3e1c3a5d53cd1501cf69bdf5?at_=1618189431292&ak_=c7bfceb7f100e5f2e9eab189efe0bd14&ad_=ac652e70b4ea46dc7d275c3188ae4047&fn=$1" "$1.zip" 3643715 4dc82ced9f17623bc287f69b2a5e42e7 "$1.zip"
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 3643715 4dc82ced9f17623bc287f69b2a5e42e7 "$1.zip"
 ;;
 
 org.meowcat.edxposed.manager.45700)
@@ -1823,7 +1812,7 @@ EdXposed_Manager_Repo)
 Installation_lion)
     version=3.7.5-miui
     versionCode=42
-    [[ $Choice = 1 ]] && Download -net "217757a84b074b1a0bcc6698c9d38443?at_=1618172949323&ak_=7e7a43b4b8f563d7d8d9a61a1c24b13d&ad_=27aca75455a0eea1146a0711922ddd69&fn=$1" "Installation_lion.apk" 1869340 865a0a9a40d289a36e9a8ee17bb6e774 "Installation_lion.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "Installation_lion.apk" 1869340 865a0a9a40d289a36e9a8ee17bb6e774 "Installation_lion.apk"
 ;;
 
 com.miui.miwallpaper)
