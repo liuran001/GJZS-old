@@ -1,5 +1,5 @@
-Configuration=2021051702
-Magisk_Warehouse_version=2021051702
+Configuration=2021051703
+Magisk_Warehouse_version=2021051703
 App_Store_version=2021051702
 Show_Compatibility_Mode=1
 MIUI=0
@@ -726,7 +726,7 @@ id='huiyiduoheyi'
 name='回忆小米8多合一'
 version='1.8.8.1'
 versionCode='10'
-author='回憶⁵²º¹³¹⁴'
+author='回憶'
 description="$name"
 time='2021年3月29号'
     [[ $Choice = 1 ]] && Download -net "ca5b9bb1a7a95c763861c9d768cadbb5?at_=1618166303655&ak_=72d7238792aab170eb901c4bcfe32f12&ad_=96398af62e4937d4f735114c198e7416&fn=$1" "$1.zip" 197660037 291ee716396c31efd54e313d78b14579 "$1.zip"
@@ -794,7 +794,7 @@ versionCode=12
 name="MIUI 12多合一通用模块"
 author='by：Han | 情非得已c'
 description="$name"
-time='2021年人4月6号'
+time='2021年4月6号'
     [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 1125623 6a76d73f76635d53395539e13c72af07 "$1.zip"
 ;;
 
@@ -1272,7 +1272,7 @@ name='Riru - Clipboard Whitelist'
 version='v10'
 versionCode=10
 author='Kr328'
-description='允许应用在Android 10上在后台访问剪贴板。'
+description='允许应用在Android 10上在后台访问剪贴板。请关闭兼容模式安装！'
 time='2021年5月17号'
     [[ $Choice = 1 ]] && Download -coding "21051601/modules/riru-clipboard-whitelist-10.zip" "$1.zip" 41790 a9bde48856540140bd4568ef682fee0a "$1.zip"
 ;;

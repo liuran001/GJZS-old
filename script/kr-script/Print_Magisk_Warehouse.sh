@@ -18,6 +18,9 @@ cat <<Han
     </text>
     <text>
         <slices>
+            <slice size="16" color="#FF9C27B0">如果模块无法安装请尝试开关兼容模式</slice>
+            <slice break="true"></slice>
+            <slice break="true"></slice>
             <slice size="16" color="#FF9C27B0">本功能为云端收集模块，模块出现的任何问题请联系作者，如果你有好的模块想分享，或者你是模块作者，可私信我云端上架分享大家一起享用</slice>
             <slice break="true"></slice>
             <slice break="true"></slice>
