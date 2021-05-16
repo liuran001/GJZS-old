@@ -1,6 +1,6 @@
-Configuration=2021051504
-Magisk_Warehouse_version=2021051503
-App_Store_version=2021051503
+Configuration=2021051701
+Magisk_Warehouse_version=2021051701
+App_Store_version=2021051701
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -27,7 +27,7 @@ versionCode=202105011
 author='嘟嘟Ski'
 description='你猜'
 time='2021年5月2号'
-    [[ $Choice = 1 ]] && Download -net "0f9063a63c885bedee4587606c2283ab?at_=1619952361896&ak_=1d78d9bf4255e452320e824bdc13223e&ad_=ba57fb38445f119523a6fec8161985a1&fn=$1" "$1.apk" 4469159 f296ea0f3ccf9b74d9039148518c6146 "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/com.omarea.vtools.apk" "$1.apk" 4469159 f296ea0f3ccf9b74d9039148518c6146 "$1.apk"
 ;;
 
 bin.mt.plus)
