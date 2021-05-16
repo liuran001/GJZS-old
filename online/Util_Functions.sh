@@ -1,5 +1,5 @@
 #Custom variable
-export Util_Functions_Code=2021051502
+export Util_Functions_Code=2021051701
 export SDdir=/data/media/0
 export Modules_Dir=/data/adb/modules
 export Script_Dir=$TMPDIR/tmp
@@ -536,6 +536,9 @@ Download() {
                 shift
                 Link="http://api.funs.ml/lzy/api.php?url=$ID&type=down"
             ;;
+            -coding)
+                shift
+                Link="http://qqcn.coding.net/p/import-rt20/d/GJZS-Warehouse/git/raw/main/$ID"
             *)
                 abort "！暂不支持下载"
             ;;
