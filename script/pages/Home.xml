@@ -122,9 +122,9 @@ cat <<Han
     <page title="实用网址推荐" config-sh="cat \$Pages/Practical_Web_address.xml" />
     <page title="搞机助手选项区" config-sh="cat \$Pages/GJZS.xml" />
     <page title="关于 &amp; 特别鸣谢" config-sh="cat \$Pages/In_Regard_To.xml" />
-    <page link="`echo $CODING/Donate.png`">
+    <page link="`echo $CODING/Other/Donate.png`">
         <title>捐赠</title>
-        <desc>「搞机助手」将一直保持免费且开源，但您可以小额捐赠表示支持</desc>
+        <desc>「搞机助手重制版」将一直保持免费且开源，但您可以小额捐赠表示支持</desc>
     </page>
     <text>
         <slices>

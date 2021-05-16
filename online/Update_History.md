@@ -1,5 +1,10 @@
 最新下载地址：https://qqcn.coding.net/public/import-rt20/GJZS-Download/git/files
+捐赠支持我：https://donate.qqcn.site/ 
 酷安动态又被屏蔽了，麻烦各位帮忙宣传下
+
+V1.0.0（云端2021051701）
+非常臭不要脸的加入了捐赠功能（bushi）
+
 V1.0.0 (云端配置2021051702)
 修复少打两个分号引起的报错
 
