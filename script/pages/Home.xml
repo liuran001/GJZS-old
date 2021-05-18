@@ -41,7 +41,7 @@ Han
 fi
 
 cat <<Han
-    <page html="`echo $CODING/Update_History.md`">
+    <page html="`echo https://gjzs.qqcn.site/changelog_online`">
         <title>$title</title>
         <summary sh=". ./CheckUpdate.sh" />
     </page>

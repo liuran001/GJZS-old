@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <group title="关于">
 <!-- START -->
+    <page link="https://gjzs.qqcn.site">
+        <title>发布页/官网</title>
+    </page>
+<!-- END -->
+<!-- START -->
     <page link="https://qqcn.coding.net/p/import-rt20/d/GJZS/git/raw/master/other/WeChat_Official_Accounts.jpg">
         <title>微信公众号：HanGJZS</title>
     </page>
