@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<group title="所有已开启的无障碍功能都将会关闭">
+	<action confirm="true" auto-finish="true">
+		<title>确认执行CleanEAST</title>
+		<desc>内容：删除EAS.ini的混乱内容&#x000A;作用场景：EAS文件出现内容错乱且无法通过删除恢复（删除后模块再次生成且内容混乱）</desc>
+		<set>
+			$ShellScript/Magisk_Module/Modules_Setting/ASGuard/CleanEAST.sh
+		</set>
+	</action>
+</group>

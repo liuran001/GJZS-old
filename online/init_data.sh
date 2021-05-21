@@ -687,6 +687,16 @@ time='2021年3月24号'
     [[ $Choice = 1 ]] && Download -net "c68a8eed3aafd769b317e905bc3041ee?at_=1618169577168&ak_=911a3b511969435b2ac6a0ee5c29c50e&ad_=5e53dabacf06d5f8cda715ee38e2bd61&fn=$1" "$1.zip" 108675627 d083690c555fa59b5f29112fc1dbb0dc "$1.zip"
 ;;
 
+huzeASGuard)
+id='huzeASGuard'
+name='H·无障碍服务守护(ASGuard)'
+version='v4.8.5'
+versionCode='202105181'
+author='沍澤'
+description='开机自动开启且实时保护无障碍服务(辅助功能)，防止应用意外关闭导致无障碍服务连同关闭，具体配置查看搞机助手>Magisk专区>一些Magisk模块的配置>ASGuard配置 或修改/data/media/0/Android/ASGuard.conf'
+time='2021年5月22号'
+    [[ $Choice = 1 ]] && Download -lz "i4EiLp8gmta&pwd=huze" "$1.zip" 2881006 be80af0e7a013c31e7fa9a6567db2c65 "$1.zip"
+;;
 
 shadow_screenshots)
 id='shadow_screenshots'
@@ -704,12 +714,12 @@ MIUI=1
 Show_Compatibility_Mode=0
 name='回忆k40多合一'
 id='hydhy'
-version='2.2.7'
-versionCode='27'
+version='2.2.9'
+versionCode='30'
 author='酷安@回憶堅強'
 description="k40的优化和美化于一身"
-time='2021年5月8号'
-    [[ $Choice = 1 ]] && Download -net "6af2ad11946c1c2d30e79d27b048b386?at_=1620483979763&ak_=1e90b7e22f50dd6f3a1b405350292f24&ad_=5cc181cbfb7ee715a7e5af4e158eaff7&fn=$1" "$1.zip" 42969182 161d8ef82ff9e16c91c92e6439b4f4b4 "$1.zip"
+time='2021年5月22号'
+    [[ $Choice = 1 ]] && Download -net "3c6c1cee8f439b5aedc59271a6b4a9ae?at_=1621617228289&ak_=3d9edb1e7dfb418d043d8aa3946ffab9&ad_=4b35ae08f054c7b8430532cb804f1fad" "$1.zip" 51026263 e4f0e6d9fea28919c2397b8c5e99d0be "$1.zip"
 ;;
 
 huiyiduoheyi)

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<group title="">
+	<text visible="source '/data/media/0/Android/ASGuard.conf' ; ([[ -d &#34;${MODPATH}&#34; ]] &#38;&#38; echo 1) || echo 0">
+		<slice color="#FF6800">本UI为Magisk模块 无障碍服务守护(ASGuard) 的配置UI界面</slice>
+	</text>
+	<text visible="source '/data/media/0/Android/ASGuard.conf' ; ([[ -d &#34;${MODPATH}&#34; ]] &#38;&#38; echo 0) || echo 1">
+		<slice color="#FF6800" bold="true">没检测到模块！请先刷入后再使用！</slice>
+	</text>
+	<text>
+		<slice color="#FF6800">ASGuardUI v1.2.9_202105181</slice>
+		<slice color="#FF6800" break="true">改进：模块安装检测路径跟随ASGuard.conf文件</slice>
+	</text>
+</group>
+<group>
+<group>
+	<switch shell="hidden"
+			reload="true"
+			title="无障碍服务守护(ASGuard) 开关"
+			desc-sh="source '/data/media/0/Android/ASGuard.conf' ;
+MODPATH=${MODPATH}/module.prop ;
+version=`cat ${MODPATH} | grep 'version=' | awk -F= '{print $2}'` ;
+versionCode=`cat ${MODPATH} | grep 'versionCode=' | awk -F= '{print $2}'` ;
+description=`cat ${MODPATH} | grep 'description=' | awk -F= '{print $2}'` ;
+description=`echo ${description} | sed 's/，/\n/g' | sed 's/ /\n/g'` ;
+echo '模块作者：沍澤&#x000A;' ; 
+text=&#34;已安装模块版本：${version}(${versionCode})&#x000A;&#x000A;模块简介&#x000A;${description}&#x000A;&#x000A;模块路径：${MODPATH}&#34; ;
+[[ -f &#34;${MODPATH}&#34; ]] &#38;&#38; echo &#34;${text}&#34;">
+		<get>
+			source '/data/media/0/Android/ASGuard.conf'
+			if [ -f ${MODPATH}/disable ]; then
+				echo 0
+			else
+				if [ -d ${MODPATH} ]; then
+					echo 1
+				else
+					echo 0
+				fi
+			fi
+		</get>
+		<set>
+			source '/data/media/0/Android/ASGuard.conf'
+			if [[ ${state} -eq 0 ]]; then
+				touch ${MODPATH}/disable
+			else
+				rm ${MODPATH}/disable
+			fi
+		</set>
+		<lock>
+			source '/data/media/0/Android/ASGuard.conf'
+			if [ -f ${MODPATH}/module.prop ]; then
+				echo 0
+			else
+				echo '请先安装模块'
+			fi
+		</lock>
+	</switch>
+</group>
+<group visible="source '/data/media/0/Android/ASGuard.conf' ; ([[ -d ${MODPATH} ]] &#38;&#38; echo 1) || echo 0">
+	<action shell="hidden">
+		<title>无障碍功能受保护APP</title>
+		<desc>配置需要保护无障碍功能的APP (修改此项实时生效)</desc>
+		<param
+			name="ASpackages"
+			title="加入此项的APP不需要加入电池优化白名单APP列表"
+			type="app"
+			multiple="true"
+			editable="false"
+			value-sh="conf='/data/media/0/Android/ASGuard.conf' ;
+			source ${conf} ;
+			echo &#34;${AS}&#34;"/>
+		<set>
+			$ShellScript/Magisk_Module/Modules_Setting/ASGuard/WriteAS.sh
+		</set>
+	</action>
+	<action shell="hidden">
+		<title>电池优化白名单APP</title>
+		<desc>配置开机后加入电池优化白名单的APP (更改此项重启生效)</desc>
+		<param
+			name="WhitelistPackages"
+			title="约在开机解锁90秒后添加，加入无障碍功能受保护APP列表则不需要加入此项"
+			type="app"
+			multiple="true"
+			editable="false"
+			value-sh="conf='/data/media/0/Android/ASGuard.conf' ;
+			source ${conf} ;
+			echo &#34;${package_whitelist}&#34;"/>
+		<set>
+			$ShellScript/Magisk_Module/Modules_Setting/ASGuard/WriteWhitelist.sh
+		</set>
+	</action>
+</group>
+<group visible="source '/data/media/0/Android/ASGuard.conf' ; ([[ -d ${MODPATH} ]] &#38;&#38; echo 1) || echo 0">
+	<switch shell="hidden" reload="false">
+		<title>开机清空电池优化白名单</title>
+		<desc>此功能对应但不影响&#34;电池优化白名单APP&#34; [模块版本不低于4.8]</desc>
+		<get>
+			conf='/data/media/0/Android/ASGuard.conf'
+			source ${conf}
+			if [[ ${whitelistclear} = 1 ]]; then
+				echo 1
+			else
+				echo 0
+			fi
+		</get>
+		<set>
+			$ShellScript/Magisk_Module/Modules_Setting/ASGuard/WriteWhitelistClear.sh
+		</set>
+	</switch>
+	<switch shell="hidden" reload="false">
+		<title>记录运行时间</title>
+		<desc>在本UI或Magisk Manager显示的运行时间</desc>
+		<get>
+			conf='/data/media/0/Android/ASGuard.conf'
+			source ${conf}
+			if [[ ${timemarker} = 1 ]]; then
+				echo 1
+			else
+				echo 0
+			fi
+		</get>
+		<set>
+			$ShellScript/Magisk_Module/Modules_Setting/ASGuard/WriteTimeMarker.sh
+		</set>
+	</switch>
+	<switch shell="hidden" reload="false">
+		<title>Rewrite</title>
+		<desc>试图解决无障碍服务无法运行的问题 [模块版本不低于4.8]</desc>
+		<get>
+			conf='/data/media/0/Android/ASGuard.conf'
+			source ${conf}
+			if [[ ${rewrite} = 1 ]]; then
+				echo 1
+			else
+				echo 0
+			fi
+		</get>
+		<set>
+			$ShellScript/Magisk_Module/Modules_Setting/ASGuard/WriteRewrite.sh
+		</set>
+	</switch>
+	<switch shell="hidden" reload="false">
+		<title>Log记录</title>
+		<desc>一般用于检查模块流程的问题 [模块版本不低于4.8]</desc>
+		<get>
+			conf='/data/media/0/Android/ASGuard.conf'
+			source ${conf}
+			if [[ ${log} = 1 ]]; then
+				echo 1
+			else
+				echo 0
+			fi
+		</get>
+		<set>
+			$ShellScript/Magisk_Module/Modules_Setting/ASGuard/WriteLog.sh
+		</set>
+	</switch>
+	<switch shell="hidden" reload="false">
+		<title>覆盖开启无障碍功能</title>
+		<desc>上一次开机运行开启的其它无障碍功能将会被关闭 [模块版本不低于4.8.2]</desc>
+		<get>
+			conf='/data/media/0/Android/ASGuard.conf'
+			source ${conf}
+			if [[ ${cover} = 1 ]]; then
+				echo 1
+			else
+				echo 0
+			fi
+		</get>
+		<set>
+			$ShellScript/Magisk_Module/Modules_Setting/ASGuard/WriteCover.sh
+		</set>
+	</switch>
+	<switch shell="hidden" reload="false">
+		<title>只开启无障碍功能</title>
+		<desc>开机开启无障碍功能后将结束模块服务进程 (不影响电池优化白名单设置) [模块版本不低于4.8.2]</desc>
+		<get>
+			conf='/data/media/0/Android/ASGuard.conf'
+			source ${conf}
+			if [[ ${stop} = 1 ]]; then
+				echo 1
+			else
+				echo 0
+			fi
+		</get>
+		<set>
+			$ShellScript/Magisk_Module/Modules_Setting/ASGuard/WriteStop.sh
+		</set>
+	</switch>
+</group>
+<group>
+    <page config-sh="echo $Pages/Magisk_Modules_Setting/ASGuard/Again.xml">
+        <title>执行CleanEAST</title>
+        <desc>一般情况下无需执行</desc>
+    </page>
+</group>
+<group title="">
+	<action>
+		<title>查看详细配置内容</title>
+		<set>
+			if [ -f '/data/media/0/Android/ASGuard.conf' ]; then
+				cat '/data/media/0/Android/ASGuard.conf'
+			else
+				echo '没有配置文件'
+			fi
+		</set>
+	</action>
+	<action>
+		<title>查看log记录</title>
+		<set>
+			if [[ -f '/data/media/0/Android/log_ASG.txt' ]]; then
+				cat '/data/media/0/Android/log_ASG.txt'
+			else
+				echo '未发现log'
+			fi
+		</set>
+	</action>
+	<action>
+		<title>查看EAS内容</title>
+		<set>
+			source '/data/media/0/Android/ASGuard.conf'
+			if [[ -f &#34;${MODPATH}/config/EAS.ini&#34; ]]; then
+				cat &#34;${MODPATH}/config/EAS.ini&#34;
+			else
+				echo '未发现EAS.ini，请检查是否安装/开启模块'
+			fi
+		</set>
+	</action>
+</group>
+<group>
+	<action>
+		<title>删除log</title>
+		<set>
+			if [[ -f '/data/media/0/Android/log_ASG.txt' ]]; then
+				rm '/data/media/0/Android/log_ASG.txt'
+				echo '已删除'
+			else
+				echo '无log文件'
+			fi
+		</set>
+	</action>
+</group>
+<group>
+	<page
+		title="获取最新版模块"
+		desc="点击打开模块作者的主页"
+		link="http://www.coolapk.com/u/919184"/>
+</group>
+<group>
+	<page
+		title="下载 无障碍服务守护 v4.8.5"
+		desc="密码：huze"
+		link="https://venmzvi.lanzoui.com/ihf4hp8cpej"/>
+</group>
+
+

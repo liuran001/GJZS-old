@@ -486,8 +486,8 @@ elif [[ "$1" = mjckfy ]]; then
                                     FY=`echo "$Row" | sed -r "s/.*'.*','.*','.*','.*',[0-9]+,'(.*)',[0-9]+,'.*;/\1/g" | tr -d '[+&{}#/:;]+' | tr ' ' _ | tr '/' %`
                                     Wei=`echo "$Row" | sed -r "s/.*'.*','.*','.*','.*',[0-9]+,'.*(',[0-9]+,'.*;)/\1/g"`
                                 fi
-                                appid="20170831000079437"
-                                key="vZWmk1G9usRAI3eFc9Mt"
+                                appid="20200301000390945"
+                                key="9l3cEklIvZLN0TwNPHyS"
                                 salt="123456"
                                 text="${appid}${FY}${salt}${key}"
                                 sign=`echo -n "$text" | md5sum`

@@ -6,7 +6,7 @@ BootAnimation_Screen1() {
     by_name=`find /dev/block -name 'by-name'|head -n 1`
     splash=$by_name/splash
     #logo=$by_name/logo
-    lu=/data/backup/com.gjzs.chongzhi.online
+    lu=/data/backup/com.gjzs.chongzhi
     lu2=$lu/splash.img
     lu3=$PeiZhi_File/BootAnimation_Screen1
     Han=false

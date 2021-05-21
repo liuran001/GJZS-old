@@ -316,7 +316,7 @@ cat <<Han
             <param name="ChongQi" label="是否刷入成功自动重启系统生效" type="bool" />
             <param name="Installation_plan" title="请选择安装方案" desc="选择方案①时如果重启未生效记得应用一遍默认主题即可" options-sh=". ./Magisk_Module/MIUI/Installation_plan.sh" value-sh="grep_prop Installation_plan \$Data_Dir/MIUI_Module.log" />
             <param name="Export_Directory" label="选择方案②时还可以自定义导出路径和名称，.mtz后缀无需输入" value-sh="grep_prop Export_Directory $Data_Dir/MIUI_Module.log" />
-            <param name="a" value-sh="echo 请输入你要提取到的绝对路径包括名称！默认留空提取路径为内部储存目录下Documents/com.gjzs.chongzhi.online目录里（也就是\$GJZS）如果你输入的路径不存在会自动帮您创建该目录。［已支持带空格和带符号路径］" readonly="readonly" />
+            <param name="a" value-sh="echo 请输入你要提取到的绝对路径包括名称！默认留空提取路径为内部储存目录下Documents/com.gjzs.chongzhi目录里（也就是\$GJZS）如果你输入的路径不存在会自动帮您创建该目录。［已支持带空格和带符号路径］" readonly="readonly" />
             <param name="Theme_plan" title="请选择主题安装方案" options-sh="printf '0|不合并主题\n1|合并主题修改（在当前应用主题基础上进行修改）'" value-sh="grep_prop Theme_plan \$Data_Dir/MIUI_Module.log" />
             <param name="x" value="请开始个性化选择" readonly="readonly" />
             <param name="NotificationBar_UI" title="请选择下拉通知栏样式和状态栏样式" options-sh=". ./Magisk_Module/MIUI/NotificationBar_UI.sh" value-sh="grep_prop NotificationBar_UI \$Data_Dir/MIUI_Module.log" />
