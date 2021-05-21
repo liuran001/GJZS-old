@@ -1,5 +1,5 @@
 #Custom variable
-export Util_Functions_Code=2021051901
+export Util_Functions_Code=2021052101
 export SDdir=/data/media/0
 export Modules_Dir=/data/adb/modules
 export Script_Dir=$TMPDIR/tmp
@@ -18,8 +18,8 @@ export Status=$Data_Dir/Status.log
 export Termux=$DATA_DIR/com.termux/files
 export BOOTMODE=true
 export Choice=0
-export New_Version=1.0.1-051901
-export New_Code=2021051901
+export New_Version=1.0.2-Online
+export New_Code=2021052101
 export ChongQi Configuration File File_Name Download_File File_MD5 id name version versionCode author description MODID MODNAME MODPATH MAGISK_VER MAGISK_VER_CODE LOCKED
 $Have_ROOT && LOCKED=false || LOCKED=true
 

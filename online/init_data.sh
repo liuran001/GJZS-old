@@ -1,6 +1,6 @@
-Configuration=2021051703
-Magisk_Warehouse_version=2021051703
-App_Store_version=2021051702
+Configuration=2021052101
+Magisk_Warehouse_version=2021052101
+App_Store_version=2021052101
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -55,12 +55,12 @@ time='2021年5月2号'
 org.lsposed.manager)
 apk='org.lsposed.manager'
 name='LSPosed 模块管理器'
-version='v1.3.5'
-versionCode='5551'
+version='v1.4.0'
+versionCode='5666'
 author='LSPosed Developers'
 description='LSPosed Xposed框架模块管理器'
 apkfile="$PeiZhi_File/$apk-$versionCode.apk"
-time='2021年3月23号'
+time='2021年5月21号'
     if [[ $Choice = 1 ]]; then
         [[ $SDK -lt 27 ]] && abort "！$name-$version（$versionCode）不支持安卓8.1.0以下系统"
         if [[ ! -s "$apkfile" ]]; then
@@ -634,19 +634,19 @@ time='2021年4月15号'
 
 riru_lsposed)
 id='riru_lsposed'
-showapk='v1.3.4(5501)'
+showapk='v1.4.0(5666)'
 name='Riru - LSPosed'
-version='v1.3.5'
-versionCode='5551'
+version='v1.4.0'
+versionCode='5666'
 author='LSPosed Developers'
 description='一款基于Riru API开发的Xposed框架，支持运行在安卓8.1.0 ~ 12系统上。需要安装Riru v25.0.0或更高版本，Telegram: @LSPosed'
-time='2021年4月12号'
+time='2021年5月21号'
     if [[ $Choice = 1 ]]; then
         mask -v
-        if [[ $MAGISK_VER_CODE -ge 21000 ]]; then
-             Download -coding "21051601/modules/LSPosed-v1.3.5-5551-release.zip" "$1.zip" 1863749 543ac282786f314ea495a1d61d276b59 "$1.zip"
+        if [[ $MAGISK_VER_CODE -ge 23000 ]]; then
+             Download -coding "21052101/modules/LSPosed-v1.4.0-5666-release.zip" "$1.zip" 1834698 53a4a06067a232bd9333ddcdd110c1c0 "$1.zip"
         else
-            echo "- 检测到Magisk版本在v21以下，无法安装最新版$version（$versionCode），开始安装v1.3.4（5501）版本"
+            echo "- 检测到Magisk版本在v23以下，无法安装最新版$version（$versionCode），开始安装v1.3.4（5501）版本"
             Download -net "a3b9e26cc0380691ee804ca7006ce2d5?at_=1618236394371&ak_=c1f7cf50ba6f13d6d01207fe9c5028b0&ad_=870ede5e093014706bebeac08c3c0f0d&fn=$1-5501" "$1.zip" 2189720 de39ec10f67b538fbdc60b7f0e6520f7 "$1.zip"
         fi
     fi
@@ -687,23 +687,16 @@ time='2021年3月24号'
     [[ $Choice = 1 ]] && Download -net "c68a8eed3aafd769b317e905bc3041ee?at_=1618169577168&ak_=911a3b511969435b2ac6a0ee5c29c50e&ad_=5e53dabacf06d5f8cda715ee38e2bd61&fn=$1" "$1.zip" 108675627 d083690c555fa59b5f29112fc1dbb0dc "$1.zip"
 ;;
 
-znzl)
-MIUI=1
-id='znzl'
-eval `(curl -skL -m 10 'https://gitee.com/youngdriver/pio/raw/master/znzl/module.prop')`
-[[ $2 = -x ]] && echo -e "版本：$version\n版本号：$versionCode\n作者：$author\n描述：$description\n更新于：$time"
-[[ $2 = -d ]] && curl -skL -o $Pages/Intelligent_Assistant.xml "$xml_url"
-;;
 
 shadow_screenshots)
 id='shadow_screenshots'
 name='阴影截图'
-version='v2.9.8'
-versionCode=2.9.8
+version='v3.0.1'
+versionCode='3'
 author='酷安@巴啦啦魔仙女王'
-description='手机截图自动套阴影，具体配置参数修改module.prop'
-time='2021年5月17号'
-    [[ $Choice = 1 ]] && Download -coding "21051601/modules/shadow_screenshots2.9.8.zip" "$1.zip" 14332223 54beb572414d8dcae2614759461d4948 "$1.zip"
+description='手机截图自动套阴影，具体配置查看搞机助手>Magisk专区>一些Magisk模块的配置>带壳截图配置 或修改/data/adb/modules/shadow_screenshots/module.prop文件'
+time='2021年5月21号'
+    [[ $Choice = 1 ]] && Download -lz "iyLJ9pb56bi" "$1.zip" 14332499 a548914f6686966ed2071368dd0e8a74 "$1.zip"
 ;;
 
 hydhy)
@@ -734,23 +727,26 @@ time='2021年3月29号'
 
 FUCK-SHIT-FILE)
 Show_Compatibility_Mode=0
-eval `(curl -s https://gitee.com/Petit-Abba/magisk-modules/raw/master/Purify-sdcard/module.prop)`
 id='FUCK-SHIT-FILE'
-    [[ $Choice = 1 ]] && Download -url "$zipurl" "$1.zip" "$size" "$md5" "$1.zip"
+name='A-循环吃掉乱拉屎的文件/文件夹'
+version='v3.1.2'
+versionCode='20210404'
+author='阿巴酱'
+description='到处拉屎？不存在！吔屎啦雷: [ /sdcard ] [/sdcard/Android ] [ /sdcard/Download ]'
+time='2021年4月4号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/FUCK-SHIT-FILEv3.1.2.zip" "$1.zip" 7815 4cf40745efb452cb5f0445b50ca74b76 "$1.zip"
 ;;
 
 S-T-E-P-S)
 Show_Compatibility_Mode=0
-eval `(curl -s https://gitee.com/Petit-Abba/magisk-modules/raw/master/STEPS/module.prop)`
 id='S-T-E-P-S'
-    [[ $Choice = 1 ]] && Download -url "$zipurl" "$1.zip" "$size" "$md5" "$1.zip"
-;;
-
-AD-Hosts)
-eval `(curl -s https://aisauce.coding.net/p/ad-hosts/d/ad-hosts/git/raw/master/Han.GJZS.prop)`
-id='AD-Hosts'
-    [[ $Choice = 1 ]] && Download -url "$zipurl" "$1.zip" "$size" "$md5" "$1.zip"
-#https://aisauce.coding.net/public/ad-hosts/ad-hosts/git/files
+name='A-智能步数管理'
+version='v3.2'
+versionCode='20210318'
+author='阿巴酱'
+description='哦豁！'
+time='2021年3月18号'
+    [[ $Choice = 1 ]] && Download -coding "21051601/modules/S-T-E-P-Sv3.2.zip" "$1.zip" 28555 24797d3382f31d153570d4e96d41bed5 "$1.zip"
 ;;
 
 AnyHosts)

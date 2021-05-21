@@ -18,7 +18,7 @@ cat <<Han
     </text>
     <text>
         <slices>
-            <slice size="16" color="#FF9C27B0">本功能为云端收集模块，模块出现的任何问题请联系作者，如果你有好的模块想分享，或者你是模块作者，可私信我云端上架分享大家一起享用</slice>
+            <slice size="16" color="#FF9C27B0">本功能为云端收集模块，模块出现的任何问题请联系作者，如果你有好的模块想分享，或者你是模块作者，可私信我云端上架分享大家一起享用，如果模块无法安装请尝试开关兼容模式</slice>
             <slice break="true"></slice>
             <slice break="true"></slice>
             <slice size="16" color="#FF9C27B0">免责申明：&#x000A;一旦使用了本页功能，出现的一切后果请自行承担风险，与本人无关</slice>
@@ -316,7 +316,7 @@ cat <<Han
             <param name="ChongQi" label="是否刷入成功自动重启系统生效" type="bool" />
             <param name="Installation_plan" title="请选择安装方案" desc="选择方案①时如果重启未生效记得应用一遍默认主题即可" options-sh=". ./Magisk_Module/MIUI/Installation_plan.sh" value-sh="grep_prop Installation_plan \$Data_Dir/MIUI_Module.log" />
             <param name="Export_Directory" label="选择方案②时还可以自定义导出路径和名称，.mtz后缀无需输入" value-sh="grep_prop Export_Directory $Data_Dir/MIUI_Module.log" />
-            <param name="a" value-sh="echo 请输入你要提取到的绝对路径包括名称！默认留空提取路径为内部储存目录下Documents/com.gjzs.chongzhi.online目录里（也就是\$GJZS）如果你输入的路径不存在会自动帮您创建该目录。［已支持带空格和带符号路径］" readonly="readonly" />
+            <param name="a" value-sh="echo 请输入你要提取到的绝对路径包括名称！默认留空提取路径为内部储存目录下Han.GJZS目录里（也就是\$GJZS）如果你输入的路径不存在会自动帮您创建该目录。［已支持带空格和带符号路径］" readonly="readonly" />
             <param name="Theme_plan" title="请选择主题安装方案" options-sh="printf '0|不合并主题\n1|合并主题修改（在当前应用主题基础上进行修改）'" value-sh="grep_prop Theme_plan \$Data_Dir/MIUI_Module.log" />
             <param name="x" value="请开始个性化选择" readonly="readonly" />
             <param name="NotificationBar_UI" title="请选择下拉通知栏样式和状态栏样式" options-sh=". ./Magisk_Module/MIUI/NotificationBar_UI.sh" value-sh="grep_prop NotificationBar_UI \$Data_Dir/MIUI_Module.log" />
@@ -513,7 +513,7 @@ cat <<Han
         <params>
             <param name="ChongQi" label="是否刷入成功自动重启系统生效" type="switch" />
             <param name="Error" label="不显示模块里的错误信息" desc="注释：该错误信息log来自模块里，关闭状态时会显示完整日志等于Magisk的保存日志功能。" type="switch" value="1" />
-            <param name="Compatible" label="使用兼容模式（兼容旧模块）" desc="注：该「兼容模式」需要模块作者遵守Magisk Modules开发指南规定，不更改update-binary脚本" type="switch" value="1" visible="echo $Show_Compatibility_Mode" />
+            <param name="Compatible" label="使用兼容模式（兼容旧模块）" desc="注：该「兼容模式」需要模块作者遵守Magisk Modules开发指南规定，不更改update-binary脚本" type="switch" visible="echo $Show_Compatibility_Mode" />
             <param name="Riru_Manger" label="是否安装Riru管理器，显示Riru状态" type="switch" />
         </params>
     </action>
@@ -532,7 +532,7 @@ cat <<Han
         <params>
             <param name="ChongQi" label="是否刷入成功自动重启系统生效" type="switch" />
             <param name="Error" label="不显示模块里的错误信息" desc="注释：该错误信息log来自模块里，关闭状态时会显示完整日志等于Magisk的保存日志功能。" type="switch" value="1" />
-            <param name="Compatible" label="使用兼容模式（兼容旧模块）" desc="注：该「兼容模式」需要模块作者遵守Magisk Modules开发指南规定，不更改update-binary脚本" type="switch" value="1" visible="echo $Show_Compatibility_Mode" />
+            <param name="Compatible" label="使用兼容模式（兼容旧模块）" desc="注：该「兼容模式」需要模块作者遵守Magisk Modules开发指南规定，不更改update-binary脚本" type="switch" visible="echo $Show_Compatibility_Mode" />
             <param name="SELinux_OFF" label="是否关闭SELinux？" desc="打开此开关为关闭SELinux，要不要关SELinux看设备而定，极少设备不关SELinux可能卡开机" type="switch" />
             <param name="edxpapk" label="安装EdXposed Manager" desc="是否安装EdXposed Manager-$showapk.apk进行XP模块管理，尽量不要取消勾选，否则有可能出现：框架未正确安装" type="switch" value="1" />
             <param name="Riru_version" label="安装Riru（Riru - Core）" desc="如果没有安装Riru（Riru - Core）模块，请不要取消勾选，否则$name不会生效" type="switch" value="1" />
@@ -556,7 +556,7 @@ cat <<Han
         <params>
             <param name="ChongQi" label="是否刷入成功自动重启系统生效" type="switch" />
             <param name="Error" label="不显示模块里的错误信息" desc="注释：该错误信息log来自模块里，关闭状态时会显示完整日志等于Magisk的保存日志功能。" type="switch" value="1" />
-            <param name="Compatible" label="使用兼容模式（兼容旧模块）" desc="注：该「兼容模式」需要模块作者遵守Magisk Modules开发指南规定，不更改update-binary脚本" type="switch" value="1" visible="echo $Show_Compatibility_Mode" />
+            <param name="Compatible" label="使用兼容模式（兼容旧模块）" desc="注：该「兼容模式」需要模块作者遵守Magisk Modules开发指南规定，不更改update-binary脚本" type="switch" visible="echo $Show_Compatibility_Mode" />
             <param name="SELinux_OFF" label="是否关闭SELinux？" desc="打开此开关为关闭SELinux，要不要关SELinux看设备而定，极少设备不关SELinux可能卡开机" type="switch" />
             <param name="Riru_version" label="安装Riru（Riru - Core）" desc="如果没有安装Riru（Riru - Core）模块，请不要取消勾选，否则$name不会生效" type="switch" value="1" />
             <param name="Riru_Manger" label="是否安装Riru管理器，显示Riru状态" type="switch" />
@@ -579,7 +579,7 @@ cat <<Han
         <params>
             <param name="ChongQi" label="是否刷入成功自动重启系统生效" type="switch" />
             <param name="Error" label="不显示模块里的错误信息" desc="注释：该错误信息log来自模块里，关闭状态时会显示完整日志等于Magisk的保存日志功能。" type="switch" value="1" />
-            <param name="Compatible" label="使用兼容模式（兼容旧模块）" desc="注：该「兼容模式」需要模块作者遵守Magisk Modules开发指南规定，不更改update-binary脚本" type="switch" value="1" visible="echo $Show_Compatibility_Mode" />
+            <param name="Compatible" label="使用兼容模式（兼容旧模块）" desc="注：该「兼容模式」需要模块作者遵守Magisk Modules开发指南规定，不更改update-binary脚本" type="switch" visible="echo $Show_Compatibility_Mode" />
             <param name="SELinux_OFF" label="是否关闭SELinux？" desc="打开此开关为关闭SELinux，要不要关SELinux看设备而定，极少设备不关SELinux可能卡开机" type="switch" />
             <param name="mjxpapk" label="安装梦境" desc="是否安装梦境-$showapk.apk进行XP模块管理" type="switch" value="1" />
             <param name="Riru_version" label="安装Riru（Riru - Core）" desc="如果没有安装Riru（Riru - Core）模块，请不要取消勾选，否则$name不会生效" type="switch" value="1" />
@@ -606,7 +606,7 @@ cat <<Han
             <param name="ChongQi" label="是否刷入成功自动重启系统生效" type="switch" />
             <param name="exp" label="是否自动安装太极-$expversion.apk" type="switch" />
             <param name="Error" label="不显示模块里的错误信息" desc="注释：该错误信息log来自模块里，关闭状态时会显示完整日志等于Magisk的保存日志功能。" type="switch" value="1" />
-            <param name="Compatible" label="使用兼容模式（兼容旧模块）" desc="注：该「兼容模式」需要模块作者遵守Magisk Modules开发指南规定，不更改update-binary脚本" type="switch" value="1" visible="echo $Show_Compatibility_Mode" />
+            <param name="Compatible" label="使用兼容模式（兼容旧模块）" desc="注：该「兼容模式」需要模块作者遵守Magisk Modules开发指南规定，不更改update-binary脚本" type="switch" visible="echo $Show_Compatibility_Mode" />
         </params>
     </action>
 <!-- END -->
@@ -623,7 +623,7 @@ cat <<Han
         <params>
             <param name="ChongQi" label="是否刷入成功自动重启系统生效" type="switch" />
             <param name="Error" label="不显示模块里的错误信息" desc="注释：该错误信息log来自模块里，关闭状态时会显示完整日志等于Magisk的保存日志功能。" type="switch" value="1" />
-            <param name="Compatible" label="使用兼容模式（兼容旧模块）" desc="注：该「兼容模式」需要模块作者遵守Magisk Modules开发指南规定，不更改update-binary脚本" type="switch" value="1" visible="echo $Show_Compatibility_Mode" />
+            <param name="Compatible" label="使用兼容模式（兼容旧模块）" desc="注：该「兼容模式」需要模块作者遵守Magisk Modules开发指南规定，不更改update-binary脚本" type="switch" visible="echo $Show_Compatibility_Mode" />
         </params>
     </action>
 <!-- END -->

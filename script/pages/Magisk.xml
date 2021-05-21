@@ -33,6 +33,11 @@
 <!-- END -->
     </pages>
 <!-- START -->
+        <page config-sh="cat $Pages/Some_Magisk_Modules_Setting.xml" locked="$LOCKED">
+            <title>一些Magisk模块的配置</title>
+        </page>
+<!-- END -->
+<!-- START -->
     <action locked="$LOCKED">
         <title>简单的查看已安装的Magisk模块信息</title>
         <set>. ./Magisk_Module/Modules_View.sh</set>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <text>
+        <slices>
+            <slice size="18" color="#FFFF0000">请确认您已安装了相关模块</slice>
+        </slices>
+    </text>
+<group title="模块配置">
+    <pages>
+        <page title="带壳截图配置" before-load="curl -o $ShellScript/shadow_screenshots.sh -sL https://gitee.com/youngdriver/pio/raw/master/page/shadow_screenshots.sh" config-sh="source $ShellScript/shadow_screenshots.sh" />
+    </pages>
+</group>
