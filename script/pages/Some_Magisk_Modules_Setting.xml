@@ -6,7 +6,7 @@
     </text>
 <group title="模块配置">
     <pages>
-        <page title="带壳截图配置" before-load="curl -o $ShellScript/shadow_screenshots.sh -sL https://gitee.com/youngdriver/pio/raw/master/page/shadow_screenshots.sh" config-sh="source $ShellScript/shadow_screenshots.sh" />
+        <page title="带壳截图配置" config-sh="source $ShellScript/Magisk_Module/Modules_Setting/shadow_screenshots.sh" />
     </pages>
     <pages>
         <page title="ASGuard配置" config-sh="cat $Pages/Magisk_Modules_Setting/ASGuard/ASGuard.xml" />

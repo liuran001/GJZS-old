@@ -6,7 +6,8 @@ if [[ -f $Load ]]; then
     elif [[ $Version_code -lt $New_Code ]]; then
         title="发现新版本$New_Version（$New_Code）"
     else
-        title="未知版本"
+        title="未知版本，请清除应用缓存后重试"
+        show=true
     fi
 elif [[ ! -f $Core ]]; then
     title="初始化功能失败"
@@ -41,7 +42,7 @@ Han
 fi
 
 cat <<Han
-    <page html="`echo https://gjzs.qqcn.site/changelog`">
+    <page html="`echo https://gjzs.qqcn.site/changelog_online`">
         <title>$title</title>
         <summary sh=". ./CheckUpdate.sh" />
     </page>
@@ -122,9 +123,9 @@ cat <<Han
     <page title="实用网址推荐" config-sh="cat \$Pages/Practical_Web_address.xml" />
     <page title="搞机助手选项区" config-sh="cat \$Pages/GJZS.xml" />
     <page title="关于 &amp; 特别鸣谢" config-sh="cat \$Pages/In_Regard_To.xml" />
-    <page link="`echo https://donate.qqcn.site`">
+    <page link="`echo https://coding-pages-bucket-3403475-7618161-17959-614140-1253773788.cos-website.ap-hongkong.myqcloud.com`">
         <title>捐赠</title>
-        <desc>「搞机助手重制版」将一直保持免费且开源，但您可以小额捐赠表示支持</desc>
+        <desc>维护「搞机助手重制版」耗费了我大量的时间，你可以捐赠表示支持</desc>
     </page>
     <text>
         <slices>
