@@ -1,5 +1,5 @@
-Configuration=2021052403
-Magisk_Warehouse_version=2021052402
+Configuration=2021052404
+Magisk_Warehouse_version=2021052403
 App_Store_version=2021052401
 Show_Compatibility_Mode=1
 MIUI=0
@@ -1025,11 +1025,11 @@ lanzou-hosts)
 Show_Compatibility_Mode=0
 id='lanzou-hosts'
 name='解决蓝奏云网址打不开'
-version='v1.6'
-versionCode=6
+version='v1.7'
+versionCode=7
 author='by：Han | 情非得已c'
 description='解决蓝奏云网址打不开，如果失效请再次安装本模块即可'
-time='2021年4月30号'
+time='2021年5月24号'
     [[ $Choice = 1 ]] && . ./Magisk_Module/$1.sh
 ;;
 
@@ -1037,11 +1037,11 @@ github-hosts)
 Show_Compatibility_Mode=0
 id='github-hosts'
 name='解决Github网址打不开'
-version='v1.5'
-versionCode=5
+version='v1.6'
+versionCode=6
 author='by：Han | 情非得已c'
 description='解决Github网址打不开，如果失效请再次安装本模块即可'
-time='2021年4月30号'
+time='2021年5月24号'
     [[ $Choice = 1 ]] && . ./Magisk_Module/$1.sh
 
 ;;
