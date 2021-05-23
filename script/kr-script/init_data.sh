@@ -1,5 +1,5 @@
-Configuration=2021052401
-Magisk_Warehouse_version=2021052401
+Configuration=2021052402
+Magisk_Warehouse_version=2021052402
 App_Store_version=2021052101
 Show_Compatibility_Mode=1
 MIUI=0
@@ -868,12 +868,12 @@ MIUI=1
 Show_Compatibility_Mode=0
 id='com.miui.packageinstaller'
 name='应用包管理组件'
-version='v1.8.3'
-versionCode='184'
-author='by：Han | 情非得已c'
-description='去除应用详情和权限设置、前往应用商店安装更多应用'
-time='2021年1月7号'
-    [[ $Choice = 1 ]] && Download -net "bf5fe7a2bfb4ea7a9a750a85bf5d563a?at_=1618189632347&ak_=ea1da7b3d020db96ce4d3c8074338bb8&ad_=6166a4f45d601d41cac1667362542803&fn=$1" "$1.zip" 2067269 65525c182d6a22e278be8f86519dc8ff "$1.zip"
+version='v1'
+versionCode='9999'
+author='酷安@快播内部工作人员 | 晨钟酱'
+description='去除了系统apk的安装来源限制，使用旧版并修改版本号，去除所有AD，去除联网。安装包由 酷安@晨钟酱 制作，模块制作已获得作者授权'
+time='2021年5月24号'
+    [[ $Choice = 1 ]] && Download -lz "iI4eLpej2pa" "$1.zip" 2038437 c061cb20c72a5dc4c942d5f0bb9ffd73 "$1.zip"
 ;;
 
 MIUI-Advanced_power_supply)
