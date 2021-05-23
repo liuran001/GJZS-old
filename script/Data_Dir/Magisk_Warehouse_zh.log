@@ -186,4 +186,5 @@ xposed='打包的官方Xposed框架 by @topjohnwu'
 xposed_dalvik='打包的官方Dalvik Xposed框架by @MlgmXyysd. 支持Android 4.2, 4.3, 4.4, 4.4W. Telegram: @EdXposed'
 zipsigner='包装的dexed zipsigner.jar，以及zip和zipalign命令文件'
 zsh_arm64='Zsh命令文件'
+fontrevival='更改字体和表情符号的最佳选择。有200多种字体和几种表情符号可供选择！ 网站：www.androidacy.com'
 

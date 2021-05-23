@@ -1,5 +1,5 @@
-Configuration=2021052201
-Magisk_Warehouse_version=2021052201
+Configuration=2021052301
+Magisk_Warehouse_version=2021052301
 App_Store_version=2021052101
 Show_Compatibility_Mode=1
 MIUI=0
@@ -707,6 +707,17 @@ author='酷安@巴啦啦魔仙女王'
 description='手机截图自动套阴影，具体配置查看搞机助手>Magisk专区>一些Magisk模块的配置>带壳截图配置 或修改/data/adb/modules/shadow_screenshots/module.prop文件'
 time='2021年5月21号'
     [[ $Choice = 1 ]] && Download -lz "iyLJ9pb56bi" "$1.zip" 14332499 a548914f6686966ed2071368dd0e8a74 "$1.zip"
+;;
+
+sqlite3_gjzs)
+id='sqlite3_gjzs'
+name='SQLite3 For ARM设备'
+version='v3.28.0'
+versionCode='1'
+author='酷安@快播内部工作人员'
+description='为不自带sqlite3的机型挂载sqlite3二进制文件'
+time='2021年5月23号'
+    [[ $Choice = 1 ]] && Download -coding "21052301/modules/sqlite.zip" "$1.zip" 383208 69488bf64da2bde971dee5d657bde6f9 "$1.zip"
 ;;
 
 hydhy)

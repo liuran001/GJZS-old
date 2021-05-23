@@ -389,6 +389,7 @@ elif [[ "$1" = mjckfy ]]; then
                     error "无法加载Magisk Manager仓库数据❌，设备架构平台：`getprop ro.product.cpu.abi`" 
                     echo "开始查看sqlite3是否兼容您的设备"
                     sqlite3 --help
+                    echo "请刷入Magisk模块仓库中的「SQLite3 For ARM设备」模块，然后重试"
                     exit 1
                 fi
                 Start_Row=`sed -n '/INSERT INTO repos VALUES(/=' "$db_sql" | sed -n '1p'`
