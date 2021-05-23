@@ -46,7 +46,7 @@ check() {
 
 
 echo "- 正在查询lanzou.com的DNS IP"
-IP=`curl -skL "https://lanzou.com.ipaddress.com/" | egrep -o '<li>[0-9.]{11,}</li>' | egrep -o -m 1 '[0-9.]{11,}'`
+IP=`curl -skLA "Mozilla/5.0 (Android 11; Mobile; rv:88.0) Gecko/88.0 Firefox/88.0" "https://lanzou.com.ipaddress.com/" | egrep -o '<li>[0-9.]{10,}</li>' | egrep -o -m 1 '[0-9.]{10,}'`
 [[ -n "$IP" ]] && echo "- 已查询到的IP：$IP" || abort "！未连接到互联网？"
 
 echo 0 >$Status
