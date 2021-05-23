@@ -1,5 +1,5 @@
-Configuration=2021052404
-Magisk_Warehouse_version=2021052403
+Configuration=2021052405
+Magisk_Warehouse_version=2021052404
 App_Store_version=2021052401
 Show_Compatibility_Mode=1
 MIUI=0
@@ -1019,18 +1019,6 @@ versionCode='3'
 author='by：Han | 情非得已c'
 description='将默认的按下音量键15次后放大至最大音量，更改为自己喜欢的数值，我只在小米上测试OK，其它机型自己测试'
 time='2020年12月12号'
-;;
-
-lanzou-hosts)
-Show_Compatibility_Mode=0
-id='lanzou-hosts'
-name='解决蓝奏云网址打不开'
-version='v1.7'
-versionCode=7
-author='by：Han | 情非得已c'
-description='解决蓝奏云网址打不开，如果失效请再次安装本模块即可'
-time='2021年5月24号'
-    [[ $Choice = 1 ]] && . ./Magisk_Module/$1.sh
 ;;
 
 github-hosts)
