@@ -1,5 +1,5 @@
-Configuration=2021052101
-Magisk_Warehouse_version=2021052101
+Configuration=2021052401
+Magisk_Warehouse_version=2021052401
 App_Store_version=2021052101
 Show_Compatibility_Mode=1
 MIUI=0
@@ -55,12 +55,12 @@ time='2021年5月2号'
 org.lsposed.manager)
 apk='org.lsposed.manager'
 name='LSPosed 模块管理器'
-version='v1.4.0'
-versionCode='5666'
+version='v1.4.2'
+versionCode='5711'
 author='LSPosed Developers'
 description='LSPosed Xposed框架模块管理器'
 apkfile="$PeiZhi_File/$apk-$versionCode.apk"
-time='2021年5月21号'
+time='2021年5月24号'
     if [[ $Choice = 1 ]]; then
         [[ $SDK -lt 27 ]] && abort "！$name-$version（$versionCode）不支持安卓8.1.0以下系统"
         if [[ ! -s "$apkfile" ]]; then
@@ -634,17 +634,17 @@ time='2021年4月15号'
 
 riru_lsposed)
 id='riru_lsposed'
-showapk='v1.4.0(5666)'
+showapk='v1.4.2(5711)'
 name='Riru - LSPosed'
-version='v1.4.0'
-versionCode='5666'
+version='v1.4.2'
+versionCode='5711'
 author='LSPosed Developers'
 description='一款基于Riru API开发的Xposed框架，支持运行在安卓8.1.0 ~ 12系统上。需要安装Riru v25.0.0或更高版本，Telegram: @LSPosed'
-time='2021年5月21号'
+time='2021年5月24号'
     if [[ $Choice = 1 ]]; then
         mask -v
         if [[ $MAGISK_VER_CODE -ge 23000 ]]; then
-             Download -coding "21052101/modules/LSPosed-v1.4.0-5666-release.zip" "$1.zip" 1834698 53a4a06067a232bd9333ddcdd110c1c0 "$1.zip"
+             Download -coding "21052401/modules/LSPosed-v1.4.2-5711-release" "$1.zip" 1843766 b3a791c6b104ae3bd51ba2d5b0da0014 "$1.zip"
         else
             echo "- 检测到Magisk版本在v23以下，无法安装最新版$version（$versionCode），开始安装v1.3.4（5501）版本"
             Download -net "a3b9e26cc0380691ee804ca7006ce2d5?at_=1618236394371&ak_=c1f7cf50ba6f13d6d01207fe9c5028b0&ad_=870ede5e093014706bebeac08c3c0f0d&fn=$1-5501" "$1.zip" 2189720 de39ec10f67b538fbdc60b7f0e6520f7 "$1.zip"
@@ -687,6 +687,16 @@ time='2021年3月24号'
     [[ $Choice = 1 ]] && Download -net "c68a8eed3aafd769b317e905bc3041ee?at_=1618169577168&ak_=911a3b511969435b2ac6a0ee5c29c50e&ad_=5e53dabacf06d5f8cda715ee38e2bd61&fn=$1" "$1.zip" 108675627 d083690c555fa59b5f29112fc1dbb0dc "$1.zip"
 ;;
 
+huzeASGuard)
+id='huzeASGuard'
+name='H·无障碍服务守护(ASGuard)'
+version='v4.8.5'
+versionCode='202105181'
+author='沍澤'
+description='开机自动开启且实时保护无障碍服务(辅助功能)，防止应用意外关闭导致无障碍服务连同关闭，具体配置查看搞机助手>Magisk专区>一些Magisk模块的配置>ASGuard配置 或修改/data/media/0/Android/ASGuard.conf'
+time='2021年5月22号'
+    [[ $Choice = 1 ]] && Download -lz "i4EiLp8gmta&pwd=huze" "$1.zip" 2881006 be80af0e7a013c31e7fa9a6567db2c65 "$1.zip"
+;;
 
 shadow_screenshots)
 id='shadow_screenshots'
@@ -699,17 +709,28 @@ time='2021年5月21号'
     [[ $Choice = 1 ]] && Download -lz "iyLJ9pb56bi" "$1.zip" 14332499 a548914f6686966ed2071368dd0e8a74 "$1.zip"
 ;;
 
+sqlite3_gjzs)
+id='sqlite3_gjzs'
+name='SQLite3 For ARM设备'
+version='v3.28.0'
+versionCode='1'
+author='酷安@快播内部工作人员'
+description='为不自带sqlite3的机型挂载sqlite3二进制文件'
+time='2021年5月23号'
+    [[ $Choice = 1 ]] && Download -coding "21052301/modules/sqlite.zip" "$1.zip" 383208 69488bf64da2bde971dee5d657bde6f9 "$1.zip"
+;;
+
 hydhy)
 MIUI=1
 Show_Compatibility_Mode=0
 name='回忆k40多合一'
 id='hydhy'
-version='2.2.7'
-versionCode='27'
+version='2.2.9'
+versionCode='30'
 author='酷安@回憶堅強'
 description="k40的优化和美化于一身"
-time='2021年5月8号'
-    [[ $Choice = 1 ]] && Download -net "6af2ad11946c1c2d30e79d27b048b386?at_=1620483979763&ak_=1e90b7e22f50dd6f3a1b405350292f24&ad_=5cc181cbfb7ee715a7e5af4e158eaff7&fn=$1" "$1.zip" 42969182 161d8ef82ff9e16c91c92e6439b4f4b4 "$1.zip"
+time='2021年5月22号'
+    [[ $Choice = 1 ]] && Download -net "3c6c1cee8f439b5aedc59271a6b4a9ae?at_=1621617228289&ak_=3d9edb1e7dfb418d043d8aa3946ffab9&ad_=4b35ae08f054c7b8430532cb804f1fad" "$1.zip" 51026263 e4f0e6d9fea28919c2397b8c5e99d0be "$1.zip"
 ;;
 
 huiyiduoheyi)

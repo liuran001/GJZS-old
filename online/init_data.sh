@@ -1,5 +1,5 @@
-Configuration=2021052302
-Magisk_Warehouse_version=2021052302
+Configuration=2021052401
+Magisk_Warehouse_version=2021052401
 App_Store_version=2021052101
 Show_Compatibility_Mode=1
 MIUI=0
@@ -55,12 +55,12 @@ time='2021年5月2号'
 org.lsposed.manager)
 apk='org.lsposed.manager'
 name='LSPosed 模块管理器'
-version='v1.4.1'
-versionCode='5698'
+version='v1.4.2'
+versionCode='5711'
 author='LSPosed Developers'
 description='LSPosed Xposed框架模块管理器'
 apkfile="$PeiZhi_File/$apk-$versionCode.apk"
-time='2021年5月23号'
+time='2021年5月24号'
     if [[ $Choice = 1 ]]; then
         [[ $SDK -lt 27 ]] && abort "！$name-$version（$versionCode）不支持安卓8.1.0以下系统"
         if [[ ! -s "$apkfile" ]]; then
@@ -634,17 +634,17 @@ time='2021年4月15号'
 
 riru_lsposed)
 id='riru_lsposed'
-showapk='v1.4.1(5698)'
+showapk='v1.4.2(5711)'
 name='Riru - LSPosed'
-version='v1.4.1'
-versionCode='5698'
+version='v1.4.2'
+versionCode='5711'
 author='LSPosed Developers'
 description='一款基于Riru API开发的Xposed框架，支持运行在安卓8.1.0 ~ 12系统上。需要安装Riru v25.0.0或更高版本，Telegram: @LSPosed'
-time='2021年5月23号'
+time='2021年5月24号'
     if [[ $Choice = 1 ]]; then
         mask -v
         if [[ $MAGISK_VER_CODE -ge 23000 ]]; then
-             Download -coding "21052301/modules/LSPosed-v1.4.1-5698-release.zip" "$1.zip" 1844105 01cf876ac75b81c958622504fb3da624 "$1.zip"
+             Download -coding "21052401/modules/LSPosed-v1.4.2-5711-release" "$1.zip" 1843766 b3a791c6b104ae3bd51ba2d5b0da0014 "$1.zip"
         else
             echo "- 检测到Magisk版本在v23以下，无法安装最新版$version（$versionCode），开始安装v1.3.4（5501）版本"
             Download -net "a3b9e26cc0380691ee804ca7006ce2d5?at_=1618236394371&ak_=c1f7cf50ba6f13d6d01207fe9c5028b0&ad_=870ede5e093014706bebeac08c3c0f0d&fn=$1-5501" "$1.zip" 2189720 de39ec10f67b538fbdc60b7f0e6520f7 "$1.zip"
