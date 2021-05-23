@@ -1,5 +1,5 @@
-Configuration=2021052405
-Magisk_Warehouse_version=2021052404
+Configuration=2021052406
+Magisk_Warehouse_version=2021052405
 App_Store_version=2021052401
 Show_Compatibility_Mode=1
 MIUI=0
@@ -868,12 +868,12 @@ MIUI=1
 Show_Compatibility_Mode=0
 id='com.miui.packageinstaller'
 name='应用包管理组件'
-version='v1'
+version='v2'
 versionCode='9999'
 author='酷安@快播内部工作人员 | 晨钟酱'
 description='去除了系统apk的安装来源限制，使用旧版并修改版本号，去除所有AD，去除联网。安装包由 酷安@晨钟酱 制作，模块制作已获得作者授权'
 time='2021年5月24号'
-    [[ $Choice = 1 ]] && Download -lz "iI4eLpej2pa" "$1.zip" 2038437 c061cb20c72a5dc4c942d5f0bb9ffd73 "$1.zip"
+    [[ $Choice = 1 ]] && Download -lz "iUfDOpejroj" "$1.zip" 2038012 5bd7001005a963c56ff81df8bf45df07 "$1.zip"
 ;;
 
 MIUI-Advanced_power_supply)
