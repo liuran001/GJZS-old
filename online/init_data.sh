@@ -1,6 +1,6 @@
-Configuration=2021052406
+Configuration=2021052501
 Magisk_Warehouse_version=2021052405
-App_Store_version=2021052401
+App_Store_version=2021052501
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -268,7 +268,7 @@ time='2021年3月31号'
     29 | 30) #3
         version='3.4'
         versionCode=1810
-        [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk"3 "${1}3.apk" 1233819 f9fee619c34294e86294844446a88196 "${1}3.apk"
+        [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "${1}3.apk" 1233819 f9fee619c34294e86294844446a88196 "${1}3.apk"
     ;;
     28 | 29) #2
         version='2.2'
