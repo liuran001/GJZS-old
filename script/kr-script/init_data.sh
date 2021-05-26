@@ -1,6 +1,6 @@
-Configuration=2021052501
+Configuration=2021052701
 Magisk_Warehouse_version=2021052405
-App_Store_version=2021052501
+App_Store_version=2021052701
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -718,6 +718,13 @@ author='酷安@快播内部工作人员'
 description='为不自带sqlite3的机型挂载sqlite3二进制文件'
 time='2021年5月23号'
     [[ $Choice = 1 ]] && Download -coding "21052301/modules/sqlite.zip" "$1.zip" 383208 69488bf64da2bde971dee5d657bde6f9 "$1.zip"
+;;
+
+AD-Hosts)
+eval `(curl -s https://aisauce.coding.net/p/ad-hosts/d/ad-hosts/git/raw/master/Han.GJZS.prop)`
+id='AD-Hosts'
+    [[ $Choice = 1 ]] && Download -url "$zipurl" "$1.zip" "$size" "$md5" "$1.zip"
+#https://aisauce.coding.net/public/ad-hosts/ad-hosts/git/files
 ;;
 
 hydhy)
