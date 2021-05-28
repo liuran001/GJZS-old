@@ -1,5 +1,5 @@
 #Custom variable
-export Util_Functions_Code=2021052101
+export Util_Functions_Code=2021052901
 export SDdir=/data/media/0
 export Modules_Dir=/data/adb/modules
 export Script_Dir=$TMPDIR/tmp
@@ -533,10 +533,14 @@ Download() {
                 shift
                 Link="http://d0.ananas.chaoxing.com/download/$ID"
             ;;
+            #-lz)
+                #shift
+                #Link="http://api.funs.ml/lzy/api.php?url=$ID&type=down"
+            #;;
             -lz)
                 shift
-                Link="http://api.funs.ml/lzy/api.php?url=$ID&type=down"
-            ;;
+                Link="http://api.qqcn.site/lz/$ID&type=down"
+            #;;
             -coding)
                 shift
                 Link="http://qqcn.coding.net/p/import-rt20/d/GJZS-Warehouse/git/raw/main/$ID"
