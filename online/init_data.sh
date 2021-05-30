@@ -1,6 +1,6 @@
-Configuration=2021053001
+Configuration=2021053002
 Magisk_Warehouse_version=2021052701
-App_Store_version=2021053001
+App_Store_version=2021053002
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -33,13 +33,13 @@ time='2021年5月17号'
 bin.mt.plus)
 eval `(curl -s https://dl.qqcn.xyz/directlink/3/APK/MT2/Han.GJZS.prop)`
 apk='bin.mt.plus'
-    [[ $Choice = 1 ]] && Download -"$url" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 bin.mt.plus.canary)
 eval `(curl -s https://dl.qqcn.xyz/directlink/3/APK/MT2_Canary/Han.GJZS.prop)`
 apk='bin.mt.plus.canary'
-    [[ $Choice = 1 ]] && Download -"$url" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 org.lsposed.manager)
