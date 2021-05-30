@@ -1,5 +1,5 @@
 #Custom variable
-export Util_Functions_Code=2021053001
+export Util_Functions_Code=2021053002
 export SDdir=/data/media/0
 export Modules_Dir=/data/adb/modules
 export Script_Dir=$TMPDIR/tmp
@@ -370,7 +370,7 @@ CURL() {
     [[ -z "$v" ]] && v=10
     [[ -z "$model" ]] && model='Redmi K30 5G'
     
-    curl -A "Mozilla/5.0 (Linux; Android $v; $model) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36" "$@"
+    curl -LA "Mozilla/5.0 (Linux; Android $v; $model) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36" "$@"
 }
 
 WGET() {
@@ -379,7 +379,7 @@ WGET() {
     [[ -z "$v" ]] && v=10
     [[ -z "$model" ]] && model='Redmi K30 5G'
     
-    wget -U "Mozilla/5.0 (Linux; Android $v; $model) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36" "$@"
+    wget -LU "Mozilla/5.0 (Linux; Android $v; $model) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36" "$@"
 }
 
 XiaZai() {

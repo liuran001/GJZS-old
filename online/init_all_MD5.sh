@@ -9,9 +9,9 @@
     # fi
 # fi
     init_data_ID=init_data.sh
-    init_data_MD5=d0a6a38b96ae716f4533d72593016f96
+    init_data_MD5=75721dbc5569ad6d8fbc78203c97b70c
     Util_Functions_ID=Util_Functions.sh
-    Util_Functions_MD5=9758a9cd96aa41b2b017e808c01be975
+    Util_Functions_MD5=e47dfc9004df87f61050954115577a04
     Cloud_ID=Cloud_Page.zip
     Cloud_Version=2021052304
     Cloud_MD5=159a6cb0cd90df09770602f492d21f14
