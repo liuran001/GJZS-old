@@ -1,6 +1,6 @@
-Configuration=2021053004
-Magisk_Warehouse_version=2021053004
-App_Store_version=2021053003
+Configuration=2021053005
+Magisk_Warehouse_version=2021053005
+App_Store_version=2021053004
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -31,20 +31,20 @@ time='2021年5月17号'
 ;;
 
 bin.mt.plus)
-eval `(curl -Ls https://dl.qqcn.xyz/directlink/3/APK/MT2/Han.GJZS.prop)`
+eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/MT2/Han.GJZS.prop)`
 apk='bin.mt.plus'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 bin.mt.plus.canary)
-eval `(curl -Ls https://dl.qqcn.xyz/directlink/3/APK/MT2_Canary/Han.GJZS.prop)`
+eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/MT2_Canary/Han.GJZS.prop)`
 apk='bin.mt.plus.canary'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 org.lsposed.manager)
 apk='org.lsposed.manager'
-eval `(curl -s https://dl.qqcn.xyz/directlink/3/APK/LSPosed_Manager/Han.GJZS.prop)`
+eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/LSPosed_Manager/Han.GJZS.prop)`
     if [[ $Choice = 1 ]]; then
         [[ $SDK -lt 27 ]] && abort "！$name-$version（$versionCode）不支持安卓8.1.0以下系统"
         if [[ ! -s "$apkfile" ]]; then
@@ -617,7 +617,7 @@ time='2021年4月15号'
 ;;
 
 riru_lsposed)
-eval `(curl -s https://dl.qqcn.xyz/directlink/3/Modules/LSPosed/Han.GJZS.prop)`
+eval `(curl -sL https://dl.qqcn.xyz/directlink/3/Modules/LSPosed/Han.GJZS.prop)`
 id='riru_lsposed'
     if [[ $Choice = 1 ]]; then
         mask -v
