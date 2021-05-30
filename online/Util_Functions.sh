@@ -1,5 +1,5 @@
 #Custom variable
-export Util_Functions_Code=2021052901
+export Util_Functions_Code=2021053001
 export SDdir=/data/media/0
 export Modules_Dir=/data/adb/modules
 export Script_Dir=$TMPDIR/tmp
@@ -543,6 +543,10 @@ Download() {
             -coding)
                 shift
                 Link="http://qqcn.coding.net/p/import-rt20/d/GJZS-Warehouse/git/raw/main/$ID"
+            ;;
+            -od)
+                shift
+                Link="https://dl.qqcn.xyz/directlink/3/$ID"
             ;;
             *)
                 abort "！暂不支持下载"

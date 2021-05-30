@@ -1,6 +1,6 @@
-Configuration=2021052901
+Configuration=2021053001
 Magisk_Warehouse_version=2021052405
-App_Store_version=2021052901
+App_Store_version=2021053001
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -31,25 +31,15 @@ time='2021年5月17号'
 ;;
 
 bin.mt.plus)
+eval `(curl -s https://dl.qqcn.xyz/directlink/3/APK/MT2/Han.GJZS.prop)`
 apk='bin.mt.plus'
-name='MT管理器'
-version='2.9.8'
-versionCode='21050100'
-author='Bin'
-description='文件管理器/安卓逆向神器'
-time='2021年5月2号'
-    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 9614454 1b1669074bd7eb773c9c6fb3ac176e98 "$1.apk"
+    [[ $Choice = 1 ]] && Download -"$url" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 bin.mt.plus.canary)
+eval `(curl -s https://dl.qqcn.xyz/directlink/3/APK/MT2_Canary/Han.GJZS.prop)`
 apk='bin.mt.plus.canary'
-name='MT管理器内测版'
-version='2.9.8-beta'
-versionCode='21050100'
-author='Bin'
-description='文件管理器/安卓逆向神器，此版本为内测版可与正式版共存，因为是内测版如果你在使用中发现bug，可向QQ：243454893提交反馈问题'
-time='2021年5月2号'
-    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 9589884 c539c700e379b0089226bd490f2b96d5 "$1.apk"
+    [[ $Choice = 1 ]] && Download -"$url" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 org.lsposed.manager)
