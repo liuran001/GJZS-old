@@ -4,9 +4,10 @@ if [[ -f $Load ]]; then
         title='正式版更新日志'
         show=true
     elif [[ $Version_code -lt $New_Code ]]; then
-        title="发现新版本$New_Version（$New_Code）"
+        title="发现新版本$New_Version（$New_Code），请点击进入官网下载"
+        show=true
     else
-        title="未知版本，请清除应用缓存后重试"
+        title="版本不对，请尝试刷新云端页面状态"
         show=true
     fi
 elif [[ ! -f $Core ]]; then

@@ -49,7 +49,7 @@ fi
         PATH="$PATH1"
     fi
         if [[ -z "$C" ]]; then
-           echo "curl 命令未找到！" 1>&2
+           echo "curl 命令未找到！请点击主页面的「修复Curl」进行修复！" 1>&2
            exit 127
         else
             CURL "$@"
