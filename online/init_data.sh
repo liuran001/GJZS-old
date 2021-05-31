@@ -1,6 +1,6 @@
-Configuration=2021053005
-Magisk_Warehouse_version=2021053005
-App_Store_version=2021053004
+Configuration=2021053101
+Magisk_Warehouse_version=2021053101
+App_Store_version=2021053101
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -232,14 +232,9 @@ time='2021年5月15号'
 
 # Xposed模块
 com.tsng.hidemyapplist)
+eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/HideMyApplist/Han.GJZS.prop)`
 apk='com.tsng.hidemyapplist'
-name='隐藏应用列表'
-version='1.6.1.Native'
-versionCode=32
-author='DR-TSNG'
-description='使应用无法检测到特定应用/应用列表  通常情况下作用域只需要系统框架  此为Native版，如果闪退请前往GitHub（https://github.com/Dr-TSNG/Hide-My-Applist）下载Non-Native版本'
-time='2021年5月17号'
-    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 5902921 f9d96efed445f44ff150c5a4afe53501 "$1.apk"
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 com.coderstory.toolkit)
@@ -1199,6 +1194,12 @@ author='Rikka  酷安@蓝莓味绿茶 '
 description='启用存储空间隔离（存储重定向）的增强模式，包名=moe.shizuku.redirectstorage'
 time='2021年5月15号'
     [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 110511 56f16e1af1c23d366932f0e99579e9e3 "$1.zip"
+;;
+
+riru_hidemyapplist)
+eval `(curl -sL https://dl.qqcn.xyz/directlink/3/Modules/HideMyApplist/Han.GJZS.prop)`
+id='riru_hidemyapplist'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
 
 riru-module-xfingerprint-pay-wechat)
