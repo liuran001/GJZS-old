@@ -42,7 +42,7 @@ Han
 fi
 
 cat <<Han
-    <page html="`echo https://gjzs.qqcn.site/changelog_online`">
+    <page html="`echo https://gjzs.qqcn.xyz/changelog_online`">
         <title>$title</title>
         <summary sh=". ./CheckUpdate.sh" />
     </page>
