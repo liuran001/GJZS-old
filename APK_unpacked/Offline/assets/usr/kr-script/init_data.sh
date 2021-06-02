@@ -660,7 +660,7 @@ time='2021年5月22号'
 shadow_screenshots)
 eval `(curl -Ls https://dl.qqcn.xyz/directlink/3/Modules/Shadow_Screenshots/Han.GJZS.prop)`
 id='shadow_screenshots'
-    [[ $Choice = 1 ]] && Download -url "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
 
 sqlite3_gjzs)
@@ -1128,13 +1128,13 @@ time='2021年2月7号'
 scene_swap_controller)
 eval `(curl -Ls https://dl.qqcn.xyz/directlink/3/Modules/Scene/SWAP/Han.GJZS.prop)`
 id='scene_swap_controller'
-    [[ $Choice = 1 ]] && Download -url "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
 
 scene_cgroup)
 eval `(curl -Ls https://dl.qqcn.xyz/directlink/3/Modules/Scene/cgroup/Han.GJZS.prop)`
 id='scene_cgroup'
-    [[ $Choice = 1 ]] && Download -url "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
 
 riru-core)
