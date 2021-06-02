@@ -1,5 +1,5 @@
-Configuration=2021053101
-Magisk_Warehouse_version=2021053101
+Configuration=2021060301
+Magisk_Warehouse_version=2021060301
 App_Store_version=2021053101
 Show_Compatibility_Mode=1
 MIUI=0
@@ -1194,12 +1194,6 @@ author='Rikka  酷安@蓝莓味绿茶 '
 description='启用存储空间隔离（存储重定向）的增强模式，包名=moe.shizuku.redirectstorage'
 time='2021年5月15号'
     [[ $Choice = 1 ]] && Download -coding "21051601/modules/$1.zip" "$1.zip" 110511 56f16e1af1c23d366932f0e99579e9e3 "$1.zip"
-;;
-
-riru_hidemyapplist)
-eval `(curl -sL https://dl.qqcn.xyz/directlink/3/Modules/HideMyApplist/Han.GJZS.prop)`
-id='riru_hidemyapplist'
-    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
 
 riru-module-xfingerprint-pay-wechat)

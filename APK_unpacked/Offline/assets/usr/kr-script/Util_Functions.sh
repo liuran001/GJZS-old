@@ -1,7 +1,16 @@
 #Custom variable
-export Util_Functions_Code=2021053102
+export Util_Functions_Code=2021060301
 export SDdir=/data/media/0
-export Modules_Dir=/data/adb/modules
+if $Have_ROOT;then
+	lite_result=$(echo `magisk -v` | grep "lite")
+	if [[ "$lite_result" != "" ]];then
+	export Modules_Dir=/data/adb/lite_modules
+	else
+		export Modules_Dir=/data/adb/modules
+	fi
+	else
+		export Modules_Dir=/data/adb/modules
+fi
 export Script_Dir=$TMPDIR/tmp
 export install_MOD=$ShellScript/Magisk_Module/install_Module_Script.sh
 export install_Frame=$ShellScript/Geek/install_Frame_Script.sh
