@@ -1,14 +1,7 @@
 show=false
 if [[ -f $Load ]]; then
-    if [[ $Version_code -eq $New_Code ]]; then
-        title='正式版更新日志'
-        show=true
-    elif [[ $Version_code -lt $New_Code ]]; then
-        title="发现新版本$New_Version（$New_Code）"
-    else
-        title="版本号好像出问题了，如果能用请无视这一提示~"
-        show=true
-    fi
+	title='正式版更新日志'
+    show=true
 elif [[ ! -f $Core ]]; then
     title="初始化功能失败"
 elif [[ ! -f $Load ]]; then
