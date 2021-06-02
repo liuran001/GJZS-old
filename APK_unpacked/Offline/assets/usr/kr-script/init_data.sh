@@ -1,6 +1,6 @@
-Configuration=2021060303
-Magisk_Warehouse_version=2021060302
-App_Store_version=2021060301
+Configuration=2021060304
+Magisk_Warehouse_version=2021060303
+App_Store_version=2021060302
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -20,15 +20,11 @@ time='2021年5月15号'
 ;;
 
 com.omarea.vtools)
+eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/Scene/Han.GJZS.prop)`
 apk='com.omarea.vtools'
-name='Scene4 Beta'
-version='4.3.6 Beta'
-versionCode=202105131
-author='嘟嘟Ski'
-description='你猜'
-time='2021年5月17号'
-    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 4530123 5a32b6f27f1416342ac65fdd0a21c4ba "$1.apk"
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
+
 
 bin.mt.plus)
 eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/MT2/Han.GJZS.prop)`
@@ -326,14 +322,9 @@ time='2021年2月4号'
 ;;
 
 com.fuckcoolapk)
+eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/FuckCoolapk/Han.GJZS.prop)`
 apk='com.fuckcoolapk'
-name='Fuck Coolapk'
-version='0.5.6'
-versionCode=20210430
-author='ejiaogl'
-description='XP模块：去除酷安各种广告'
-time='2021年5月2号'
-    [[ $Choice = 1 ]] && Download -net "1645ede3782bd64087d9f6f43e30079a?at_=1619952944354&ak_=a18e70fc883292b7ea513f4eb7bc0985&ad_=ce15313285003801b7a0a114b45271b9&fn=com.fckcoolapk" "$1.apk" 874541 f9664cc6c1b182bee366fe101b368949 "$1.apk"
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 com.mhook.MrSFastTranslation)
@@ -1135,25 +1126,15 @@ time='2021年2月7号'
 ;;
 
 scene_swap_controller)
+eval `(curl -Ls https://dl.qqcn.xyz/directlink/3/Modules/Scene/SWAP/Han.GJZS.prop)`
 id='scene_swap_controller'
-name='Scene的附加模块(二)'
-version='2.4.0'
-versionCode='2400'
-author='嘟嘟Ski'
-description='Scene的附加模块之二（ZRAM/SWAP控制器），在开机时根据配置调整虚拟内存'
-time='2021年4月21号'
-    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.zip" 16690 9baf11b6e4ce8dd43f92c8764e1adb5f "$1.zip"
+    [[ $Choice = 1 ]] && Download -url "$zipurl" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
 
 scene_cgroup)
+eval `(curl -Ls https://dl.qqcn.xyz/directlink/3/Modules/Scene/cgroup/Han.GJZS.prop)`
 id='scene_cgroup'
-name='Scene的附加模块(三)'
-version='1.0.0'
-versionCode='1'
-author='嘟嘟Ski'
-description='自动调节部分关键进程的cgroup(memory|cpu)，从资源分配策略上(理论)提高系统稳定性(流畅度方面)'
-time='2020年12月13号'
-    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.zip" "$1.zip" 8896 c138428e8abe7bbd7c6f5748c353c659 "$1.zip"
+    [[ $Choice = 1 ]] && Download -url "$zipurl" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
 
 riru-core)
