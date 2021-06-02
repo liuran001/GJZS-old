@@ -1,6 +1,6 @@
-Configuration=2021060301
+Configuration=2021060302
 Magisk_Warehouse_version=2021060301
-App_Store_version=2021053101
+App_Store_version=2021060301
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -447,14 +447,9 @@ time='2021年4月4号'
 ;;
 
 club.youppgd.adhook)
+eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/AdHook/Han.GJZS.prop)`
 apk='club.youppgd.adhook'
-name='联璧模块'
-version='75.8'
-versionCode=75
-author='youppgd'
-description='XP模块：去除腾讯视频、爱奇艺、优酷、芒果、豆瓣的各处广告，只支持官方app'
-time='2021年5月29号'
-    [[ $Choice = 1 ]] && Download -lz "iqYPGpjvakf" "$1.apk" 2163952 e1281d742891f18286744b3c85f5d556 "$1.apk"
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 cn.kwaiching.hook)

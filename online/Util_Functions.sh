@@ -1,9 +1,9 @@
 #Custom variable
-export Util_Functions_Code=2021060301
+export Util_Functions_Code=2021060302
 export SDdir=/data/media/0
 if $Have_ROOT;then
-	lite_result=$(echo `magisk -v` | grep "lite")
-	if [[ "$lite_result" != "" ]];then
+	Magisk_lite_Version=$(echo `magisk -v` | grep "lite")
+	if [[ "$Magisk_lite_Version" != "" ]];then
 	export Modules_Dir=/data/adb/lite_modules
 	else
 		export Modules_Dir=/data/adb/modules
