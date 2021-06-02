@@ -1,5 +1,5 @@
-Configuration=2021060302
-Magisk_Warehouse_version=2021060301
+Configuration=2021060303
+Magisk_Warehouse_version=2021060302
 App_Store_version=2021060301
 Show_Compatibility_Mode=1
 MIUI=0
@@ -667,14 +667,9 @@ time='2021年5月22号'
 ;;
 
 shadow_screenshots)
+eval `(curl -Ls https://dl.qqcn.xyz/directlink/3/Modules/Shadow_Screenshots/Han.GJZS.prop)`
 id='shadow_screenshots'
-name='阴影截图'
-version='v3.0.1'
-versionCode='3'
-author='酷安@巴啦啦魔仙女王'
-description='手机截图自动套阴影，具体配置查看搞机助手>Magisk专区>一些Magisk模块的配置>带壳截图配置 或修改/data/adb/modules/shadow_screenshots/module.prop文件'
-time='2021年5月21号'
-    [[ $Choice = 1 ]] && Download -lz "iyLJ9pb56bi" "$1.zip" 14332499 a548914f6686966ed2071368dd0e8a74 "$1.zip"
+    [[ $Choice = 1 ]] && Download -url "$zipurl" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
 
 sqlite3_gjzs)
