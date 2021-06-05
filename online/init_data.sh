@@ -1,5 +1,5 @@
-Configuration=2021060305
-Magisk_Warehouse_version=2021060304
+Configuration=2021060501
+Magisk_Warehouse_version=2021060501
 App_Store_version=2021060303
 Show_Compatibility_Mode=1
 MIUI=0
@@ -705,6 +705,13 @@ author='回憶'
 description="$name"
 time='2021年3月29号'
     [[ $Choice = 1 ]] && Download -net "ca5b9bb1a7a95c763861c9d768cadbb5?at_=1618166303655&ak_=72d7238792aab170eb901c4bcfe32f12&ad_=96398af62e4937d4f735114c198e7416&fn=$1" "$1.zip" 197660037 291ee716396c31efd54e313d78b14579 "$1.zip"
+;;
+
+K30lcdmod)
+eval `(curl -Ls https://dl.qqcn.xyz/directlink/3/Modules/K30lcdmod/Han.GJZS.prop)`
+id='K30lcdmod'
+MIUI=1
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
 
 FUCK-SHIT-FILE)
