@@ -1,4 +1,4 @@
-Configuration=2021060501
+Configuration=2021060502
 Magisk_Warehouse_version=2021060501
 App_Store_version=2021060303
 Show_Compatibility_Mode=1
@@ -1546,225 +1546,52 @@ Xposed_rovo89)
         fi
 ;;
 
+# Big thank to People-11
+# 特别感谢「抱抱猫People11」
+# 以下开机动画由「抱抱猫People11」提供
 BootAnimation_Screen2)
-    if [[ $2 = BaiJZY ]]; then
-        Download -lz i2iWInyt8ji "$2.zip" 1794147 969c51b355b7292b91adc81ac77ddae3 "$2.zip"
-    elif [[ $2 = BaiJZY_6 ]]; then
-        Download -lz iUIAfnytdnc "$2.zip" 46204989 d590bae9ee184f3bddf8eb95ca1b8720 "$2.zip"
-    elif [[ $2 = BaiJZY_Dynamic ]]; then
-        Download -lz ivwLqnyte6b "$2.zip" 12758763 1670809de395eeed135296eecf45bf6a "$2.zip"
-    elif [[ $2 = Bat ]]; then
-        Download -lz iTwOrnytesd "$2.zip" 13467018 71749fa85558d78b4e260ad6a79d471d "$2.zip"：
-    elif [[ $2 = BiliBili ]]; then
-        Download -lz isYienyteyj "$2.zip" 2168703 dd5ad5ba2d86391ee759e70c76cbbf15 "$2.zip"
-    elif [[ $2 = BiliBili2233 ]]; then
-        Download -lz ivpaJnytf5g "$2.zip" 19659178 3847a30ee173b3be44548c8bfbac404b "$2.zip"
-    elif [[ $2 = Bilibili_2233_DS ]]; then
-        Download -lz iEiDknytewh "$2.zip" 12037019 b8a8f960eec94753a93e21a71acc64d1 "$2.zip"
-    elif [[ $2 = Bilibili_2233_JDT ]]; then
-        Download -lz i5dJYnytexi "$2.zip" 11281311 7f0fbaf5732a536dcf6ea004a40ac041 "$2.zip"
-    elif [[ $2 = Black_Shark ]]; then
-        Download -lz iHhNQnytf6h "$2.zip" 10407307 0eaf30c0ca3e403827c08e2fe459af2e "$2.zip"
-    elif [[ $2 = Bukaniang_Black ]]; then
-        Download -lz iWRtJnytf8j "$2.zip" 3009410 6b68edd13e341dbc362bd837ef5f7095 "$2.zip"
-    elif [[ $2 = Bukaniang_White ]]; then
-        Download -lz ixhfFnytf9a "$2.zip" 4105241 800a36d1b4b4367f3c9bfa00ae532bac "$2.zip"
-    elif [[ $2 = CaWu_1920 ]]; then
-        Download -lz iJLDOnythgj "$2.zip" 77278425 18fab9959f8941151c367e9c90d5a0f0 "$2.zip"
-    elif [[ $2 = CaWu_2400 ]]; then
-        Download -lz ivJGpnytied "$2.zip" 77278425 4816b67c736781d500274fedf184c030 "$2.zip"
-    elif [[ $2 = China_Telecom_5G ]]; then
-        Download -lz ifbBbnytipe "$2.zip" 9449409 bf1c0627ac777baa5845cebfe3bd0da7 "$2.zip"
-    elif [[ $2 = China_Unicom_5G ]]; then
-        Download -lz irhDOnytiva "$2.zip" 6799725 28d8ccc55a6cba6b9f322f06e67f7fc0 "$2.zip"
-    elif [[ $2 = chuyinBlack ]]; then
-        Download -lz ilbY4nytixc "$2.zip" 467628 c4e618f63c7c1da5b6db1a77baa7334e "$2.zip"
-    elif [[ $2 = chuyinWhite ]]; then
-        Download -lz iGOwLnytj0f "$2.zip" 1859769 95fe13d96baff1c2848d06f18f868df3 "$2.zip"
-    elif [[ $2 = Code_Rain ]]; then
-        Download -lz iTf6Lnytj6b "$2.zip" 8275873 a95342d8ca543f007db5b93097d9aad1 "$2.zip"
-    elif [[ $2 = coolapk ]]; then
-        Download -lz ixjoinytjbg "$2.zip" 9366708 64ddf1f747170a27966b883446cc69b7 "$2.zip"
-    elif [[ $2 = coolapk2 ]]; then
-        Download -lz iFoS8nytjdi "$2.zip" 2994983 3e55137054db1a993fd8debbd263190b "$2.zip"
-    elif [[ $2 = Cyberpunk_2077 ]]; then
-        Download -lz iAIACnytk5g "$2.zip" 70335084 ee7b9763cb57be9897979674294c0570 "$2.zip"
-    elif [[ $2 = DaMoWang ]]; then
-        Download -lz iJK22nytk9a "$2.zip" 1198924 cdef4a3a4a9662ed93a370aada1ee088 "$2.zip"
-    elif [[ $2 = DaMoWang_x ]]; then
-        Download -lz ix49gnytk7i "$2.zip" 263343 9dbe1277de1b74462ddf9d9a3a53e90b "$2.zip"
-    elif [[ $2 = DotOS ]]; then
-        Download -lz iNwUhnytkab "$2.zip" 1798940 e4fe220e1b83d60b7aaf96990077516b "$2.zip"
-    elif [[ $2 = DuYe ]]; then
-        Download -lz i9aovnytkhi "$2.zip" 19232047 fbd1c447e6a83a36935203a2c789bf1f "$2.zip"
-    elif [[ $2 = FindX ]]; then
-        Download -lz icyY5nytkij "$2.zip" 3660064 6018048bf689bf0b505c285b1055fc22 "$2.zip"
-    elif [[ $2 = Flyme ]]; then
-        Download -lz i4pxbnytkja "$2.zip" 1193872 3655e5fc077e811d0820dee44073f118 "$2.zip"
-    elif [[ $2 = Fox ]]; then
-        Download -lz i3Zf0nytkkb "$2.zip" 1131803 77942ee47e9e550b6d17802af9541bc1 "$2.zip"
-    elif [[ $2 = GEARMAGIC ]]; then
-        Download -lz iPDqCnytklc "$2.zip" 235975 5f3130e10c48987ba76928a17201dc11 "$2.zip"
-    elif [[ $2 = GuiHuo ]]; then
-        Download -lz i1SSLnytkzg "$2.zip" 10121365 feb18abc45c2ad9894e8ac930bf57b93 "$2.zip"
-    elif [[ $2 = Google_Colorful_White ]]; then
-        Download -lz i3mY1nytkqh "$2.zip" 26512605 7f57277e961b92555480e21e32f83afe "$2.zip"
-    elif [[ $2 = GoogleBlack ]]; then
-        Download -lz i7uUynytkri "$2.zip" 1874601 acb835df41e619143dfb3ae95ae0dc0c "$2.zip"
-    elif [[ $2 = GoogleWhite ]]; then
-        Download -lz ilnHKnytkta "$2.zip" 1842440 2ecc374d3c4321e8949a0b1d670921c1 "$2.zip"
-    elif [[ $2 = GoogleWhite2 ]]; then
-        Download -lz iQOM4nytkwd "$2.zip" 9724110 424c39d5899acb6539fec6e32c942efe "$2.zip"
-    elif [[ $2 = GoogleWhite3 ]]; then
-        Download -lz iyLtAnytkyf "$2.zip" 4753079 9c8386ebca34bc4eea84c1312d7699be "$2.zip"
-    elif [[ $2 = haipa ]]; then
-        Download -lz iNu03nytl2j "$2.zip" 14386690 e49820c65d6dae3158a7263f6e239022 "$2.zip"
-    elif [[ $2 = HAVOC ]]; then
-        Download -lz iMnzSnyvi9a "$2.zip" 10769316 33e03a61693d82c4448a01c5c5a08bc2 "$2.zip"
-    elif [[ $2 = HarmonyOS ]]; then
-        Download -lz i8hiyorgw6f "$2.zip" 3164600 5a682308707497b7c1ea46f17717c3f2 "$2.zip"
-    elif [[ $2 = HuaJi ]]; then
-        Download -lz iLfl0nyvigh "$2.zip" 15394894 09a85ae7f8dd21473fc7935ef612fd52 "$2.zip"
-    elif [[ $2 = HuaWeiBlack ]]; then
-        Download -lz iyIcknytl3a "$2.zip" 1001282 dc00d9aadd2b646c412d6baa8e443de3 "$2.zip"
-    elif [[ $2 = HuaWeiBlack2 ]]; then
-        Download -lz igbnInyvikb "$2.zip" 7761130 9a501c80e00bcc6d610c1594214cdf12 "$2.zip"
-    elif [[ $2 = iPhoneBlack ]]; then
-        Download -lz ilH1rnytl4b "$2.zip" 157544 b867829d9f9ae14ff401c26889456901 "$2.zip"
-    elif [[ $2 = iPhoneBlack2 ]]; then
-        Download -lz i1gfNnytl5c "$2.zip" 15383 6f51a952737c5b077b53126f124bbe44 "$2.zip"
-    elif [[ $2 = iPhoneBlack_Flower ]]; then
-        Download -lz itjBOnyv93a "$2.zip" 10765768 f30cb352e7abac65a509093fa52a90c1 "$2.zip"
-    elif [[ $2 = iPhoneWhite ]]; then
-        Download -lz iLon5nytl6d "$2.zip" 23346 ce9af9e53c0c72a4ce1e8f10a0425355 "$2.zip"
-    elif [[ $2 = IQOO ]]; then
-        Download -lz iz13Snyvazi "$2.zip" 5043143 e6e3eb9f3166079fe82daf0d77133050 "$2.zip"
-    elif [[ $2 = JiaZaiZ ]]; then
-        Download -lz iGyeqnytl8f "$2.zip" 2391115 c6d2f445ae2acbb14cda4e0c9e4c40cc "$2.zip"
-    elif [[ $2 = Joker ]]; then
-        Download -lz iP92nnytlah "$2.zip" 815691 2a2ecd693ba544f113dc5cb846489d03 "$2.zip"
-    elif [[ $2 = Joker_Rom ]]; then
-        Download -lz ilij2nytl9g "$2.zip" 277688 7d5ba90ed233591287e2c43057e305c5 "$2.zip"
-    elif [[ $2 = LineageOS ]]; then
-        Download -lz iUvsVnyvcej "$2.zip" 1973207 50b6a947bb080c8fbccbfa7fbeca80df "$2.zip"
-    elif [[ $2 = MeiTu_CC ]]; then
-        Download -lz i3TAgnyvclg "$2.zip" 9825387 f90be201cdb8af4538e88e9d6e46012e "$2.zip"
-    elif [[ $2 = mi ]]; then
-        Download -lz ih8pinytlda "$2.zip" 174486 a80dc5fafe3a498ec8f8198a746b90d2 "$2.zip"
-    elif [[ $2 = mi2 ]]; then
-        Download -lz isLaDnytorc "$2.zip" 244765 070c9b01d7fcca068bb4fe08da7f36a2 "$2.zip"
-    elif [[ $2 = MI8 ]]; then
-        Download -lz iLafznytoxi "$2.zip" 13347835 e606a31f4bb9c0963b1bca57e579f388 "$2.zip"
-    elif [[ $2 = MI9 ]]; then
-        Download -lz iazpYnytp9a "$2.zip" 39661781 2ab0258ea8a2bfebbd69b407019c3efd "$2.zip"
-    elif [[ $2 = mi_CC ]]; then
-        Download -lz iqUE2nyvf5i "$2.zip" 12099788 cd5b850e0fea46538e650af13e35e504 "$2.zip"
-    elif [[ $2 = mi_ChengSe_White ]]; then
-        Download -lz iskiMnytlcj "$2.zip" 178812 6ada98ed677e5b6d91287adfbbd76e0c "$2.zip"
-    elif [[ $2 = mi_ChengSe_Black ]]; then
-        Download -lz i3ALynytlbi "$2.zip" 878068 07485ecb9c42206f699b777a28c71c59 "$2.zip"
-    elif [[ $2 = mi_New ]]; then
-        Download -lz iUHQhnyvf6j "$2.zip" 292628 e226ff1acf262b297b77137e2aa14471 "$2.zip"
-    elif [[ $2 = MiaoHuaTang ]]; then
-        Download -lz i8XlTnytpbc "$2.zip" 4349845 4f7fc12886f79a27b7159dae9d34ccd3 "$2.zip"
-    elif [[ $2 = miku ]]; then
-        Download -lz ieYomnytpef "$2.zip" 12792125 e0d0af19723c38c81be0b7154f76fbdb "$2.zip"
-    elif [[ $2 = MiTu ]]; then
-        Download -lz ihNOLnytpfg "$2.zip" 1422155 19429884bc457c5dd66b1a1ddbab8f8b "$2.zip"
-    elif [[ $2 = MIUI10 ]]; then
-        Download -lz ivGhgnytplc "$2.zip" 2476705 72675465776fa247672898a9f9041325 "$2.zip"
-    elif [[ $2 = MIUI7 ]]; then
-        Download -lz iWQoAnytpyf "$2.zip" 211974 db789ec11a630305e6aa05f7b252b112 "$2.zip"
-    elif [[ $2 = MIUI8 ]]; then
-        Download -lz iKD2Snytpzg "$2.zip" 208250 aa3339b8d6b7b5d0b9e16aa2cb192781 "$2.zip"
-    elif [[ $2 = MIUI10_2 ]]; then
-        Download -lz iaL4Inytpkb "$2.zip" 13369021 61cef1779aad6b62e5f9822b93c05a90 "$2.zip"
+    if [[ $2 = Harmony_OS ]]; then
+        Download -net2 "fleid=606267039561658368&puid=176246092" "$2.zip" 96187051 2e418d056841d638d3b522bde3dd1f12 "$2.zip"
+    elif [[ $2 = Google_Dark ]]; then
+        Download -net2 "fleid=606049175122051072&puid=176246092" "$2.zip" 2415413 24ec7a08c55fdf908995ea9c99bfd15c "$2.zip"
+    elif [[ $2 = Google_White ]]; then
+        Download -net2 "fleid=606049169574158336&puid=176246092" "$2.zip" 2431275 8582603d8b8e5b3c184416ca384e3983 "$2.zip"
+    elif [[ $2 = 2233_Pink ]]; then
+        Download -net2 "fleid=606049282923159552&puid=176246092" "$2.zip" 19659178 3847a30ee173b3be44548c8bfbac404b "$2.zip"
+    elif [[ $2 = 2233_Blue ]]; then
+        Download -net2 "fleid=606049336406159360&puid=176246092" "$2.zip" 12037019 b8a8f960eec94753a93e21a71acc64d1 "$2.zip"
     elif [[ $2 = MIUI11 ]]; then
-        Download -lz ivhj6nytpsj "$2.zip" 33862944 c0309c88d9c42c4e0d159a9fb53b0347 "$2.zip"
-    elif [[ $2 = MIUI12 ]]; then
-        Download -lz ifjKBnytpxe "$2.zip" 459800 8136022635d3e81ee7d4d36ffb0ffb88 "$2.zip"
-    elif [[ $2 = MIUI12.5 ]]; then
-        Download -lz iAp14nytpwd "$2.zip" 6669292 cdc4987be9c02a80dc710670fe974626 "$2.zip"
-    elif [[ $2 = MIUI12_5G ]]; then
-        Download -lz iQEUFnytpub "$2.zip" 1456192 9344deb69f4e6a734df9aa99451a918c "$2.zip"
-    elif [[ $2 = MIUI_History ]]; then
-        Download -lz i1VZ6nytpgh "$2.zip" 3844612 4e6de77f25e818f944a347d772e052d2 "$2.zip"
-    elif [[ $2 = MIX ]]; then
-        Download -lz i4Ns4nytq0h "$2.zip" 33211 96873cabdb249913c7bf745518bed69e "$2.zip"
-    elif [[ $2 = MIX_New ]]; then
-        Download -lz iseYOnyvgfe "$2.zip" 323339 d9db8dde42701996572a1dc88d4f7fba "$2.zip"
-    elif [[ $2 = MOKEE ]]; then
-        Download -lz id2W6nytq2j "$2.zip" 4642817 e3d3434747ff459feea199a077c92564 "$2.zip"
-    elif [[ $2 = Nike ]]; then
-        Download -lz ieWbunytq6d "$2.zip" 874407 29463791455f84c6f74deb7d370c3f0f "$2.zip"
-    elif [[ $2 = NOKIA ]]; then
-        Download -lz isJd0nytrdg "$2.zip" 305737 df7ea2c13c14038896fca6578f4db421 "$2.zip"
-    elif [[ $2 = Nokia_White2 ]]; then
-        Download -lz iDXX5nytrbe "$2.zip" 12864675 f60ea74c55f5592794075a32f0d92aaf "$2.zip"
-    elif [[ $2 = NOKIABlack ]]; then
-        Download -lz iFkoxnytrfi "$2.zip" 471492 fd451c7a575e22e395e64597929f0de4 "$2.zip"
-    elif [[ $2 = One_Plus_Colorful_Red ]]; then
-        Download -lz iRWQKnytrha "$2.zip" 10249441 1b9583cf8fd69bd8bea9fbaf5ca13f53 "$2.zip"
-    elif [[ $2 = One_Plus_Colorful_White ]]; then
-        Download -lz izOdKnytrkd "$2.zip" 13678052 1e505b2dc520ec741d52d097ca6d96ba "$2.zip"
-    elif [[ $2 = OnePlus_H2OS ]]; then
-        Download -lz iOuyunytrmf "$2.zip" 5228568 24a50c8e4398499d7c2752a206185326 "$2.zip"
-    elif [[ $2 = OnePlus_XiangJiaoJun ]]; then
-        Download -lz iXl9Wnytrve "$2.zip" 34142011 ed9238361c125e6094b67d164f63540f "$2.zip"
-    elif [[ $2 = OPPO_Cai_S ]]; then
-        Download -lz icNoAnytrxg "$2.zip" 1618211 0140cd3d836b7ae0a6786a9cbb3663ca "$2.zip"
-    elif [[ $2 = OPPO_Cai_Z ]]; then
-        Download -lz irh8qnyts0j "$2.zip" 909334 327241b2184894c90183462462a73d46 "$2.zip"
-    elif [[ $2 = OPPO_S ]]; then
-        Download -lz ivhtqnyts1a "$2.zip" 212333 7c3d8aa7683d5940c19a15ab564e34d2 "$2.zip"
-    elif [[ $2 = ORI2_BenPao ]]; then
-        Download -lz i3p1lnyts6f "$2.zip" 6463077 48ca57e5d5e41d67eec52de41c8f380b "$2.zip"
-    elif [[ $2 = Playing_Basketball ]]; then
-        Download -lz iHMvjnytsih "$2.zip" 34290395 a10da255b62d372860b9d6d94954ea8f "$2.zip"
-    elif [[ $2 = Pornhub ]]; then
-        Download -lz iAObDnytskj "$2.zip" 2242565 5a3aa376f36198e162f97f49f64dea2e "$2.zip"
-    elif [[ $2 = Qualcomm_865 ]]; then
-        Download -lz i0snRnytsod "$2.zip" 21923315 c368135c271269018912895871c44696 "$2.zip"
-    elif [[ $2 = realme ]]; then
-        Download -lz iIKwbnytsrg "$2.zip" 1022750 4dcaa50809016a3926ccab5d1e813bc0 "$2.zip"
-    elif [[ $2 = Redmi ]]; then
-        Download -lz ioAcpnytsva "$2.zip" 706579 8b70c45b0b4fb5563d29e19a88801685 "$2.zip"
-    elif [[ $2 = Redmi_New ]]; then
-        Download -lz ilXdSnytsti "$2.zip" 379694 5317fbd9623f41b3067c9f47709c0e39 "$2.zip"
-    elif [[ $2 = ShangGan ]]; then
-        Download -lz icu3Ynytswb "$2.zip" 4184144 7642c5a427f41af46288d08ecdecbe2a "$2.zip"
-    elif [[ $2 = SIMPLICITY ]]; then
-        Download -lz imoQxnytsyd "$2.zip" 8038239 7cf975cad5f0f4039050836d3e49cc59 "$2.zip"
-    elif [[ $2 = SyberiaOS ]]; then
-        Download -lz iwnhBnytugh "$2.zip" 20452117 cda78613f6f053cbe5d3e39e166bd06c "$2.zip"
-    elif [[ $2 = SkyMi ]]; then
-        Download -lz i8aeunytsze "$2.zip" 6888111 e746f543929b19bff0cdeacd9ed1ce4c "$2.zip"
-    elif [[ $2 = SteveJobs ]]; then
-        Download -lz iraP4nytu3e "$2.zip" 35486 d30f0cfcce41624599b96887e325cb93 "$2.zip"
-    elif [[ $2 = TaiChi ]]; then
-        Download -lz ifbTlnytumd "$2.zip" 15788112 28ffd78580cc52816acfbcbf74d64ff7 "$2.zip"
-    elif [[ $2 = TanChiShe ]]; then
-        Download -lz iO3jLnytupg "$2.zip" 6898692 e00f36c2fdef682d743bae5e1facba4a "$2.zip"
-    elif [[ $2 = Windows10 ]]; then
-        Download -lz iSWesnytuqh "$2.zip" 1890458 dc7661d414a9f627a6b69cef96d442ff "$2.zip"
-    elif [[ $2 = XiaoLong_ZiJian ]]; then
-        Download -lz iVMdbnytuwd "$2.zip" 10992959 8aa96f18b28acc3ace04cb94e67bddd7 "$2.zip"
+        Download -net2 "fleid=606049488184901632&puid=176246092" "$2.zip" 33852072 63059bb9857720d83f418ce1ec062486 "$2.zip"
+    elif [[ $2 = Scary_EP ]]; then
+        Download -net2 "fleid=606049587664510976&puid=176246092" "$2.zip" 12246016 cc47ea9fc3e5984a23cae71b9b02f9fb "$2.zip"
+    elif [[ $2 = Scary_MI ]]; then
+        Download -net2 "fleid=606049649197006848&puid=176246092" "$2.zip" 14386690 e49820c65d6dae3158a7263f6e239022 "$2.zip"
+    elif [[ $2 = Scary_OnePlus ]]; then
+        Download -net2 "fleid=605979147022536704&puid=176246092" "$2.zip" 9387253 e9888de8d5458b1265e2b912abc02955 "$2.zip"
+    elif [[ $2 = OnePlus_2077 ]]; then
+        Download -net2 "fleid=606267417344192512&puid=176246092" "$2.zip" 70335956 a67184db7350916de41e62e028ec01a3 "$2.zip"
+    elif [[ $2 = ROG2 ]]; then
+        Download -net2 "fleid=606267096252502016&puid=176246092" "$2.zip" 12758779 cdd773fd2148844948417dc985893016 "$2.zip"
+    elif [[ $2 = LittleFox ]]; then
+        Download -net2 "fleid=606267105705832448&puid=176246092" "$2.zip" 2138454 607fa72c3440fd6ba7a7071133671dc8 "$2.zip"
+    elif [[ $2 = iOS ]]; then
+        Download -net2 "fleid=606279594921902080&puid=176246092" "$2.zip" 20501 f28958c51c65dc9718673cb29c902dd0 "$2.zip"
     elif [[ $2 = Horizon_Line_1920 ]]; then
-        Download -net "08dc60fc5154f04167baceab03698897?at_=1618214689400&ak_=e82fa554be3c48db7bc197202db7fd26&ad_=84a265d5d8c864b849e67e972edded4e&fn=$1" "$2.zip" 116540719 fdb2aa8511ac17eb88cc4f76d2451dff "$2.zip"
+        Download -net2 "fleid=605568099538792448&puid=176246092" "$2.zip" 116540719 fdb2aa8511ac17eb88cc4f76d2451dff "$2.zip"
     elif [[ $2 = Horizon_Line_2400 ]]; then
-        Download -net "f31321e5a6ce1a4c6e4bfc7d3d064ca5?at_=1618214704300&ak_=1eb09a30cb7b66f7c10641bb68154a8f&ad_=03be7730c7b2d4429f11836abd1def07&fn=$1" "$2.zip" 116540719 99705fbbae0a2d017c3913151f3417a6 "$2.zip"
+        Download -net2 "fleid=605568103946117120&puid=176246092" "$2.zip" 116540719 99705fbbae0a2d017c3913151f3417a6 "$2.zip"
     elif [[ $2 = KOBE_1920 ]]; then
-        Download -net "069ec3dbcca9ce2ae083be458580ed33?at_=1618214740249&ak_=22572b6fa599ebb3a57a428f18cb6ff3&ad_=f1fc2c58b42d99ccd2074442848be892&fn=$1" "$2.zip" 108363348 347cb7b4d8e88595791cf08a00172bc5 "$2.zip"
+        Download -net2 "fleid=605568130955296768&puid=176246092" "$2.zip" 108363348 347cb7b4d8e88595791cf08a00172bc5 "$2.zip"
     elif [[ $2 = KOBE_2400 ]]; then
-        Download -net "e5b99815e268d711a9a53259be94ad56?at_=1618214751766&ak_=a589f66604f30aca5d9311be5a122b55&ad_=7dbd1a835f007b025e000b2d9b37b94b&fn=$1" "$2.zip" 108363348 72f3226747ec099a3934a6a29eea096a "$2.zip"
+        Download -net2 "fleid=605568135327907840&puid=176246092" "$2.zip" 108363348 72f3226747ec099a3934a6a29eea096a "$2.zip"
     elif [[ $2 = Your_Name_1920 ]]; then
-        Download -net "271fd5a4d242bed47ffd175bb5557856?at_=1618214715226&ak_=277095ec40d95ce60bbb58e8fa23f3d1&ad_=daa35a9cf7b30ad8eeaada1dbccdc2dd&fn=$1" "$2.zip" 116114234 87a17012955b38213a18213de2b050db "$2.zip"
+        Download -net2 "fleid=605568311636905984&puid=176246092" "$2.zip" 116114234 87a17012955b38213a18213de2b050db "$2.zip"
     elif [[ $2 = Your_Name_2400 ]]; then
-        Download -net "f38e76e3262f561437a8881c7e10fd03?at_=1618214729829&ak_=15ee7ec512662ac255649849c2e64ebc&ad_=ba30544a46b40d86efb943222ad9173b&fn=$1" "$2.zip" 116114234 7bf9e3b9c1cefb154e45c05f7c2eb9fe "$2.zip"
+        Download -net2 "fleid=605568314842923008&puid=176246092" "$2.zip" 116114234 7bf9e3b9c1cefb154e45c05f7c2eb9fe "$2.zip"
     elif [[ $2 = Kang_In_Kyung_1920 ]]; then
-        Download -net "1dc9013fb47598cb350249406fc190dd?at_=1618214834534&ak_=3af8e0ccbddc7f12e69167f0ac605e59&ad_=b63d98583fcba7e49fc2620eadd22a11&fn=$1" "$2.zip" 345712297 7649c8b3d1feb855fb7897c4c3fd93f2 "$2.zip"
+        Download -net2 "fleid=605568122905333760&puid=176246092" "$2.zip" 345712297 7649c8b3d1feb855fb7897c4c3fd93f2 "$2.zip"
     elif [[ $2 = Kang_In_Kyung_2400 ]]; then
-        Download -net "c71c018ac1e70ece465f1b77377d594a?at_=1618216039851&ak_=404a34a064fa14ea93f2bc89eea8ee97&ad_=f62060c0ea43269804b6265402881be1&fn=$1" "$2.zip" 345786085 704b88462902bc774c8791bcd6c49257 "$2.zip"
+        Download -net2 "fleid=605568128370982912&puid=176246092" "$2.zip" 345786085 704b88462902bc774c8791bcd6c49257 "$2.zip"
     fi
 ;;
 

@@ -1,5 +1,5 @@
 #Custom variable
-export Util_Functions_Code=2021060302
+export Util_Functions_Code=2021060601
 export SDdir=/data/media/0
 if $Have_ROOT;then
 	Magisk_lite_Version=$(echo `magisk -v` | grep "lite")
@@ -540,7 +540,11 @@ Download() {
             ;;
             -net)
                 shift
-                Link="http://d0.ananas.chaoxing.com/download/$ID"
+                Link="https://d0.ananas.chaoxing.com/download/$ID"
+            ;;
+            -net2)
+                shift
+                Link="https://pan-yz.chaoxing.com/download/downloadfile?$ID"
             ;;
             #-lz)
                 #shift
@@ -548,11 +552,11 @@ Download() {
             #;;
             -lz)
                 shift
-                Link="http://api.qqcn.site/lz/$ID&type=down"
+                Link="https://api.qqcn.site/lz/$ID&type=down"
             ;;
             -coding)
                 shift
-                Link="http://qqcn.coding.net/p/import-rt20/d/GJZS-Warehouse/git/raw/main/$ID"
+                Link="https://qqcn.coding.net/p/import-rt20/d/GJZS-Warehouse/git/raw/main/$ID"
             ;;
             -od)
                 shift
