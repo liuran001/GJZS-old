@@ -1,6 +1,6 @@
-Configuration=2021060502
-Magisk_Warehouse_version=2021060501
-App_Store_version=2021060303
+Configuration=2021060701
+Magisk_Warehouse_version=2021060701
+App_Store_version=2021060701
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -20,27 +20,27 @@ time='2021年5月15号'
 ;;
 
 com.omarea.vtools)
-eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/Scene/Han.GJZS.prop)`
+eval `(curl -sL https://od.qqcn.site/directlink/3/APK/Scene/Han.GJZS.prop?raw)`
 apk='com.omarea.vtools'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 
 bin.mt.plus)
-eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/MT2/Han.GJZS.prop)`
+eval `(curl -sL https://od.qqcn.site/directlink/3/APK/MT2/Han.GJZS.prop?raw)`
 apk='bin.mt.plus'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 bin.mt.plus.canary)
-eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/MT2_Canary/Han.GJZS.prop)`
+eval `(curl -sL https://od.qqcn.site/directlink/3/APK/MT2_Canary/Han.GJZS.prop?raw)`
 apk='bin.mt.plus.canary'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 org.lsposed.manager)
 apk='org.lsposed.manager'
-eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/LSPosed_Manager/Han.GJZS.prop)`
+eval `(curl -sL https://od.qqcn.site/directlink/3/APK/LSPosed_Manager/Han.GJZS.prop?raw)`
     if [[ $Choice = 1 ]]; then
         [[ $SDK -lt 27 ]] && abort "！$name-$version（$versionCode）不支持安卓8.1.0以下系统"
         if [[ ! -s "$apkfile" ]]; then
@@ -228,7 +228,7 @@ time='2021年5月15号'
 
 # Xposed模块
 com.tsng.hidemyapplist)
-eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/HideMyApplist/Han.GJZS.prop)`
+eval `(curl -sL https://od.qqcn.site/directlink/3/APK/HideMyApplist/Han.GJZS.prop?raw)`
 apk='com.tsng.hidemyapplist'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
@@ -322,7 +322,7 @@ time='2021年2月4号'
 ;;
 
 com.fuckcoolapk)
-eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/FuckCoolapk/Han.GJZS.prop)`
+eval `(curl -sL https://od.qqcn.site/directlink/3/APK/FuckCoolapk/Han.GJZS.prop?raw)`
 apk='com.fuckcoolapk'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
@@ -438,7 +438,7 @@ time='2021年4月4号'
 ;;
 
 club.youppgd.adhook)
-eval `(curl -sL https://dl.qqcn.xyz/directlink/3/APK/AdHook/Han.GJZS.prop)`
+eval `(curl -sL https://od.qqcn.site/directlink/3/APK/AdHook/Han.GJZS.prop?raw)`
 apk='club.youppgd.adhook'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
@@ -598,7 +598,7 @@ time='2021年4月15号'
 ;;
 
 riru_lsposed)
-eval `(curl -sL https://dl.qqcn.xyz/directlink/3/Modules/LSPosed/Han.GJZS.prop)`
+eval `(curl -sL https://od.qqcn.site/directlink/3/Modules/LSPosed/Han.GJZS.prop?raw)`
 id='riru_lsposed'
     if [[ $Choice = 1 ]]; then
         mask -v
@@ -658,7 +658,7 @@ time='2021年5月22号'
 ;;
 
 shadow_screenshots)
-eval `(curl -Ls https://dl.qqcn.xyz/directlink/3/Modules/Shadow_Screenshots/Han.GJZS.prop)`
+eval `(curl -Ls https://od.qqcn.site/directlink/3/Modules/Shadow_Screenshots/Han.GJZS.prop?raw)`
 id='shadow_screenshots'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
@@ -708,7 +708,7 @@ time='2021年3月29号'
 ;;
 
 K30lcdmod)
-eval `(curl -Ls https://dl.qqcn.xyz/directlink/3/Modules/K30lcdmod/Han.GJZS.prop)`
+eval `(curl -Ls https://od.qqcn.site/directlink/3/Modules/K30lcdmod/Han.GJZS.prop?raw)`
 id='K30lcdmod'
 MIUI=1
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
@@ -1133,13 +1133,13 @@ time='2021年2月7号'
 ;;
 
 scene_swap_controller)
-eval `(curl -Ls https://dl.qqcn.xyz/directlink/3/Modules/Scene/SWAP/Han.GJZS.prop)`
+eval `(curl -Ls https://od.qqcn.site/directlink/3/Modules/Scene/SWAP/Han.GJZS.prop?raw)`
 id='scene_swap_controller'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
 
 scene_cgroup)
-eval `(curl -Ls https://dl.qqcn.xyz/directlink/3/Modules/Scene/cgroup/Han.GJZS.prop)`
+eval `(curl -Ls https://od.qqcn.site/directlink/3/Modules/Scene/cgroup/Han.GJZS.prop?raw)`
 id='scene_cgroup'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
@@ -1631,14 +1631,13 @@ binwalk)
 ;;
 
 Install_busybox)
-    u='https://cdn.jsdelivr.net/gh/Magisk-Modules-Repo/busybox-ndk@b37714da560188391d23b92f9a9788f2487a4980/'
     name="busybox-$Type"
-    [[ $Type = arm ]] && Start_Install -url "$u/$name-selinux" "$name-selinux" 1447948 69f90314e39e1470597202b645a4d95a "$name" 1.32.1 13210
-    [[ $Type = arm64 ]] && Start_Install -url "$u/$name-selinux" "$name-selinux" 2054232 a273337dacf73c5f82c54235737f5526 "$name" 1.32.1 13210
-    [[ $Type = x86 ]] && Start_Install -url "$u/$name-selinux" "$name-selinux" 2086680 dbec861e084d41849b3d871111d53f35 "$name" 1.32.1 13210
-    [[ $Type = x86_64 ]] && Start_Install -url "$u/$name-selinux" "$name-selinux" 2214216 a4b0f53b31357b244901afec6c972046 "$name" 1.32.1 13210
-    [[ $Type = mips ]] && Start_Install -url "$u/$name" "$name" 1918688 e9a12834f952f3807ccf4f73f9ffaab8 "$name" 1.32.1 13210
-    [[ $Type = mips64 ]] && Start_Install -url "$u/$name" "$name" 1935256 d4f253e2a284fc0dc3a0c5370299f643 "$name" 1.32.1 13210
+    [[ $Type = arm ]] && Start_Install -od "Other/Busybox/$name-selinux" "$name-selinux" 1452044 92a3d5c291124e5b8bd4d7b04c24362d "$name" 1.33.1 13310
+    [[ $Type = arm64 ]] && Start_Install -od "Other/Busybox/$name-selinux" "$name-selinux" 2066520 2340fc8c0f18462fc0dffe9e591c5c01 "$name" 1.33.1 13310
+    [[ $Type = x86 ]] && Start_Install -od "Other/Busybox/$name-selinux" "$name-selinux" 2094872 cd5fde5c345e711657709599f348e260 "$name" 1.33.1 13310
+    [[ $Type = x86_64 ]] && Start_Install -od "Other/Busybox/$name-selinux" "$name-selinux" 2222408 195292917f4c3a3815ed352cac3bda99 "$name" 1.33.1 13310
+    [[ $Type = mips ]] && Start_Install -od "Other/Busybox/$name" "$name" 1918732 7886ed84533e344c0ea0e87ff0578749 "$name" 1.33.1 13310
+    [[ $Type = mips64 ]] && Start_Install -od "Other/Busybox/$name" "$name" 1939440 c8c7311463e2999af63540c51628364e "$name" 1.33.1 13310
 ;;
 
 *)

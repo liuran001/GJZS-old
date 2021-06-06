@@ -1,5 +1,5 @@
 #Custom variable
-export Util_Functions_Code=2021060601
+export Util_Functions_Code=2021060701
 export SDdir=/data/media/0
 if $Have_ROOT;then
 	Magisk_lite_Version=$(echo `magisk -v` | grep "lite")
@@ -560,7 +560,7 @@ Download() {
             ;;
             -od)
                 shift
-                Link="https://dl.qqcn.xyz/directlink/3/$ID"
+                Link="https://od.qqcn.site/$ID?raw"
             ;;
             *)
                 abort "！暂不支持下载"
