@@ -1,4 +1,4 @@
-Configuration=2021060702
+Configuration=2021060701
 Magisk_Warehouse_version=2021060701
 App_Store_version=2021060701
 Show_Compatibility_Mode=1
@@ -6,8 +6,6 @@ MIUI=0
 
 
 case "$1" in
-
-eval `(curl -sL https://od.qqcn.site/Warehouse_List.sh?raw)`
 
 #应用
 com.topjohnwu.magisk)
@@ -19,6 +17,25 @@ author='John Wu'
 description='Magisk Manager'
 time='2021年5月15号'
     [[ $Choice = 1 ]] && Download -url 'https://cdn.jsdelivr.net/gh/topjohnwu/magisk-files@23.0/app-release.apk' "$1.apk" 6874374 ea450d98c25b4e09bb353e5bef8ca8a0 "$1.apk"
+;;
+
+com.omarea.vtools)
+eval `(curl -sL https://od.qqcn.site/APK/Scene/Han.GJZS.prop?raw)`
+apk='com.omarea.vtools'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
+;;
+
+
+bin.mt.plus)
+eval `(curl -sL https://od.qqcn.site/APK/MT2/Han.GJZS.prop?raw)`
+apk='bin.mt.plus'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
+;;
+
+bin.mt.plus.canary)
+eval `(curl -sL https://od.qqcn.site/APK/MT2_Canary/Han.GJZS.prop?raw)`
+apk='bin.mt.plus.canary'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 org.lsposed.manager)
@@ -210,6 +227,11 @@ time='2021年5月15号'
 ;;
 
 # Xposed模块
+com.tsng.hidemyapplist)
+eval `(curl -sL https://od.qqcn.site/APK/HideMyApplist/Han.GJZS.prop?raw)`
+apk='com.tsng.hidemyapplist'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
+;;
 
 com.coderstory.toolkit)
 apk='com.coderstory.toolkit'
@@ -297,6 +319,12 @@ author='未知'
 description='XP模块：在不允许截屏的应用上强制截屏'
 time='2021年2月4号'
     [[ $Choice = 1 ]] && Download -net "2ce40dba6dcad0e9576898371fb51012?at_=1618172929086&ak_=f64a510079fcd1027f011f1cc61b34ac&ad_=4898f471d3aa030af7ee4066422090ae&fn=$1" "$1.apk" 10775 8853193dd4e4b74d1800af5b8fc55674 "$1.apk"
+;;
+
+com.fuckcoolapk)
+eval `(curl -sL https://od.qqcn.site/APK/FuckCoolapk/Han.GJZS.prop?raw)`
+apk='com.fuckcoolapk'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 com.mhook.MrSFastTranslation)
@@ -409,6 +437,11 @@ time='2021年4月4号'
     [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 1586050 53e33ecff5327d0305b3d0cca5fcc3b6 "$1.apk"
 ;;
 
+club.youppgd.adhook)
+eval `(curl -sL https://od.qqcn.site/APK/AdHook/Han.GJZS.prop?raw)`
+apk='club.youppgd.adhook'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
+;;
 
 cn.kwaiching.hook)
 apk='cn.kwaiching.hook'
@@ -624,6 +657,11 @@ time='2021年5月22号'
     [[ $Choice = 1 ]] && Download -lz "i4EiLp8gmta&pwd=huze" "$1.zip" 2881006 be80af0e7a013c31e7fa9a6567db2c65 "$1.zip"
 ;;
 
+shadow_screenshots)
+eval `(curl -Ls https://od.qqcn.site/Modules/Shadow_Screenshots/Han.GJZS.prop?raw)`
+id='shadow_screenshots'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
+;;
 
 sqlite3_gjzs)
 id='sqlite3_gjzs'
@@ -669,6 +707,12 @@ time='2021年3月29号'
     [[ $Choice = 1 ]] && Download -net "ca5b9bb1a7a95c763861c9d768cadbb5?at_=1618166303655&ak_=72d7238792aab170eb901c4bcfe32f12&ad_=96398af62e4937d4f735114c198e7416&fn=$1" "$1.zip" 197660037 291ee716396c31efd54e313d78b14579 "$1.zip"
 ;;
 
+K30lcdmod)
+eval `(curl -Ls https://od.qqcn.site/Modules/K30lcdmod/Han.GJZS.prop?raw)`
+id='K30lcdmod'
+MIUI=1
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
+;;
 
 FUCK-SHIT-FILE)
 Show_Compatibility_Mode=0
@@ -1088,6 +1132,17 @@ time='2021年2月7号'
     [[ $Choice = 1 ]] && . ./Magisk_Module/$1.sh
 ;;
 
+scene_swap_controller)
+eval `(curl -Ls https://od.qqcn.site/Modules/Scene/SWAP/Han.GJZS.prop?raw)`
+id='scene_swap_controller'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
+;;
+
+scene_cgroup)
+eval `(curl -Ls https://od.qqcn.site/Modules/Scene/cgroup/Han.GJZS.prop?raw)`
+id='scene_cgroup'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
+;;
 
 riru-core)
 List="：
