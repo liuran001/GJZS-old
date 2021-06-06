@@ -20,27 +20,27 @@ time='2021年5月15号'
 ;;
 
 com.omarea.vtools)
-eval `(curl -sL https://od.qqcn.site/directlink/3/APK/Scene/Han.GJZS.prop?raw)`
+eval `(curl -sL https://od.qqcn.site/APK/Scene/Han.GJZS.prop?raw)`
 apk='com.omarea.vtools'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 
 bin.mt.plus)
-eval `(curl -sL https://od.qqcn.site/directlink/3/APK/MT2/Han.GJZS.prop?raw)`
+eval `(curl -sL https://od.qqcn.site/APK/MT2/Han.GJZS.prop?raw)`
 apk='bin.mt.plus'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 bin.mt.plus.canary)
-eval `(curl -sL https://od.qqcn.site/directlink/3/APK/MT2_Canary/Han.GJZS.prop?raw)`
+eval `(curl -sL https://od.qqcn.site/APK/MT2_Canary/Han.GJZS.prop?raw)`
 apk='bin.mt.plus.canary'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 org.lsposed.manager)
 apk='org.lsposed.manager'
-eval `(curl -sL https://od.qqcn.site/directlink/3/APK/LSPosed_Manager/Han.GJZS.prop?raw)`
+eval `(curl -sL https://od.qqcn.site/APK/LSPosed_Manager/Han.GJZS.prop?raw)`
     if [[ $Choice = 1 ]]; then
         [[ $SDK -lt 27 ]] && abort "！$name-$version（$versionCode）不支持安卓8.1.0以下系统"
         if [[ ! -s "$apkfile" ]]; then
@@ -228,7 +228,7 @@ time='2021年5月15号'
 
 # Xposed模块
 com.tsng.hidemyapplist)
-eval `(curl -sL https://od.qqcn.site/directlink/3/APK/HideMyApplist/Han.GJZS.prop?raw)`
+eval `(curl -sL https://od.qqcn.site/APK/HideMyApplist/Han.GJZS.prop?raw)`
 apk='com.tsng.hidemyapplist'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
@@ -322,7 +322,7 @@ time='2021年2月4号'
 ;;
 
 com.fuckcoolapk)
-eval `(curl -sL https://od.qqcn.site/directlink/3/APK/FuckCoolapk/Han.GJZS.prop?raw)`
+eval `(curl -sL https://od.qqcn.site/APK/FuckCoolapk/Han.GJZS.prop?raw)`
 apk='com.fuckcoolapk'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
@@ -438,7 +438,7 @@ time='2021年4月4号'
 ;;
 
 club.youppgd.adhook)
-eval `(curl -sL https://od.qqcn.site/directlink/3/APK/AdHook/Han.GJZS.prop?raw)`
+eval `(curl -sL https://od.qqcn.site/APK/AdHook/Han.GJZS.prop?raw)`
 apk='club.youppgd.adhook'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
@@ -598,7 +598,7 @@ time='2021年4月15号'
 ;;
 
 riru_lsposed)
-eval `(curl -sL https://od.qqcn.site/directlink/3/Modules/LSPosed/Han.GJZS.prop?raw)`
+eval `(curl -sL https://od.qqcn.site/Modules/LSPosed/Han.GJZS.prop?raw)`
 id='riru_lsposed'
     if [[ $Choice = 1 ]]; then
         mask -v
@@ -658,7 +658,7 @@ time='2021年5月22号'
 ;;
 
 shadow_screenshots)
-eval `(curl -Ls https://od.qqcn.site/directlink/3/Modules/Shadow_Screenshots/Han.GJZS.prop?raw)`
+eval `(curl -Ls https://od.qqcn.site/Modules/Shadow_Screenshots/Han.GJZS.prop?raw)`
 id='shadow_screenshots'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
@@ -708,7 +708,7 @@ time='2021年3月29号'
 ;;
 
 K30lcdmod)
-eval `(curl -Ls https://od.qqcn.site/directlink/3/Modules/K30lcdmod/Han.GJZS.prop?raw)`
+eval `(curl -Ls https://od.qqcn.site/Modules/K30lcdmod/Han.GJZS.prop?raw)`
 id='K30lcdmod'
 MIUI=1
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
@@ -1133,13 +1133,13 @@ time='2021年2月7号'
 ;;
 
 scene_swap_controller)
-eval `(curl -Ls https://od.qqcn.site/directlink/3/Modules/Scene/SWAP/Han.GJZS.prop?raw)`
+eval `(curl -Ls https://od.qqcn.site/Modules/Scene/SWAP/Han.GJZS.prop?raw)`
 id='scene_swap_controller'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
 
 scene_cgroup)
-eval `(curl -Ls https://od.qqcn.site/directlink/3/Modules/Scene/cgroup/Han.GJZS.prop?raw)`
+eval `(curl -Ls https://od.qqcn.site/Modules/Scene/cgroup/Han.GJZS.prop?raw)`
 id='scene_cgroup'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
