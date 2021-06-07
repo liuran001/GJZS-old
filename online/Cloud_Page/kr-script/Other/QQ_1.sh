@@ -15,4 +15,3 @@ file /dev/qq3.png | egrep "png|PNG|jpg|JPG|jpeg|JPEG|gif|GIF" > /dev/null
 [[ $? -ne 0 ]] && rm -f /dev/null
 setprop qq.number.binding "QQ:${QQ}
 电话:${QQ_TieUp}"
-昵称:${NAME}
