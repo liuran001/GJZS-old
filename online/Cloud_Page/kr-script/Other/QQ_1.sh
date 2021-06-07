@@ -9,10 +9,10 @@ else
 fi
 
 
-NAME="$(curl -s -H 'accept-language: zh-CN,en-US;q=0.9' -kL "https://r.qzone.qq.com/fcg-bin/cgi_get_portrait.fcg?uins=${QQ}" | awk -F '"' '{print $6}' )"
+#NAME="$(curl -s -H 'accept-language: zh-CN,en-US;q=0.9' -kL "https://r.qzone.qq.com/fcg-bin/cgi_get_portrait.fcg?uins=${QQ}" | awk -F '"' '{print $6}' )"
 curl -so /dev/qq3.png "http://q1.qlogo.cn/g?b=qq&nk=${QQ}&s=5"
 file /dev/qq3.png | egrep "png|PNG|jpg|JPG|jpeg|JPEG|gif|GIF" > /dev/null
 [[ $? -ne 0 ]] && rm -f /dev/null
 setprop qq.number.binding "QQ:${QQ}
-昵称:${NAME}
 电话:${QQ_TieUp}"
+昵称:${NAME}
