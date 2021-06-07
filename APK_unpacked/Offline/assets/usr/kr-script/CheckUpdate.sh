@@ -11,19 +11,8 @@ V() {
 }
 
 if [[ -f $Core ]]; then
-    if [[ $Version_code -lt $New_Code ]]; then
-        echo "- 当前版本：$Version_Name（$Version_code）"
-        echo "- 已发布了最新版本：$New_Version（$New_Code）"
-        echo
-        echo "- 如果你是从别的渠道下载的请确保签名MD5一致，如果有发现未签名，或签名信息不对的请谨慎安装，因为已经有盗版软件伪装成「搞机助手」。导致有人安装后被格机/锁机或更为严重的后果"
-        echo "- 签名MD5：暂未提供"
-        echo "- 推荐使用MT管理器进行签名MD5对比，点击apk文件 -->点击签名状态右边的信息 -->对比"
-        echo "- 如果你在软件上遇到bug，可联系重制版作者QQ1939426769"
-    elif [[ $Version_code -eq $New_Code ]]; then
-        V 软件
-    else
-        echo "！未知版本：$Version_Name（$Version_code）"
-    fi
+	V 软件
+fi
 elif [[ ! -s $Core ]]; then
         echo -e "\n！连接服务器失败❌（error：404）"
 fi

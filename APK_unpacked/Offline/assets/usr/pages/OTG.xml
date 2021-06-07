@@ -1,7 +1,5 @@
 if ! $Have_ROOT; then
     exit 1
-elif [[ $Version_code != $New_Code ]]; then
-    exit 1
 fi
     case "$ABI" in
         arm*) :;;

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <text>
+        <slices>
+            <slice size="18" color="#FFFF0000">此页面所有功能仅供学习交流使用，严禁用于违法用途</slice>
+        </slices>
+    </text>
+<group title="QQ查询专区">
+    <action icon="/dev/qq3.png" reload="true" title="QQ绑定手机号查询" desc-sh="getprop qq.number.binding">
+        <desc>仅供学习使用</desc>
+        <set>. ./Other/QQ_1.sh</set>
+        <params>
+            <param name="QQ" label="输入QQ号" placeholder="接口来自fulimcp.qb-api.com，仅供学习使用，部分代码来自「阿巴酱」" type="int" required="true" min="5" maxlength="11" />
+        </params>
+    </action>
+    <action icon="/dev/qq4.png" reload="true" title="手机绑定QQ号查询" desc-sh="getprop mobile.number.binding">
+        <desc>仅供学习使用</desc>
+        <set>. ./Other/QQ_2.sh</set>
+        <params>
+            <param name="mobile2" label="输入手机号" placeholder="接口来自fulimcp.qb-api.com，仅供学习使用" type="int" required="true" min="8" maxlength="11" />
+        </params>
+    </action>
+</group>
