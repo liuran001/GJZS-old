@@ -114,7 +114,7 @@ cat <<Han
         <set>cd /; . &#34;\$File&#34;</set>
     </action>
     <page title="实用网址推荐" config-sh="cat \$Pages/Practical_Web_address.xml" />
-    <page title="便民查询区" config-sh="cat \$Pages/Easy_Query.xml" />
+    <page title="便民查询区" config-sh="cat \$Pages/Easy_Query.xml" >
             <lock>
                     echo '功能维护中'
             </lock>
