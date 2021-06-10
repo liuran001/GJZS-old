@@ -1,5 +1,5 @@
-Configuration=2021061001
-Magisk_Warehouse_version=2021061001
+Configuration=2021061002
+Magisk_Warehouse_version=2021061002
 App_Store_version=2021060701
 Show_Compatibility_Mode=1
 MIUI=0
@@ -678,8 +678,7 @@ time='2021年6月10号'
 	elif [[ $Type = x86 ]]; then
 		Download -od Modules/BromiteSystemWebview/[x86]BromiteSystemWebview-$version.zip "$1.zip" 46941914 00eb9647adfe03a10e738556684ef5fe "$1.zip"
 	else
-	echo "你的设备架构为：$Type"
-	abort "暂不支持您的设备！"
+		abort "暂不支持您的设备！"
 	fi
 ;;
 
