@@ -9,7 +9,7 @@
     # fi
 # fi
     init_data_ID=init_data.sh
-    init_data_MD5=c93391718c2bae1e9542a5120751fabc
+    init_data_MD5=476b92871dedc103b80687ac2fdc74ea
     Util_Functions_ID=Util_Functions.sh
     Util_Functions_MD5=ef518b7ceb042bd7b69fc17dc5e417c8
     Cloud_ID=Cloud_Page.zip
