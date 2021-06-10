@@ -1,5 +1,5 @@
-Configuration=2021061107
-Magisk_Warehouse_version=2021061107
+Configuration=2021061108
+Magisk_Warehouse_version=2021061108
 App_Store_version=2021060701
 Show_Compatibility_Mode=1
 MIUI=0
@@ -667,16 +667,16 @@ com.google.android.webview)
 id='com.google.android.webview'
 name='Bromite System Webview'
 version='91.0.4472.97'
-versionCode='1'
+versionCode='2'
 author='酷安@快播内部工作人员'
 description='将Android System Webview替换为修改了包名并替换签名的Bromite System Webview'
 time='2021年6月11号'
 	if [[ $ABI = armeabi-v7a ]]; then
-		[[ $Choice = 1 ]] && Download -od "Modules/BromiteSystemWebview/ARM-$version.zip" "$1.zip" 40445216 3051f61539c95c63694b57c0cc94ccd4 "$1.zip"
+		[[ $Choice = 1 ]] && Download -od "Modules/BromiteSystemWebview/ARM-$version.zip" "$1.zip" 40445402 60958205a352779f6693dcaa2b4b8c13 "$1.zip"
 	elif [[ $ABI = arm64-v8a ]]; then
-		[[ $Choice = 1 ]] && Download -od "Modules/BromiteSystemWebview/ARM64-$version.zip" "$1.zip" 45615170 2134ee2524d7f1d98419dcffebfda281 "$1.zip"
+		[[ $Choice = 1 ]] && Download -od "Modules/BromiteSystemWebview/ARM64-$version.zip" "$1.zip" 45615356 2a75ff7d415ea3d31eae3bbda8d38012 "$1.zip"
 	elif [[ $ABI = x86 ]]; then
-		[[ $Choice = 1 ]] && Download -od "Modules/BromiteSystemWebview/x86-$version.zip" "$1.zip" 46941880 514a65f730a430fdbbaa92352f8a23e7 "$1.zip"
+		[[ $Choice = 1 ]] && Download -od "Modules/BromiteSystemWebview/x86-$version.zip" "$1.zip" 46942065 bd7f52b80fbdef6c321a9028e9f7ac34 "$1.zip"
 	fi
 ;;
 
