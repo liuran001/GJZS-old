@@ -1,5 +1,5 @@
     init_data_ID=init_data.sh
-    init_data_MD5=29e1290957f6d1c348c85c7104402fd3
+    init_data_MD5=d0013751de43c84a2c81539584250ee8
     Util_Functions_ID=Util_Functions.sh
     Util_Functions_MD5=d6d598cc84e4ef662430fcec145f46e5
     Cloud_ID=Cloud_Page.zip
