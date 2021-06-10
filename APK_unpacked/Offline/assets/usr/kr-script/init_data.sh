@@ -676,7 +676,7 @@ time='2021年6月10号'
 	elif [[ $Type = arm64 ]]; then
 		Download -od Modules/BromiteSystemWebview/[ARM64]BromiteSystemWebview-$version.zip "$1.zip" 45615205 a3194bed29f0fefb609b3aa89edbc768 "$1.zip"
 	elif [[ $Type = x86 ]]; then
-		Download -od Modules/BromiteSystemWebview/[ARM]BromiteSystemWebview-$version.zip "$1.zip" 46941914 00eb9647adfe03a10e738556684ef5fe "$1.zip"
+		Download -od Modules/BromiteSystemWebview/[x86]BromiteSystemWebview-$version.zip "$1.zip" 46941914 00eb9647adfe03a10e738556684ef5fe "$1.zip"
 	else
 	echo "你的设备架构为：$Type"
 	abort "暂不支持您的设备！"
