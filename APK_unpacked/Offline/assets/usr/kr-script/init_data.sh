@@ -1,5 +1,5 @@
-Configuration=2021060701
-Magisk_Warehouse_version=2021060701
+Configuration=2021061001
+Magisk_Warehouse_version=2021061001
 App_Store_version=2021060701
 Show_Compatibility_Mode=1
 MIUI=0
@@ -661,6 +661,26 @@ shadow_screenshots)
 eval `(curl -Ls https://od.qqcn.site/Modules/Shadow_Screenshots/Han.GJZS.prop?raw)`
 id='shadow_screenshots'
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
+;;
+
+com.google.android.webview)
+id='com.google.android.webview'
+name='Bromite System Webview'
+version='91.0.4472.97'
+versionCode='1'
+author='酷安@快播内部工作人员'
+description='将Android System Webview替换为修改了包名并替换签名的Bromite System Webview'
+time='2021年6月10号'
+	if [[ $Type = arm ]]; then
+		Download -od Modules/BromiteSystemWebview/[ARM]BromiteSystemWebview-$version.zip "$1.zip" 40445251 2175b8f1b4bd99a50fb2022884dbdefd "$1.zip"
+	elif [[ $Type = arm64 ]]; then
+		Download -od Modules/BromiteSystemWebview/[ARM64]BromiteSystemWebview-$version.zip "$1.zip" 45615205 a3194bed29f0fefb609b3aa89edbc768 "$1.zip"
+	elif [[ $Type = x86 ]]; then
+		Download -od Modules/BromiteSystemWebview/[ARM]BromiteSystemWebview-$version.zip "$1.zip" 46941914 00eb9647adfe03a10e738556684ef5fe "$1.zip"
+	else
+	echo "你的设备架构为：$Type"
+	abort "暂不支持您的设备！"
+	fi
 ;;
 
 sqlite3_gjzs)
