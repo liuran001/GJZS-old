@@ -1,5 +1,5 @@
 #Custom variable
-export Util_Functions_Code=2021060701
+export Util_Functions_Code=2021061301
 export SDdir=/data/media/0
 if $Have_ROOT;then
 	Magisk_lite_Version=$(echo `magisk -v` | grep "lite")
@@ -27,8 +27,8 @@ export Status=$Data_Dir/Status.log
 export Termux=$DATA_DIR/com.termux/files
 export BOOTMODE=true
 export Choice=0
-export New_Version=1.0.4-Online
-export New_Code=2021053102
+export New_Version=1.0.5-Online
+export New_Code=2021061301
 export ChongQi Configuration File File_Name Download_File File_MD5 id name version versionCode author description MODID MODNAME MODPATH MAGISK_VER MAGISK_VER_CODE LOCKED
 $Have_ROOT && LOCKED=false || LOCKED=true
 

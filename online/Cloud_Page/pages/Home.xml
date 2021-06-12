@@ -1,15 +1,7 @@
 show=false
 if [[ -f $Load ]]; then
-    if [[ $Version_code -eq $New_Code ]]; then
-        title='正式版更新日志'
-        show=true
-    elif [[ $Version_code -lt $New_Code ]]; then
-        title="发现新版本$New_Version（$New_Code），请点击进入官网下载"
-        show=true
-    else
-        title="版本不对，请尝试刷新云端页面状态"
-        show=true
-    fi
+	title="永久免费，禁止倒卖"
+    show=true
 elif [[ ! -f $Core ]]; then
     title="初始化功能失败"
 elif [[ ! -f $Load ]]; then
@@ -43,10 +35,11 @@ Han
 fi
 
 cat <<Han
-    <page html="`echo https://gjzs.qqcn.xyz/changelog_online`">
-        <title>$title</title>
-        <summary sh=". ./CheckUpdate.sh" />
-    </page>
+    <text>
+        <slices>
+            <slice bold="true" size="20" align="center" break="true">$title</slice>
+        </slices>
+    </text>
 </group>
 Han
 
@@ -65,6 +58,7 @@ cat <<Han
 </group>
 <group title="功能区">
     <pages>
+    <page title="OTG功能区" config-sh="\$Pages/OTG.xml" />
         <page title="Magisk专区" config-sh="cat \$Pages/Magisk.xml" />
         <page title="Magisk模块仓库" before-load=". \$ShellScript/Magisk_Module/Print_Magisk_Warehouse.sh" config-sh="cat \$Pages/Magisk_Warehouse.xml" locked="$LOCKED" />
         <page title="应用/Xposed仓库" before-load=". \$ShellScript/Print_App_Store.sh" config-sh="cat \$Pages/App_Store.xml" />

@@ -1,6 +1,6 @@
 show=false
 if [[ -f $Load ]]; then
-	title='正式版更新日志'
+	title="永久免费，禁止倒卖"
     show=true
 elif [[ ! -f $Core ]]; then
     title="初始化功能失败"
@@ -31,15 +31,16 @@ cat <<Han
             <slice size="18" color="#FFFF0000">未能获取到ROOT权限，能用啥功能自己去玩吧</slice>
         </slices>
     </text>
+</group>
 Han
 fi
 
 cat <<Han
-    <page html="`echo https://gjzs.qqcn.xyz/changelog`">
-        <title>$title</title>
-        <summary sh=". ./CheckUpdate.sh" />
-    </page>
-</group>
+    <text>
+        <slices>
+            <slice bold="true" size="20" align="center" break="true">$title</slice>
+        </slices>
+    </text>
 Han
 
 if $show; then
@@ -57,6 +58,7 @@ cat <<Han
 </group>
 <group title="功能区">
     <pages>
+    	<page title="OTG功能区" config-sh="\$Pages/OTG.xml" />
         <page title="Magisk专区" config-sh="cat \$Pages/Magisk.xml" />
         <page title="Magisk模块仓库" before-load=". \$ShellScript/Magisk_Module/Print_Magisk_Warehouse.sh" config-sh="cat \$Pages/Magisk_Warehouse.xml" locked="$LOCKED" />
         <page title="应用/Xposed仓库" before-load=". \$ShellScript/Print_App_Store.sh" config-sh="cat \$Pages/App_Store.xml" />

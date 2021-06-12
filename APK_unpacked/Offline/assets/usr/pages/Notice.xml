@@ -1,0 +1,60 @@
+cat <<Han
+<?xml version="1.0" encoding="utf-8"?>
+<group>
+    <page html="`echo https://gjzs.qqcn.xyz/changelog/`">
+        <title>离线版更新日志</title>
+        <summary sh=". ./CheckUpdate.sh" />
+    </page>
+</group>
+
+    <group>
+        <text>
+            <title>📢公告</title>
+            <desc>本重制版包括Q群/TG群组免费提供，自愿打赏
+唯一官方承认发布渠道为酷安@快播内部工作人员 以及官网gjzs.qqcn.xyz（或gjzs.qqcn.site）（包括其附属蓝奏云链接和coding/github仓库）
+如果有人倒卖，请不遗余力在全平台举报并且曝光他！
+            </desc>
+        </text>
+    </group>
+
+    <text>
+        <slices>
+            <slice bold="true" size="20" align="center" break="true">这是公告页，请点击右下角进入主页</slice>
+        </slices>
+    </text>
+    
+<group title="关于">
+<!-- START -->
+    <page link="https://gjzs.qqcn.xyz">
+        <title>重制版发布页/官网</title>
+    </page>
+<!-- END -->
+<!-- START -->
+    <page link="https://github.com/liuran001/GJZS">
+        <title>开源地址</title>
+    </page>
+<!-- END -->
+<!-- START -->
+    <page link="https://od.qqcn.site">
+        <title>模块/应用仓库[在建]</title>
+    </page>
+<!-- END -->
+<!-- START -->
+    <page link="http://www.coolapk.com/u/1169803">
+        <title>现作者酷安ID「快播内部工作人员」</title>
+    </page>
+<!-- END -->
+<!-- START -->
+    <page link="https://blog.qqcn.xyz">
+        <title>现作者博客</title>
+    </page>
+<!-- END -->
+</group>
+
+<group>
+    <page link="`echo https://coding-pages-bucket-3403475-7618161-17959-614140-1253773788.cos-website.ap-hongkong.myqcloud.com`">
+        <title>捐赠</title>
+        <desc>维护「搞机助手重制版」耗费了我大量的时间，你可以捐赠表示支持</desc>
+    </page>
+</group>
+Han
