@@ -6,8 +6,8 @@ lu=$PeiZhi_File/BootAnimation_Screen1/Customize
 lu2=$GJZS/Customize_BootAnimation_Screen1
 jian=$lu/Configuration.log
 . $jian
-img=$lu/$IMG_Name.img
-tmp=$TMPDIR/$IMG_Name.img
+img=$lu/$IMG_Name
+tmp=$TMPDIR/$IMG_Name
 
 echo "- 开始复制到临时目录"
 cp -f $img $tmp
@@ -50,7 +50,7 @@ s=`cat "$Status"`
             else
                 mv -f $tmp $lu2
                 echo
-                echo "- 文件已输出到$lu2/$IMG_Name.img"
+                echo "- 文件已输出到$lu2/$IMG_Name"
                 echo "！温馨提示：如果重新点击「生成配置」这个目录所有文件会被清空"
             fi
             
