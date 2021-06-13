@@ -11,7 +11,7 @@ cat <<Han
         <text>
             <title>📢公告</title>
             <desc>本重制版包括Q群/TG群组免费提供，自愿打赏
-唯一官方承认发布渠道为酷安@快播内部工作人员 以及官网gjzs.qqcn.xyz（或gjzs.qqcn.site）（包括其附属蓝奏云链接和coding/github仓库）
+唯一官方承认发布渠道为酷安@快播内部工作人员 以及官网gjzs.qqcn.xyz（或gjzs.qqcn.site）（包括其附属蓝奏云链接和coding/github仓库）和酷安@午夜神
 如果有人倒卖，请不遗余力在全平台举报并且曝光他！
             </desc>
         </text>
@@ -51,10 +51,45 @@ cat <<Han
 <!-- END -->
 </group>
 
+<group title="特别感谢">
+<!-- START -->
+    <page link="http://www.coolapk.com/u/462071">
+        <title>酷安@午夜神</title>
+    </page>
+<!-- END -->
+<!-- START -->
+    <page>
+        <title>群友@深信不疑。 提供服务器支持</title>
+    </page>
+<!-- END -->
+</group>
+
 <group>
     <page link="`echo https://coding-pages-bucket-3403475-7618161-17959-614140-1253773788.cos-website.ap-hongkong.myqcloud.com`">
         <title>捐赠</title>
         <desc>维护「搞机助手重制版」耗费了我大量的时间，你可以捐赠表示支持</desc>
     </page>
 </group>
+
+<group title="进群交流">
+<!-- START -->
+    <page link="https://jq.qq.com/?_wv=1027&k=QyqytjQk">
+        <title>QQ一群</title>
+        <desc>群号1059362609</desc>
+    </page>
+<!-- END -->
+<!-- START -->
+    <page link="https://t.me/gjzs666">
+        <title>TG交流群</title>
+        <desc>@gjzs666</desc>
+    </page>
+<!-- END -->
+<!-- START -->
+    <page link="https://t.me/gjzs666_channel">
+        <title>TG通知频道</title>
+        <desc>@gjzs666_channel</desc>
+    </page>
+<!-- END -->
+</group>
+
 Han
