@@ -73,7 +73,7 @@ cat <<Han
 
 <group title="进群交流">
 <!-- START -->
-    <page link="https://jq.qq.com/?_wv=1027&k=QyqytjQk">
+    <page link='https://jq.qq.com/?_wv=1027&k=QyqytjQk'>
         <title>QQ一群</title>
         <desc>群号1059362609</desc>
     </page>
