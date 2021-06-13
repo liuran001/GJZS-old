@@ -850,7 +850,7 @@ time='2021年4月7号'
 
 com.miui.packageinstaller)
 eval `(curl -Ls https://od.qqcn.site/Modules/com.miui.packageinstaller/Han.GJZS.prop?raw)`
-id='shadow_screenshots'
+id='com.miui.packageinstaller'
 MIUI=1
     [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
