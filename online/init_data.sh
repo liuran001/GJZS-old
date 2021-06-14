@@ -1,5 +1,5 @@
-Configuration=2021061402
-Magisk_Warehouse_version=2021061401
+Configuration=2021061403
+Magisk_Warehouse_version=2021061402
 App_Store_version=2021060701
 Show_Compatibility_Mode=1
 MIUI=0
@@ -647,14 +647,9 @@ time='2021年3月24号'
 ;;
 
 huzeASGuard)
+eval `(curl -Ls https://od.qqcn.site/Modules/ASGuard/Han.GJZS.prop?raw)`
 id='huzeASGuard'
-name='H·无障碍服务守护(ASGuard)'
-version='v4.8.5'
-versionCode='202105181'
-author='沍澤'
-description='开机自动开启且实时保护无障碍服务(辅助功能)，防止应用意外关闭导致无障碍服务连同关闭，具体配置查看搞机助手>Magisk专区>一些Magisk模块的配置>ASGuard配置 或修改/data/media/0/Android/ASGuard.conf'
-time='2021年5月22号'
-    [[ $Choice = 1 ]] && Download -lz "i4EiLp8gmta&pwd=huze" "$1.zip" 2881006 be80af0e7a013c31e7fa9a6567db2c65 "$1.zip"
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
 
 shadow_screenshots)
