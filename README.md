@@ -1,6 +1,5 @@
 # GJZS
-https://gjzs.qqcn.site  
-https://gjzs.qqcn.xyz （优化中国用户访问）
+https://gjzs.online  
   
 目录结构：  
 - 「APK_unpacked」未打包和签名的APK文件

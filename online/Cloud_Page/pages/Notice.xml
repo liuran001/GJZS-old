@@ -9,7 +9,7 @@ if [[ $Version_code -eq $New_Code ]]; then
 cat <<Han
 <?xml version="1.0" encoding="utf-8"?>
 <group>
-    <page html="`echo https://gjzs.qqcn.xyz/changelog/`">
+    <page html="`echo https://gjzs.online/changelog_online/`">
         <title>$title</title>
         <summary sh=". ./CheckUpdate.sh" />
     </page>
@@ -18,10 +18,10 @@ cat <<Han
     <group>
         <text>
             <title>📢公告</title>
-            <desc>端午安康！
+            <desc>官网已更换为https://gjzs.online/ （暂时没有被tx屏蔽）
 
 本重制版包括Q群/TG群组免费提供，自愿打赏
-唯一官方承认发布渠道为酷安@快播内部工作人员 以及官网gjzs.qqcn.xyz（或gjzs.qqcn.site）（包括其附属蓝奏云链接和coding/github仓库）和酷安@午夜神
+唯一官方承认发布渠道为酷安@快播内部工作人员 以及官网gjzs.online（包括其附属蓝奏云链接和coding/github仓库）和酷安@午夜神
 如果有人倒卖，请不遗余力在全平台举报并且曝光他！
             </desc>
         </text>
@@ -35,7 +35,7 @@ cat <<Han
     
 <group title="关于">
 <!-- START -->
-    <page link="https://gjzs.qqcn.xyz">
+    <page link="https://gjzs.online">
         <title>重制版发布页/官网</title>
     </page>
 <!-- END -->
