@@ -1,6 +1,6 @@
-Configuration=2021061403
-Magisk_Warehouse_version=2021061402
-App_Store_version=2021060701
+Configuration=2021061404
+Magisk_Warehouse_version=2021061403
+App_Store_version=2021061401
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -234,16 +234,11 @@ apk='com.tsng.hidemyapplist'
 ;;
 
 com.coderstory.toolkit)
+eval `(curl -sL https://od.qqcn.site/APK/CorePatch/Han.GJZS.prop?raw)`
 apk='com.coderstory.toolkit'
-name='安卓4.4-11核心破解'
-author='CoderStory'
-description='XP模块：降级安装/不同签名安装'
-time='2021年3月31号'
     case $SDK in
-    29 | 30) #3
-        version='3.4'
-        versionCode=1810
-        [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "${1}3.apk" 1233819 f9fee619c34294e86294844446a88196 "${1}3.apk"
+    30) #3
+        [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
     ;;
     28 | 29) #2
         version='2.2'
@@ -275,6 +270,12 @@ author='reinit'
 description='XP模块：QQ辅助性功能增强'
 time='2021年5月2号'
     [[ $Choice = 1 ]] && Download -net "769362c497c215c84251e695a48b6e44?at_=1619904518477&ak_=0ea4c6bcbb98a9456f0b39fe22d8de30&ad_=3c193974dba14f86b2830bd8f3947cfd&fn=$1" "$1.apk" 4580963 033538f98d4c006b7f959b8f84394be8 "$1.apk"
+;;
+
+me.kyuubiran.qqcleaner)
+eval `(curl -sL https://od.qqcn.site/APK/QQCleaner/Han.GJZS.prop?raw)`
+apk='me.kyuubiran.qqcleaner'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 com.fkzhang.qqxposed)
@@ -310,15 +311,10 @@ time='2020年9月4号'
     [[ $Choice = 1 ]] && Download -net "c4a3b988ba900b8174fba2064d52a529?at_=1618166699245&ak_=f781ba3671efe214a699154127ce1f0e&ad_=7798772d4572df4705b3cc62fc92f3d9&fn=$1" "$1.apk" 1507161 a30f0617f21997df08e623fa93ee4934 "$1.apk"
 ;;
 
-io.github.lsposed.disableflagsecure)
-apk='io.github.lsposed.disableflagsecure'
-name='禁用 FLAG_SECURE（强制截屏）'
-version='1.0.1'
-versionCode=2
-author='未知'
-description='XP模块：在不允许截屏的应用上强制截屏'
-time='2021年2月4号'
-    [[ $Choice = 1 ]] && Download -net "2ce40dba6dcad0e9576898371fb51012?at_=1618172929086&ak_=f64a510079fcd1027f011f1cc61b34ac&ad_=4898f471d3aa030af7ee4066422090ae&fn=$1" "$1.apk" 10775 8853193dd4e4b74d1800af5b8fc55674 "$1.apk"
+com.varuns2002.disable_flag_secure)
+eval `(curl -sL https://od.qqcn.site/APK/Disable-FLAG_SECURE/Han.GJZS.prop?raw)`
+apk='com.varuns2002.disable_flag_secure'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 com.fuckcoolapk)
@@ -405,14 +401,9 @@ time='2021年2月23号'
 ;;
 
 com.variable.apkhook)
+eval `(curl -sL https://od.qqcn.site/APK/ApkHook/Han.GJZS.prop?raw)`
 apk='com.variable.apkhook'
-name='应用伪装'
-version='1.9.0-叼毛优化版'
-versionCode=5
-author='未知'
-description='XP模块：自定义应用获取的设备数据'
-time='2021年5月17号'
-    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 2679555 4e37ba65925ffaad09dbb4ef3ede39df "$1.apk"
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 pansong291.xposed.quickenergy.qiufeng)
