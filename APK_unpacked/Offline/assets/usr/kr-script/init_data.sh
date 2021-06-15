@@ -1,6 +1,6 @@
-Configuration=2021061404
+Configuration=2021061501
 Magisk_Warehouse_version=2021061403
-App_Store_version=2021061401
+App_Store_version=2021061501
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -262,14 +262,9 @@ apk='com.coderstory.toolkit'
 ;;
 
 nil.nadph.qnotified)
+eval `(curl -sL https://od.qqcn.site/APK/QNotified/Han.GJZS.prop?raw)`
 apk='nil.nadph.qnotified'
-name='QNotified'
-version='0.8.19.2c41172'
-versionCode=1619871089
-author='reinit'
-description='XP模块：QQ辅助性功能增强'
-time='2021年5月2号'
-    [[ $Choice = 1 ]] && Download -net "769362c497c215c84251e695a48b6e44?at_=1619904518477&ak_=0ea4c6bcbb98a9456f0b39fe22d8de30&ad_=3c193974dba14f86b2830bd8f3947cfd&fn=$1" "$1.apk" 4580963 033538f98d4c006b7f959b8f84394be8 "$1.apk"
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 me.kyuubiran.qqcleaner)
@@ -398,6 +393,12 @@ author='yonghen'
 description='XP模块：解除MIUI双开应用限制'
 time='2021年2月23号'
     [[ $Choice = 1 ]] && Download -net "61f65eeb2ba9777c3b2f74617c57fca6?at_=1618172540435&ak_=ac96e8b99ac82b65b093b634ea29c978&ad_=5a84fe8092383428d82e0a2cbad6ad1d&fn=$1" "$1.apk" 91157 dab61d4cdc27f7ce337163b41c069f27 "$1.apk"
+;;
+
+com.mikutart.bettermiui)
+eval `(curl -sL https://od.qqcn.site/APK/BetterMIUI/Han.GJZS.prop?raw)`
+apk='com.mikutart.bettermiui'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 com.variable.apkhook)
