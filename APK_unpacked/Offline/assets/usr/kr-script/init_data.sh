@@ -1,6 +1,6 @@
-Configuration=2021061501
+Configuration=2021061701
 Magisk_Warehouse_version=2021061403
-App_Store_version=2021061501
+App_Store_version=2021061701
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -381,7 +381,7 @@ versionCode=1
 author='yujincheng08'
 description='XP模块：强制MIUI 全局高帧'
 time='2021年3月18号'
-    [[ $Choice = 1 ]] && Download -coding "21051601/apks/$1.apk" "$1.apk" 7448 c9757f98794ba42259094080c13ef24d "$1.apk"
+    [[ $Choice = 1 ]] && Download -coding "21051601/apks/cn.lovesykun.miuiforcefps.apk" "$1.apk" 7448 c9757f98794ba42259094080c13ef24d "$1.apk"
 ;;
 
 org.meowcat.xposed.miui)
