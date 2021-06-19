@@ -1,6 +1,6 @@
-Configuration=2021061701
-Magisk_Warehouse_version=2021061403
-App_Store_version=2021061701
+Configuration=2021061901
+Magisk_Warehouse_version=2021061901
+App_Store_version=2021061901
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -1454,6 +1454,7 @@ payload_dumper-win64)
     [[ $Choice = 1 ]] && Download -net "35e02784d1d210637b564dc03c238947?at_=1618167612334&ak_=62de7de128ffd8740ee058ce68580dac&ad_=e199b8d19bab1589fe2c2c6d5e79dd10&fn=$1" "$1.zip" 6755703 20029a0740cba709789ad074949bf5fa "$1.zip"
 ;;
 
+# 原版Xposed下载链接由「抱抱猫People11」提供
 Xposed_rovo89)
     if [[ $2 = -install ]]; then
         v=89
@@ -1461,67 +1462,67 @@ Xposed_rovo89)
             case $SDK in
             21)
                 if [[ $Type = arm ]]; then
-                    Download -lz iYOEsnyxu0f "xposed-v$v-sdk$SDK-$Type.zip" 3480379 614d01a116809abf09cadfd7a1abc8f2 "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605569913261240320&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 3480379 614d01a116809abf09cadfd7a1abc8f2 "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = arm64 ]]; then
-                    Download -lz iY2YHnyxu3i "xposed-v$v-sdk$SDK-$Type.zip" 5853627 0a460e9f52ddb3e9ba1f389badd7bd6e "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605568216103239680&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 5853627 0a460e9f52ddb3e9ba1f389badd7bd6e "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = x86 ]]; then
-                    Download -lz iHKFNnyxu4j "xposed-v$v-sdk$SDK-$Type.zip" 4012550 be4b512111cc3efc45d8cb85e07173c2 "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605569946598199296&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 4012550 be4b512111cc3efc45d8cb85e07173c2 "xposed-v$v-sdk$SDK-$Type.zip"
                 fi
             ;;
             22)
                 if [[ $Type = arm ]]; then
-                    Download -lz iQM0anyxu5a "xposed-v$v-sdk$SDK-$Type.zip" 3561425 80fff79c7ad85141c520e5fd0c644ec7 "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605568222934331392&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 3561425 80fff79c7ad85141c520e5fd0c644ec7 "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = arm64 ]]; then
-                    Download -lz ixT0Knyxuaf "xposed-v$v-sdk$SDK-$Type.zip" 5969129 4d3bac2357dd004afff54cc48cb18fff "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605568226916151296&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 5969129 4d3bac2357dd004afff54cc48cb18fff "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = x86 ]]; then
-                    Download -lz imeOmnyxuch "xposed-v$v-sdk$SDK-$Type.zip" 4094816 050a3d6cf4468556f2f87c9526b9e30e "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605569981257871360&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 4094816 050a3d6cf4468556f2f87c9526b9e30e "xposed-v$v-sdk$SDK-$Type.zip"
                 fi
             ;;
             23)
                 if [[ $Type = arm ]]; then
-                    Download -lz i8vhLnyxugb "xposed-v$v-sdk$SDK-$Type.zip" 4874299 9361a270336427455c7e09af5f9c6969 "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605570039984386048&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 4874299 9361a270336427455c7e09af5f9c6969 "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = arm64 ]]; then
-                    Download -lz iSLfMnyxuje "xposed-v$v-sdk$SDK-$Type.zip" 8206844 bdaee35f5c9239d399d75ca25e89db7c "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605568242471399424&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 8206844 bdaee35f5c9239d399d75ca25e89db7c "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = x86 ]]; then
-                    Download -lz idRtVnyxukf "xposed-v$v-sdk$SDK-$Type.zip" 5715178 973c8a8725d7a0bcbd718ce1f8cfa31c "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605570116559159296&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 5715178 973c8a8725d7a0bcbd718ce1f8cfa31c "xposed-v$v-sdk$SDK-$Type.zip"
                 fi
             ;;
             24)
                 if [[ $Type = arm ]]; then
-                    Download -lz iKjNznyxuni "xposed-v$v-sdk$SDK-$Type.zip" 4389429 f6fcabd71339d549699e62524f7d6c1f "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605568251948396544&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 4389429 f6fcabd71339d549699e62524f7d6c1f "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = arm64 ]]; then
-                    Download -lz irbxenyxute "xposed-v$v-sdk$SDK-$Type.zip" 8238874 1e867e70bae5e6b38cdf937b8e79df37 "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605568255366115328&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 8238874 1e867e70bae5e6b38cdf937b8e79df37 "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = x86 ]]; then
-                    Download -lz iSSOrnyxuxi "xposed-v$v-sdk$SDK-$Type.zip" 5191178 44696b7092a69a263160365a6c058b41 "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605570162619576320&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 5191178 44696b7092a69a263160365a6c058b41 "xposed-v$v-sdk$SDK-$Type.zip"
                 fi
             ;;
             25)
                 if [[ $Type = arm ]]; then
-                    Download -lz iIyevnyxuyj "xposed-v$v-sdk$SDK-$Type.zip" 4405400 778dd744f0dfa6bd7608ae17281c0faa "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605568266539565056&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 4405400 778dd744f0dfa6bd7608ae17281c0faa "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = arm64 ]]; then
-                    Download -lz iAJZDnyxv4f "xposed-v$v-sdk$SDK-$Type.zip" 8272548 3039d5169746025a075a3bf297af2f86 "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605568269399715840&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 8272548 3039d5169746025a075a3bf297af2f86 "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = x86 ]]; then
-                    Download -lz i5Jpwnyxvab "xposed-v$v-sdk$SDK-$Type.zip" 5206379 544f993de6ec2be20583a23116c342de "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605570210024849408&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 5206379 544f993de6ec2be20583a23116c342de "xposed-v$v-sdk$SDK-$Type.zip"
                 fi
             ;;
             26)
                 v=90
                 if [[ $Type = arm ]]; then
-                    Download -lz iyCp7nyxvcd "xposed-v$v-sdk$SDK-$Type.zip" 4277017 405ee87d04741bbfbbd0a02ffb938428 "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605568277750939648&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 4277017 405ee87d04741bbfbbd0a02ffb938428 "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = arm64 ]]; then
-                    Download -lz i4ZTCnyxvhi "xposed-v$v-sdk$SDK-$Type.zip" 8068001 a18f89a0470b126ac5dfe7e0ed2d5d0c "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605568283737960448&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 8068001 a18f89a0470b126ac5dfe7e0ed2d5d0c "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = x86 ]]; then
-                    Download -lz iXT6knyxwda "xposed-v$v-sdk$SDK-$Type.zip" 4770182 e68569d68dc6b9badeb2f41cd87bbe87 "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605570249756237824&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 4770182 e68569d68dc6b9badeb2f41cd87bbe87 "xposed-v$v-sdk$SDK-$Type.zip"
                 fi
             ;;
             27)
                 v=90
                 if [[ $Type = arm ]]; then
-                    Download -lz i9Hxwnyxwah "xposed-v$v-sdk$SDK-$Type.zip" 4229826 fa6b26bec7d95b41716ebdc746e4d576 "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605568291387424768&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 4229826 fa6b26bec7d95b41716ebdc746e4d576 "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = arm64 ]]; then
-                    Download -lz iKAM8nyxw6d "xposed-v$v-sdk$SDK-$Type.zip" 8038926 1085eb845483523a1b5a30547f24fc46 "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605568297574035456&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 8038926 1085eb845483523a1b5a30547f24fc46 "xposed-v$v-sdk$SDK-$Type.zip"
                 elif [[ $Type = x86 ]]; then
-                    Download -lz iDCBHnyxw1i "xposed-v$v-sdk$SDK-$Type.zip" 4963220 69705e2d5c6e88815d7f984f69d03200 "xposed-v$v-sdk$SDK-$Type.zip"
+                    Download -net2 "fleid=605570294033367040&puid=176246092" "xposed-v$v-sdk$SDK-$Type.zip" 4963220 69705e2d5c6e88815d7f984f69d03200 "xposed-v$v-sdk$SDK-$Type.zip"
                 fi
             ;;
             *)
@@ -1535,11 +1536,11 @@ Xposed_rovo89)
             *) abort "！原版Xposed不支持您的设备SDK：$SDK";;
         esac
             if [[ $Type = arm ]]; then
-                Download -lz iEMyRnyxtxc "xposed-uninstaller-20180117-$Type.zip" 311568 d4d2fa1d22779d70d3be10a0b920aaea "xposed-uninstaller-20180117-$Type.zip"
+                Download -net2 "fleid=605569874819022848&puid=176246092" "xposed-uninstaller-20180117-$Type.zip" 311568 d4d2fa1d22779d70d3be10a0b920aaea "xposed-uninstaller-20180117-$Type.zip"
             elif [[ $Type = arm64 ]]; then
-                Download -lz itxq4nyxtyd "xposed-uninstaller-20180117-$Type.zip" 311568 d4d2fa1d22779d70d3be10a0b920aaea "xposed-uninstaller-20180117-$Type.zip"
+                Download -net2 "fleid=605569877241184256&puid=176246092" "xposed-uninstaller-20180117-$Type.zip" 311568 d4d2fa1d22779d70d3be10a0b920aaea "xposed-uninstaller-20180117-$Type.zip"
             elif [[ $Type = x86 ]]; then
-                Download -lz iM3sOnyxtze "xposed-uninstaller-20180117-$Type.zip" 455283 87846dd6c7fe48eabbe2763c4dd6cb86 "xposed-uninstaller-20180117-$Type.zip"
+                Download -net2 "fleid=605569879127818240&puid=176246092" "xposed-uninstaller-20180117-$Type.zip" 455283 87846dd6c7fe48eabbe2763c4dd6cb86 "xposed-uninstaller-20180117-$Type.zip"
             fi
         fi
 ;;
