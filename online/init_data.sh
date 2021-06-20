@@ -1,6 +1,6 @@
-Configuration=2021061901
+Configuration=2021062001
 Magisk_Warehouse_version=2021061901
-App_Store_version=2021061901
+App_Store_version=2021062001
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -393,6 +393,12 @@ author='yonghen'
 description='XP模块：解除MIUI双开应用限制'
 time='2021年2月23号'
     [[ $Choice = 1 ]] && Download -net "61f65eeb2ba9777c3b2f74617c57fca6?at_=1618172540435&ak_=ac96e8b99ac82b65b093b634ea29c978&ad_=5a84fe8092383428d82e0a2cbad6ad1d&fn=$1" "$1.apk" 91157 dab61d4cdc27f7ce337163b41c069f27 "$1.apk"
+;;
+
+cn.coderstory.miui.water)
+eval `(curl -sL https://od.qqcn.site/APK/MIUIWater/Han.GJZS.prop?raw)`
+apk='cn.coderstory.miui.water'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.apk" "$size" "$md5" "$1.apk"
 ;;
 
 com.mikutart.bettermiui)
