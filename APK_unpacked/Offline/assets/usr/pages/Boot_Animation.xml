@@ -69,7 +69,7 @@
     </action>
 <!-- END -->
 <!-- START -->
-    <page before-load="curl -o &#34;$Pages/Make_BootAnimation_Screen2.xml&#34; -skL https://gitee.com/youngdriver/pio/raw/master/bootanimation/bootanimation.sh" config-sh="cat &#34;$Pages/Make_BootAnimation_Screen2.xml&#34;">
+    <page config-sh="cat ./BootAnimation/bootanimation.xml">
         <title>自定义制作开机动画</title>
         <desc>由by:酷安@巴啦啦魔仙女王提供服务</desc>
     </page>
