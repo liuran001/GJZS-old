@@ -1,6 +1,6 @@
 #!/system/bin/sh
 FILE="/data/adb/bootanimation_make"
-FFMPEG="${TOOLKIT}/ffmpeg"
+FFMPEG="$PREFIX/ffmpeg"
 FFMPEGMD5="efab65c8885bd5594996d41fd5d13b1b"
 mkdir -p $FILE
 if [[ ! -f $FFMPEG ]]
