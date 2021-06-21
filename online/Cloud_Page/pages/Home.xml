@@ -120,9 +120,6 @@ cat <<Han
     </action>
     <page title="实用网址推荐" config-sh="cat \$Pages/Practical_Web_address.xml" />
     <page title="便民查询区" config-sh="cat \$Pages/Easy_Query.xml" >
-            <lock>
-                    echo '功能维护中'
-            </lock>
     </page>
     <page title="搞机助手选项区" config-sh="cat \$Pages/GJZS.xml" />
     <page title="关于 &amp; 特别鸣谢" config-sh="cat \$Pages/In_Regard_To.xml" />
