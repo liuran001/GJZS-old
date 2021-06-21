@@ -7,7 +7,7 @@ if [[ ! -f $FFMPEG ]]
 then
 	echo "--联网下载ffmpeg，稍等"
 	cd $FILE
-	curl -O https://od.qqcn.site/Other/ffmpeg/ffmpeg.a[a-u]?raw
+	curl -LO https://od.qqcn.site/Other/ffmpeg/ffmpeg.a[a-u]?raw
 	cat ffmpeg.a* > ffmpeg
 	cp -f ffmpeg $FFMPEG
 	cd - > /dev/null
