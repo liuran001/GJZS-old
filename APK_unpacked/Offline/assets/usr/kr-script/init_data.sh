@@ -1,5 +1,5 @@
-Configuration=2021062001
-Magisk_Warehouse_version=2021061901
+Configuration=2021062101
+Magisk_Warehouse_version=2021062101
 App_Store_version=2021062001
 Show_Compatibility_Mode=1
 MIUI=0
@@ -802,6 +802,13 @@ name="MIUI9 - MIUI10多合一通用模块"
 author='by：Han | 情非得已c'
 description="$name"
 time='2019年8月17号'
+;;
+
+theme_pojie)
+eval `(curl -Ls https://od.qqcn.site/Modules/MIUIThemePJ/Han.GJZS.prop?raw)`
+MIUI=1
+id='theme_pojie'
+    [[ $Choice = 1 ]] && Download -"$down" "$down_url" "$1.zip" "$size" "$md5" "$1.zip"
 ;;
 
 GJZS_Theme_Color)
@@ -1626,7 +1633,7 @@ Install_Applet)
     name=Applet
     versionCode=73
     Download_File=$Other/$name.zip
-   # Install_Applet -net "c008b755a09dfa04eab2f41a0531496b?at_=1618175097072&ak_=5f4f8c56ed61fd6dcec62eb5e94f3af7&ad_=01eb5ec2e36b2bf134f6e4e02ed902fb&fn=$1" "$name.zip" 7362205 4b72333cf5ca2edff20743f58de71cbb "$name" $versionCode
+    Install_Applet -net "c008b755a09dfa04eab2f41a0531496b?at_=1618175097072&ak_=5f4f8c56ed61fd6dcec62eb5e94f3af7&ad_=01eb5ec2e36b2bf134f6e4e02ed902fb&fn=$1" "$name.zip" 7362205 4b72333cf5ca2edff20743f58de71cbb "$name" $versionCode
     Install_Applet2
 ;;
 
