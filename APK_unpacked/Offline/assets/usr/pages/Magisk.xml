@@ -189,3 +189,19 @@
     </action>
 <!-- END -->
 </group>
+<group title="Magisk_lite专属功能">
+<!-- START -->
+    <action confirm="true" auto-off="true" interruptible="false"  locked="$LOCKED">
+        <title>移动模块目录</title>
+        <desc>刷入模块之后发现没显示的可以试试这个功能哦</desc>
+        <set>. ./Magisk_Module/Lite_Move_modules.sh</set>
+        <lock>
+                if [[ "$Magisk_lite_Version" = "" ]]; then
+                    echo '该功能仅对Magisk_lite用户开放'
+                else
+                    echo 'unlocked'
+                fi
+        </lock>
+    </action>
+<!-- END -->
+</group>
