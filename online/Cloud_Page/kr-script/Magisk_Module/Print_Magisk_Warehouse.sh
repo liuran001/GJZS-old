@@ -550,8 +550,8 @@ riru_lsposed)
 cat <<Han
 <!-- START -->
     <action interruptible="false">
-        <title>'Riru - LSPosed'</title>
-        <desc>'一款基于Riru API开发的Xposed框架，支持运行在安卓8.1.0 ~ 12系统上。需要安装Riru v25.0.0或更高版本，Telegram: @LSPosed'</desc>
+        <title>$name</title>
+        <desc>$desc</desc>
         <set>. ./Magisk_Module/riru_lsposed_Installer.sh</set>
         <params>
             <param name="ChongQi" label="是否刷入成功自动重启系统生效" type="switch" />

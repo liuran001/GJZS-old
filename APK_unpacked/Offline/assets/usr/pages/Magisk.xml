@@ -18,11 +18,6 @@
 <group title="模块区">
     <pages>
 <!-- START -->
-        <page before-load=". $ShellScript/Magisk_Module/Print_Magisk_Warehouse.sh" config-sh="cat $Pages/Magisk_Warehouse.xml" locked="$LOCKED">
-            <title>Magisk模块仓库</title>
-        </page>
-<!-- END -->
-<!-- START -->
         <page id="Modules_Management_page" config-sh=". $ShellScript/Magisk_Module/Modules_Management_page.sh" locked="$LOCKED">
             <title>Magisk模块管理</title>
             <menu type="refresh">刷新界面</menu>

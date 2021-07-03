@@ -1,5 +1,5 @@
 Configuration=2021070301
-Magisk_Warehouse_version=2021062101
+Magisk_Warehouse_version=2021070301
 App_Store_version=2021062001
 Show_Compatibility_Mode=1
 MIUI=0
